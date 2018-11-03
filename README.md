@@ -20,5 +20,18 @@ function onLoad() {
 }
 
 
-----------------------------------
+----------------------------------Date and Time------------------------------
+
+var dt=new GlideDateTime("2018-09-07 08:00:00);
+dt.addMonthsLocalTime(-2);
+gs.info(dt.getDate());
+
+
+var gdt=new GlideDateTime("2018-07-04 08:00:00);
+gdt.addSeconds(1000);
+gs.info(gdt.getValue());
+
+
+rec.insert(),rec.deleteRecord()
+
 
