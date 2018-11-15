@@ -46,3 +46,15 @@ gs.print('Number = ' + ga.number);
 
 gs.log('Total count of the incident with category as hardware is ' + ga.getRowCount());
 
+
+----Query for all incidents created in the past 3 days where the caller is ‘Joe Employee’…log a count of records returned---
+
+var ga=new GlideRecord('incident');
+ga.addQuery('caller_id=681ccaf9c0a8016400b98a06818d57c7^sys_created_onRELATIVEGE@dayofweek@ago@3');
+ga.query();
+while(ga.next()){
+gs.print('Number = ' + ga.number);
+}
+
+gs.log('Total count of the incident with category as hardware is ' + ga.getRowCount());
+
