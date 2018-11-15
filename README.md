@@ -35,3 +35,14 @@ gs.info(gdt.getValue());
 rec.insert(),rec.deleteRecord()
 
 
+-------------------Query for all incidents with a category of ‘hardware’…log a count of records returned--------------------
+
+var ga=new GlideRecord('incident');
+ga.addQuery('category','hardware');
+ga.query();
+while(ga.next()){
+gs.print('Number = ' + ga.number);
+}
+
+gs.log('Total count of the incident with category as hardware is ' + ga.getRowCount());
+
