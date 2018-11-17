@@ -58,3 +58,32 @@ gs.print('Number = ' + ga.number);
 
 gs.log('Total count of the incident with category as hardware is ' + ga.getRowCount());
 
+
+-----------------------------Delete all the incidents updated by 'ITIL User' in the past 24 hours---------------
+
+
+var ga=new GlideRecord('incident');
+ga.addQuery('sys_updated_onRELATIVEGE@dayofweek@ago@1^sys_updated_by=itil');
+ga.query();
+while(ga.next()){
+ga.deleteRecord();
+}
+
+gs.print('Count= ' + ga.getRowCount());
+
+
+---------------------------------Abort the submission of any incident with high priority--------------------------------
+
+(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+if(current.priority==1){
+	gs.addInfoMessage('Enter valid priority.P1 is not allowed');
+	current.setAbortAction(true);
+	
+}
+})(current, previous);
+
+
+
+
