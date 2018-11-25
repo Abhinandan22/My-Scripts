@@ -85,5 +85,71 @@ if(current.priority==1){
 })(current, previous);
 
 
+---------------------------------country state city combination in a Service Catalog--------------------------------------
+
+Write an onChange script on Country
+
+   if (isLoading || newValue == '') {
+      g_form.clearOptions('state');
+	   g_form.clearOptions('city');
+	  
+	  
+   }
+	else{
+		g_form.clearOptions('state');
+	if(newValue=='india'){
+		g_form.addOption('state','Karnataka','Karnataka');
+		g_form.addOption('state','Odisha','Odisha');
+	}
+	  else if(newValue=='usa'){
+		g_form.addOption('state','Oklahoma','Oklahoma');
+		g_form.addOption('state','Houston','Houston');
+	  }
+		else if(newValue=='aus'){
+			g_form.addOption('state','NSW','NSW');
+			g_form.addOption('state','Canberra','Canberra');
+		}
+	}
+	
+	
+	Write an onChange script on State 
+	
+	if (isLoading || newValue == '') {
+      g_form.clearOptions('city');
+   }
+	g_form.clearOptions('city');
+if(newValue=='Odisha'){
+	g_form.addOption('city','Bhadrak','Bhadrak');
+	g_form.addOption('city','Balasore','Balasore');
+	
+}
+	else if(newValue=='Karnataka'){
+	g_form.addOption('city','Bengaluru','Bengaluru');
+	g_form.addOption('city','Hubli','Hubli');
+	
+}
+		else if(newValue=='Oklahoma'){
+	g_form.addOption('city','SanDiego','SanDiego');
+	g_form.addOption('city','Minneapolis','Minneapolis');
+	
+}
+		else if(newValue=='Houston'){
+	g_form.addOption('city','NYC','NYC');
+	g_form.addOption('city','Colorado','Colorado');
+	
+}
+	
+		if(newValue=='NSW'){
+	g_form.addOption('city','Wollongong','Wollongong');
+	g_form.addOption('city','Perth','Perth');
+	
+}
+		if(newValue=='Canberra'){
+	g_form.addOption('city','Sydney','Sydney');
+	g_form.addOption('city','Melbourne','Melbourne');
+	
+}
+
+
 
 
