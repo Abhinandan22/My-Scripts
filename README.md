@@ -151,5 +151,19 @@ if(newValue=='Odisha'){
 }
 
 
+---------------Creating incident thorough script--------------------------------------------
+
+var gr=new GlideRecord('incident');
+gr.initialize();
+gr.setDisplayValue('caller_id','Joe Employee');
+gr.impact= 1 ;
+gr.urgency=1;
+gr.description= "Creation through script";
+gr.insert();
+gs.print("incident created successfully");
+
+
+
+
 
 
