@@ -35,7 +35,8 @@ gs.info(gdt.getValue());
 rec.insert(),rec.deleteRecord()
 
 
--------------------1)Query for all incidents with a category of ‘hardware’…log a count of records returned--------------------
+-------------------1)Query for all incidents with a category of ‘hardware’…log a count of records returned------------------
+
 
 var ga=new GlideRecord('incident');
 ga.addQuery('category','hardware');
@@ -215,6 +216,14 @@ alert(response);
 ------------------------Set up a department on your user record. Use a UI action to show an information message with the sys_id of your department.-----------------------------
 
 
+
+Create a UI Action in the user table and include in the script 
+
+gs.addInfoMessage('The department of the user is ' + gs.getUser().getDepartmentID());
+
+
+
+-----------------------------
 
 
 
