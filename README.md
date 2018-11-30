@@ -223,7 +223,15 @@ gs.addInfoMessage('The department of the user is ' + gs.getUser().getDepartmentI
 
 
 
------------------------------
+-----------------------------Use a client script or UI policy to display an alert message showing the title of the currently logged-in user.-----------------------------
+
+
+UI policy
+
+gs.getUser().getRecord().getValue('title');
+
+
+
 
 
 
