@@ -35,7 +35,7 @@ gs.info(gdt.getValue());
 rec.insert(),rec.deleteRecord()
 
 
--------------------Query for all incidents with a category of ‘hardware’…log a count of records returned--------------------
+-------------------1)Query for all incidents with a category of ‘hardware’…log a count of records returned--------------------
 
 var ga=new GlideRecord('incident');
 ga.addQuery('category','hardware');
@@ -47,7 +47,7 @@ gs.print('Number = ' + ga.number);
 gs.log('Total count of the incident with category as hardware is ' + ga.getRowCount());
 
 
-----Query for all incidents created in the past 3 days where the caller is ‘Joe Employee’…log a count of records returned---
+----------------- 2)Query for all incidents created in the past 3 days where the caller is ‘Joe Employee’…log a count of records returned---
 
 var ga=new GlideRecord('incident');
 ga.addQuery('caller_id=681ccaf9c0a8016400b98a06818d57c7^sys_created_onRELATIVEGE@dayofweek@ago@3');
@@ -59,7 +59,7 @@ gs.print('Number = ' + ga.number);
 gs.log('Total count of the incident with category as hardware is ' + ga.getRowCount());
 
 
------------------------------Delete all the incidents updated by 'ITIL User' in the past 24 hours---------------
+-----------------------------5)Delete all the incidents updated by 'ITIL User' in the past 24 hours---------------
 
 
 var ga=new GlideRecord('incident');
@@ -72,7 +72,7 @@ ga.deleteRecord();
 gs.print('Count= ' + ga.getRowCount());
 
 
----------------------------------Abort the submission of any incident with high priority--------------------------------
+---------------------------------6)Abort the submission of any incident with high priority--------------------------------
 
 (function executeRule(current, previous /*null when async*/) {
 
@@ -151,16 +151,76 @@ if(newValue=='Odisha'){
 }
 
 
----------------Creating incident thorough script--------------------------------------------
+---------------3)4)Creating incident through script with specific condition also--------------------------------------------
 
 var gr=new GlideRecord('incident');
 gr.initialize();
-gr.setDisplayValue('caller_id','Joe Employee');
-gr.impact= 1 ;
+gr.setDisplayValue('caller_id','Joe Employee');//This is the format for reference type field. Direct not allowed.
+gr.impact= 1 ;//Inorder to create a priority 1 incident you have to mention impact and urgency values.Direct value not allowed
 gr.urgency=1;
 gr.description= "Creation through script";
+gr.setDisplayValue('cmdb_ci','*ANNIE-IBM');
 gr.insert();
 gs.print("incident created successfully");
+
+
+----------------1)Query for ITIL user record--------------------------------------------------------
+
+
+Script Include-
+
+fn_counttotal : function(){
+
+		var input=this.getParameter("sysparm_val");
+		var inputstr=input.toString();
+		
+		var arr_q=[];
+
+
+		var count = new GlideAggregate('task'); count.addEncodedQuery('ref_incident.caller_id=' + input + '^sys_class_name=incident^NQsys_class_name=change_request^ref_change_request.requested_by=' + input + '^NQsys_class_name=problem^opened_by=' + input);
+		count.addAggregate('COUNT','sys_class_name');
+		count.query();
+		while(count.next()){
+			arr_q.push(count.getValue('sys_class_name') +" = " + count.getAggregate('COUNT','sys_class_name'));
+		}
+		return arr_q.join("\n");
+
+
+	}
+
+});
+
+
+
+
+
+
+Write onChange client script on incident, problem and SR and call the script include function.
+
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+var ga=new GlideAjax('TotalCount_SI2');
+ ga.addParam("sysparm_name","fn_counttotal");
+ ga.addParam("sysparm_val",newValue);
+ ga.getXML(my_fun);
+function my_fun(response){
+alert(response);
+}
+
+
+
+------------------------Set up a department on your user record. Use a UI action to show an information message with the sys_id of your department.-----------------------------
+
+
+
+
+
+
+
+
 
 
 
