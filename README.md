@@ -260,7 +260,14 @@ if (gs.hasRole("itil") && gs.isInteractive()) {
 Others are simple or can be found at community
 
 
+g_form.setMandatory('state',true);
+g_form.setVisible('state',false);
+g_form.setReadOnly('state',true);
 
+Also UI Policy
+
+buttons are available
+ Visible choose false.
 
 
 
