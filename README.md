@@ -247,6 +247,24 @@ Also through Server side scripting.
 
 
 
+-----------------Disallow ‘itil’ users the ability to read any record where the state is ‘Closed’. Hint: You shouldn’t use an ACL for this one!-----------------------------
+
+
+Write Before Query Business Rule. Dont mention any table.
+
+if (gs.hasRole("itil") && gs.isInteractive()) {
+  var qc = current.addQuery("state", '!=', '7');
+}
+
+
+Others are simple or can be found at community
+
+
+
+
+
+
+
 
 
 
