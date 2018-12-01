@@ -232,6 +232,22 @@ gs.getUser().getRecord().getValue('title');
 
 
 
+---------Set yourself up with some roles and test (in both a client script and a business rule) to see if you have that role----------
+
+
+
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   if(g_user.hasRoles('admin','itil'))
+g_form.setValue('description',"Contains required roles");
+}
+
+
+Also through Server side scripting.
+
+
+
+
 
 
 
