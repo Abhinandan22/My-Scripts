@@ -270,6 +270,46 @@ buttons are available
  Visible choose false.
 
 
+-----------------------------Populate the manager,location of the caller user----------------------------------------
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+var val=g_form.getValue('caller_id');
+var user=new GlideRecord('sys_user');
+user.addQuery('sys_id',val);
+user.query();
+	while(user.next()){
+		g_form.setValue('u_manager_name',user.manager);
+		g_form.setValue('u_manager_email',user.email);
+		g_form.setValue('location',user.location);
+	}
+
+	
+
+   //Type appropriate comment here, and begin script below
+   
+}
+
+-----------Stop the submission of any Priority 1 incident created by a user without the ‘itil’ role. Alert the user when this happens---
+
+function onSubmit() {
+   //Type appropriate comment here, and begin script below
+ if(g_user.hasRole('itil') && g_form.getValue('priority')==1){
+ alert("Record submission aborted");  
+g_form.submitted=false;
+return false;
+}}
+
+function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   if(g_user.hasRole('itil','itil_admin')&& g_form.getValue('priority')==1)
+   
+return confirm('Submit a priority 1??');
+
+}
+
+
+-------------------------
+
 
 
 
