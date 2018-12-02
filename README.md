@@ -308,7 +308,18 @@ return confirm('Submit a priority 1??');
 }
 
 
--------------------------
+-------------------------Resend an email----------------
+
+Go to email logs and change the view to Sent view by clicking on Hamburger icon.
+Click on any of the records. Now click on the Resend Button.
+
+----------------------Trigger an event from graphical workflow that sends an email.---------
+--------------Set up an end-to-end email notification using a business rule trigger.
+
+
+
+
+
 
 
 
