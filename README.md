@@ -317,6 +317,22 @@ Click on any of the records. Now click on the Resend Button.
 --------------Set up an end-to-end email notification using a business rule trigger.
 
 
+------------------Write a schedule job to update the description from test to testing schedule job--------------
+
+In the script section of the schedule job:-
+
+var ga=new GlideRecord('problem');
+ga.addQuery('description','test');
+ga.query();
+while(ga.next()){
+	ga.description='Schedule job Testing';
+	ga.update();
+}
+
+
+------------------------------
+
+
 
 
 
