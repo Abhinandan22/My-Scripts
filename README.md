@@ -330,7 +330,15 @@ while(ga.next()){
 }
 
 
-------------------------------
+------------------------------schedule job to update the field name to'hardware'----------------------
+
+var gr=new GlideRecord('incident');
+gr.addEncodedQuery('category=software^active=true');
+gr.query();
+while(gr.next()){
+	gr.category='hardware';
+	gr.update();
+}
 
 
 
