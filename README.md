@@ -341,6 +341,28 @@ while(gr.next()){
 }
 
 
+-------------------------------Mandatory Attachment before order the item--------------------------------
+
+OnSubmit client script  (It will have performance issues)
+
+function onSubmit() {
+   //Type appropriate comment here, and begin script below
+ var att = new GlideRecord("sys_attachment");
+  att.addQuery("table_name", "sc_cart_item");
+  //att.addQuery("sys_created_by", g_user.userName);
+  //att.addQuery("sys_created_on", '>=', 'javascript:gs.minutesAgo(10)');
+  att.query();
+  if (!att.next()) {
+    confirm("Please attach the requested form before submitting.");
+    return false;
+  }
+  return true;
+}
+
+
+
+
+
 
 
 
