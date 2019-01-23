@@ -360,6 +360,21 @@ function onSubmit() {
 }
 
 
+----------------------------------Script to count the total number of incidents in active state-----------------
+
+var count = new GlideAggregate('incident');
+count.addQuery('active','true');
+count.addAggregate('COUNT');
+count.query();
+
+while(count.next()){
+var inccount=count.getAggregate('COUNT');
+gs.log=("There are currently " + inccount +"incidents");
+
+}
+
+
+
 
 
 
