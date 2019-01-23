@@ -374,6 +374,26 @@ gs.log=("There are currently " + inccount +"incidents");
 }
 
 
+------------------------------------Script to divide the total count of incidents based on category---------------------
+
+
+var ga=new GlideAggregate('incident');
+ga.addQuery('active','=','true');
+ga.addAggregate('COUNT','category');
+ga.query();
+
+while(ga.next()){
+
+var cat=ga.category;
+var category_count=ga.getAggregate('COUNT','category');
+
+gs.log("The total count of " + cat + "is :" + category_count);
+}
+
+
+---------------------------------------
+
+
 
 
 
