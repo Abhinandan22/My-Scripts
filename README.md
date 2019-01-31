@@ -391,7 +391,20 @@ gs.log("The total count of " + cat + "is :" + category_count);
 }
 
 
----------------------------------------
+---------------------------------------Get User Details-----------------------------------------------------------
+
+var user_obj=gs.getUser();         //Retrieving the user object 
+gs.print(user_obj.getFirstName()); //Retrieving the user first name(o/p-System for System Administrator)
+gs.print(user_obj.getLastName());  //Retrieving the user last name(o/p- Administrator for System Administrator)
+gs.print(user_obj.getID());        //Retrieving the User ID (o/p- sysid)
+
+var user_obj=gs.getUserName();     //Retrieves username
+gs.print(user_obj);
+
+
+
+
+
 
 
 
