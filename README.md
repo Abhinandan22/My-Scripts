@@ -401,6 +401,8 @@ gs.print(user_obj.getID());        //Retrieving the User ID (o/p- sysid)
 var user_obj=gs.getUserName();     //Retrieves username
 gs.print(user_obj);
 
+gs.print(user_obj.isMemberOf('CAB Approval'));  // Returns false
+
 
 
 
