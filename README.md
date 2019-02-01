@@ -404,6 +404,42 @@ gs.print(user_obj);
 gs.print(user_obj.isMemberOf('CAB Approval'));  // Returns false
 
 
+----------------------------------------Adding a role to all users--------------------------------------------------
+
+Write a background script:-
+
+var gr = new GlideRecord("sys_user");
+gr.query();
+while(gr.next()) {
+var userrole = new GlideRecord("sys_user_has_role");
+userrole.initialize();
+userrole.role = "282bf1fac6112285017366cb5f867469" ;  //Pass the sys_id of the role you want to add to the user
+userrole.user = gr.sys_id;
+userrole.insert();
+}
+
+
+----------------The below code will not add the role to the user if the role is already present for the user for the above scenario-----------------------
+
+var gr = new GlideRecord("sys_user");
+gr.query();
+while(gr.next()) {
+var role = new GlideRecord('sys_user_has_role')
+role.addQuery('user',gr.sys_id);
+role.addQuery('role', '<sys_id of the role>');
+role.query();
+if(!role.next())
+{
+role.initialize();
+role.user = gr.sys_id;
+role.role = "<sys_id of the role>";
+role.insert();
+}
+}
+
+
+
+
 
 
 
