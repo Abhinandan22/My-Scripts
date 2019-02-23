@@ -1,0 +1,20 @@
+1 > email.setSubject("Priority is "+current.priority.getDisplayValue()+" for Incident numbered "+current.number);
+	//Subject of the incident
+	
+	template.print("Number: "+'<a href="https://' + gs.getProperty('instance_name') + '.service-now.com/nav_to.do?uri=incident.do?sys_id=' + current.sys_id + '">' + current.number + '</a>'+"<br/>");
+	//Link of the incident number 
+	
+	template.print("State: "+ current.state.getDisplayValue()+"<br/>");//template data of the mail
+	template.print("Priority: "+ current.priority.getDisplayValue()+"<br/>");
+	template.print("Short Description: "+ current.short_description+"<br/>");
+	template.print("Description: "+ current.description+"<br/>");
+	
+	var assigned_user=event.parm1.getDisplayValue();//To of the mail
+	var caller_user=event.parm2.getDisplayValue();
+
+
+
+	
+	email.addAddress("cc",current.assigned_to.manager.email,current.assigned_to.manager.name);//cc of the mail
+	email.addAddress("cc",current.caller_id.manager.email,current.caller_id.manager.name);
+	
