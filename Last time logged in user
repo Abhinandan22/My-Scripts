@@ -1,0 +1,2 @@
+To get the last time that a guest has checked in, the following code could be used:
+var gr = new GlideAggregate('u_check_in'); gr.addAggregate('max', 'sys_created_on'); gr.groupBy('u_guest'); gr.query(); while(gr.next()) {  gs.log(gr.u_guest.name + ' ' + gr.getAggregate('max', 'sys_created_ on')); 
