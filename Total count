@@ -1,0 +1,2 @@
+var count = new GlideAggregate('u_check_in'); 
+count.addQuery('sys_created_on', '>', gs.beginningOfYesterday()); count.addAggregate('count'); count.query(); var result = 0; if (count.next())  result = count.getAggregate('COUNT'); gs.log('Result: ' + result); 
