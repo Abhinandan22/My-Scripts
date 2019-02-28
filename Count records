@@ -1,0 +1,13 @@
+//code to the check the records created in Check-in table
+
+
+var results = [];
+var gr = new GlideRecord('u_check_in);
+gr.addQuery('u_check_in','CONTAINS','Alice);
+gr.setLimit(2);
+gr.orderByDesc('sys_created_on');
+gr.query();
+while(gr.next()){
+results.push(gr.sys_created_on + ' ');
+}
+gs.log(results.join(', ' );
