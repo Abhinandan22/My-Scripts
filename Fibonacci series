@@ -1,0 +1,6 @@
+function log (s) {  typeof gs === 'object' ? gs.log(s) : console.log(s); 
+} 
+function fibonacci (n) {
+
+  return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2); }
+var s = new Date().getTime(); for (var i = 0; i <= 30; i += 1) {  log( i + ': ' + fibonacci(i)); } var e = new Date().getTime(); log('Execution time: ' + (e - s))
