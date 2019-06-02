@@ -1,0 +1,50 @@
+Alert Message with the short description
+
+UI action :-
+
+client script :-ticked 
+on condition call the function
+form buttons
+
+function shortDialog(){
+	var short_text = g_form.getValue("short_description");
+	
+	var dialog = new GlideDialogWindow("add_comments_dialog");//UI Page add_comments_dialog
+	dialog.setTitle("Add Description Alert");
+	dialog.setPreference("short_text",short_text);//Pass in a short description for use in the dialog
+	dialog.render();//Open the dialog 
+
+}
+
+
+
+
+
+UI Page :-
+
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<g:ui_form>
+  <!-- Get the values from dialog preferences -->
+  <g:evaluate var="jvar_short_text"
+    expression="RP.getWindowProperties().get('short_text')" />
+  
+		<!--<g:evaluate var="jvar_comments_text"
+    expression="RP.getWindowProperties().get('comments_text')" />-->
+   
+		<!-- Set up form fields and labels -->
+   <table width="100%">
+     <tr id="description_row" valign="top">
+        <td colspan="2">
+           <!-- Short description value used as a label -->
+           ${jvar_short_text}
+        </td>
+     </tr>
+	   </table>
+</g:ui_form>
+	</j:jelly>
+     
+     
+
+
