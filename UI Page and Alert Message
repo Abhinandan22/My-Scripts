@@ -1,4 +1,4 @@
-Alert Message with the short description
+Alert Message with the short description using UI action :-
 
 UI action :-
 
@@ -44,7 +44,61 @@ UI Page :-
 	   </table>
 </g:ui_form>
 	</j:jelly>
-     
+
+
+-------Alert Message with the UI page called from client script----------------------------- 	
+
+
+
+UI Page :-
+
+<g:ui_form>
+		<g:evaluate var="jvar_alert_text"
+    expression="RP.getWindowProperties().get('alert_text')" />
+		
+		
+			 <table width="100%">
+     <tr id="description_row" valign="top">
+        <td colspan="2">
+           <!-- Short description value used as a label -->
+           ${jvar_alert_text}
+        </td>
+     </tr>
+     <tr>
+       <td>
+          <div style="width:200px; height:50px; overflow:auto; solid gray;">
+            
+          </div>
+       </td>
+     </tr>
+		</table>
+		</g:ui_form>
+		
+		-----------------------Client Script------------------------------
+		
+		
+     var EnteredDate=new Date(g_form.getValue("wanted_by_date"));
+	var alert_text="Only future date is allowed";
+
+//alert(EnteredDate);
+
+var dateToday=new Date();
+
+//alert(dateToday);
+
+if(EnteredDate<dateToday)
+
+{
+
+var dialog = new GlideDialogWindow('Date_Error_Message');       
+	dialog.setTitle('Invalid Date'); 
+	dialog.setSize(5,5);
+	dialog.setPreference("alert_text",alert_text);
+dialog.render(); 
+	g_form.clearValue('wanted_by_date',true);
+}
+
+--------------------------------------------------------------------------------------------------
      
 
 
