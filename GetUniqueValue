@@ -1,0 +1,7 @@
+var gr = new GlideRecord('incident');
+gr.query();
+gr.next();
+var uniqueid = gr.getUniqueValue('INC0000060');
+gs.info(uniqueid);
+
+o/p:- Sys_id of the Incident number provided 
