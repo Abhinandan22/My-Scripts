@@ -1,0 +1,10 @@
+
+var queryString = "priority=1^ORpriority=2";
+var gr = new GlideRecord('incident');
+gr.addEncodedQuery(queryString);
+gr.query();
+while (gr.next()) {
+  gs.addInfoMessage(gr.number);
+}
+
+gs.info(gr.getRowCount());
