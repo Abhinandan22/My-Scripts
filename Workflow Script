@@ -1,0 +1,11 @@
+1 > Approval will be triggered based on the values of a field in the catalog item field:-
+
+This is specifically for Scripting scenario:-
+First check the Advanced checkbox in the Approval user activity:-
+answer[];
+answer.push(current.variables.end_user);
+
+
+for ui select conditions
+
+2 >
