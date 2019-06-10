@@ -8,4 +8,13 @@ answer.push(current.variables.end_user);
 
 for ui select conditions
 
-2 >
+2 > Updating the description of the task from the RITM
+
+task.short_description=current.variables.short_description;
+
+IF WANT TO USE SCRATCHPAD then ,
+
+workflow.scratchpad.short_de=current.variables.short_description;
+task.short_description=workflow.scratchpad.short_de;
+
+3 > 
