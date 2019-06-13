@@ -1,0 +1,51 @@
+GlideRecord :- 
+
+
+1 ) var rec = new GlideRecord('incident');
+rec.addQuery('category','hardware');
+rec.query();
+
+while(rec.next()){
+gs.print("Incident number = " +rec.number);
+}
+
+gs.print("The total number of required incidents are ="+rec.getRowCount());
+
+
+2 ) var rec = new GlideRecord('incident');
+rec.addQuery('sys_created_onRELATIVELT@dayofweek@ago@3^caller_id=681ccaf9c0a8016400b98a06818d57c7');
+rec.query();
+
+while(rec.next()){
+gs.print("Incident number = " +rec.number);
+}
+
+gs.print("The total number of required incidents are ="+rec.getRowCount());
+
+3 ) var gr = new GlideRecord('incident');
+gr.initialize();
+gr.short_description = 'Network problem';
+gr.category = 'software';
+gr.caller_id.setDisplayValue('Joe Employee');
+gr.priority = 1 ;
+gr.setWorkflow(false); //Business Rules will give conflicting values for the priority field
+gr.insert();
+
+
+4 ) 5 ) Doubt
+
+6 )current.priority == 1  
+current.setAbortAction(true);
+
+
+Accessing User Information :- 
+
+1 ) var ga =new GlideRecord('sys_user');
+ga.addQuery('roles=itil');
+ga.query();
+
+while(ga.next()){
+gs.print(ga.name);
+}
+
+2 ) 
