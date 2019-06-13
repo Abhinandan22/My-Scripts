@@ -48,4 +48,29 @@ while(ga.next()){
 gs.print(ga.name);
 }
 
-2 ) 
+2 ) gs.addInfoMessage("The dept of "+ gs.getUser() +"is " + gs.getUser().getDepartmentID());
+
+3 ) Default value :- javascript:gs.getUserID();
+
+4 )UI Policy :-
+
+function onCondition() {
+var ga = new GlideRecord('sys_user');
+ga.get(g_user.userID);
+	var title = ga.title;
+	alert(title);
+	
+}
+
+5 ) BR:-
+
+if(gs.hasRole('admin'))
+	gs.addInfoMessage('User has valid role');
+	else
+		gs.addErrorMessage('Choose a valid user');
+    
+    CS:-
+    
+    hasRole('admin')
+    
+    
