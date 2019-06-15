@@ -1,0 +1,30 @@
+Client Script :-
+
+On change client script :-
+
+var ga = new GlideAjax('GetManagerDetails');
+	ga.addParam('sysparm_name','managerdetails');
+	ga.addParam('sysparm_caller_id',newValue);
+	ga.getXML(Mdetails);
+	
+	function Mdetails(response){
+		var responsefromXML=response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue('u_manager',responsefromXML);
+	}
+
+
+Script Include :-
+
+Client callable script include:-
+
+managerdetails : function(){
+   
+		var g=new GlideRecord('sys_user');
+        g.get(this.getParameter('sysparm_caller_id'));
+		return g.manager;
+
+
+
+
+
+
