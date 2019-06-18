@@ -1,0 +1,17 @@
+
+1 > Print the IP address of CI in the short description of Incident form
+
+if (newValue === '') {
+      g_form.clearValue('short_description');
+	   return;
+   }
+	
+	var ciRec = g_form.getReference('cmdb_ci',getResult);
+	
+	function getResult(ciRec){
+		if(ciRec){
+			if(ciRec.ip_address !='' ){
+				g_form.setValue('short_description',ciRec.ip_address);
+			}
+		}
+	}
