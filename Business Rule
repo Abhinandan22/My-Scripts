@@ -25,3 +25,30 @@ inc.query();
    inc.update();
    gs.print("Incident " + inc.number + " closed based on closure of incident " + current.number);
   }
+
+
+(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	
+	 var aggIncident = new GlideAggregate('incident');
+
+    // Add query parameters
+    aggIncident.addQuery('active','=',true);
+
+    // Add Aggregate  
+    aggIncident.addAggregate('COUNT','caller_id');
+
+    // Execute query 
+    aggIncident.query();
+
+    // Process returned records
+    while(aggIncident.next()){
+        // Create a message to display the count of the Caller's active Incidents
+        if (aggIncident.caller_id == current.caller_id){
+            var msg = aggIncident.caller_id.name + " has " + aggIncident.getAggregate('COUNT','caller_id') + " active incidents." ;
+            gs.addInfoMessage(msg);
+        }
+    }
+
+})(current, previous);
