@@ -52,3 +52,112 @@ inc.query();
     }
 
 })(current, previous);
+
+
+(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+	updateChildIncidents();
+function updateChildIncidents() {
+	
+	//Doing check if Incidnet has child record
+	var count = 0 ;
+	var fieldchange;
+	var comments = "";
+	var work_notes = "";
+	
+	var havingchild = new GlideAggregate('incident');
+	havingchild.addQuery("parent", current.sys_id);
+	havingchild.addAggregate('COUNT');
+	havingchild.query();
+	
+	if (havingchild.next() && havingchild.getAggregate('COUNT')>0 ){
+		//gs.log("Count for child:" + havingchild.getAggregate('COUNT'));
+		
+		/*if (current.incident_state.changesTo(6))
+		resolveChildIncidents();*/
+		
+		if(current.comments.changes())
+			{
+			comments = current.comments;
+			//commentChildIncidents();
+		}
+		if(current.work_notes.changes())
+			{
+			work_notes = current.work_notes;
+			//workNotesChildIncidents();
+		}
+		//trigger event for updating the child incidnet as Async
+		gs.eventQueue('incident.childupdate', current, comments,work_notes );
+		
+	}
+	
+}
+
+function commentChildIncidents() {
+	var rec = new GlideRecord("incident");
+	rec.addQuery("parent", current.sys_id);
+	var rec1 = rec.addQuery("incident_state", "!=", "190");
+	rec1.addOrCondition("incident_state", "!=", "6");
+	rec.addActiveQuery();
+	rec.query();
+	while (rec.next()) {
+		var msg = "Comment copied from Parent Incident";
+		if (current.comments.toString().indexOf(msg) == 0)
+			rec.comments = current.comments;
+		else
+			rec.comments = msg + ": " + current.comments;
+		rec.update();
+	}
+}
+function workNotesChildIncidents() {
+	var ChildNotes = new GlideRecord("incident");
+	ChildNotes.addQuery("parent", current.sys_id);
+	var ChildNotes1 = ChildNotes.addQuery("incident_state", "!=", "190");
+	ChildNotes1.addOrCondition("incident_state", "!=", "6");
+	ChildNotes.addActiveQuery();
+	ChildNotes.query();
+	while (ChildNotes.next()) {
+		
+		msgNotes = "Work note copied from Parent Incident";
+		if (current.work_notes.toString().indexOf(msgNotes) == 0)
+			ChildNotes.work_notes = current.work_notes;
+		else
+			ChildNotes.work_notes = msgNotes + ": " + current.work_notes;
+		ChildNotes.update();
+	}
+}
+
+//
+// Resolve active, unresolved incidents that are children of the current incident
+//
+/*function resolveChildIncidents() {
+	var incident = new GlideRecord("incident");
+	incident.addActiveQuery();
+	incident.addQuery("parent", current.sys_id);
+	incident.query();
+	var msg = "";
+	while (incident.next()) {
+		if (incident.close_notes.nil()) {
+			msg = "Close notes copied from Parent Incident";
+			if (current.close_notes.toString().indexOf(msg) == 0)
+				incident.close_notes = current.close_notes;
+			else
+				incident.close_notes = msg + ": " + current.close_notes;
+		}
+		//To Restrict Child Comment Notification While The Parent Incident Is Resolved
+		
+		msg = "Resolved based on resolution of Parent Incident.";
+		if (current.comments.toString().indexOf(msg) == 0)
+			incident.comments = current.comments;
+		else
+			incident.comments = msg + " " + current.comments;
+		incident.work_notes = current.work_notes;
+		incident.update();
+	}
+}*/
+
+
+	
+})(current, previous);
