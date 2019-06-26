@@ -4,6 +4,7 @@ Advanced view script:-
 
 g_scratchpad.oldImpact=current.getValue('impact');
 g_scratchpad.oldUrgency=current.getValue('urgency');
+g_scratchpad.oldUrgency=current.getValue('priority');
 
 onChange client script on Impact and Urgency fields(2 client script):-
 
