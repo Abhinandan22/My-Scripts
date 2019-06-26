@@ -7,17 +7,20 @@ g_scratchpad.oldUrgency=current.getValue('urgency');
 
 onChange client script on Impact and Urgency fields(2 client script):-
 
-var isAdmin = g_user.hasRole('admin');
-	var imp=g_form.getValue('impact');
-if(!isAdmin){
-	if(newValue == 1 && imp == 1){ 
+if (isLoading || newValue === '') {
+      return;
+   }
 	
-	g_form.setValue('urgency',g_scratchpad.oldUrgency);
-	g_form.setValue('impact',g_scratchpad.oldImpact);
-	g_form.setValue('priority',oldValue);
-	g_form.addInfoMessage('Unauthorized to create P0/P1-Critical');
-}
-}
+	var userRole=g_user.hasRole('admin');
+	var imp=g_form.getValue('impact');
+	if(!userRole){
+		if(newValue == 1 && imp==1){
+			g_form.setValue('impact',g_scratchpad.impact);
+			g_form.setValue('urgency',g_scratchpad.urgency);
+			g_form.setValue('priority',g_scratchpad.priority);
+			g_form.addErrorMessage('Invalid Update');
+		}
+	}
 
 
 Adjust values accordingly for impact field.
