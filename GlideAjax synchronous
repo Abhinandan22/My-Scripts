@@ -1,0 +1,63 @@
+onChange client script :-
+
+var attach_record = new GlideAjax('Attachment_SI');
+   attach_record.addParam('sysparm_name','attachvalid');
+   attach_record.addParam('sysparm_inc',g_form.getUniqueValue());
+   attach_record.getXMLWait();
+	
+	var answer = attach_record.getAnswer();
+	
+	if(answer == 'Not Attached'){
+		alert("You must attach a file to submit");
+		return false;
+	}
+	
+  
+  
+  attachvalid : function(){
+	var answer = 'Attached';
+	var inc_id = this.getParameter('sysparm_inc');
+	var gr = new GlideRecord("sys_attachment");
+	gr.addQuery("table_name", "incident");
+	gr.addQuery("table_sys_id", inc_id);
+	gr.query();
+	if (!gr.next()) {
+	answer = 'Not Attached';
+	}
+		 return answer;
+},
+
+
+
+getrecordattach : function(){
+		var answer = 'Attached';
+		var cat_id = this.getParameter('sysparm_cat_item');
+		var ritm_attach = new GlideRecord('sys_attachment');
+		ritm_attach.addQuery("table_name","sc_req_item");
+		ritm_attach.addQuery("table_sys_id",cat_id);
+		ritm_attach.query();
+		
+		if(!ritm_attach.next()){
+			answer='Not Attached';
+		}
+		
+		return answer;
+		
+	},
+
+
+var attach_rec = new GlideAjax('Attachment_SI_SR');
+	attach_rec.addParam('sysparm_name','getrecordattach');
+	attach_rec.addParam('sysparm_cat_id',g_form.getUniqueValue());
+	attach_rec.getXMLWait();
+	
+	var answer = attach_rec.getAnswer();
+	
+	if(answer == 'Not Attached'){
+		alert("You must attach a file to submit");
+		return false;
+	}
+  
+  
+
+
