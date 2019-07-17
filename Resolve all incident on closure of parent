@@ -1,0 +1,56 @@
+var incident = new GlideRecord('incident');
+	incident.addActiveQuery();
+	incident.addQuery('parent_incident',current.sys_id);
+	incident.addQuery('incident_state','!=','IncidentState.RESOLVE');
+	incident.query();
+	
+	var msg = "";
+	while(incident.next()){
+		
+		gs.print("Incident "+ incident.number + 'resolved based on resolution of Parent Incident' + current.number);
+		
+		incident.inciden_state = IncidentState.RESOLVED;
+		
+		if(incident.close_notes.nil()){
+			
+			msg = "Close notes copied from Parent Incident";
+
+
+   if (current.close_notes.toString().indexOf(msg) == 0)
+
+
+   incident.close_notes = current.close_notes;
+
+
+   else
+
+
+   incident.close_notes = msg + ": " + current.close_notes;
+
+
+   }
+
+
+   incident.close_code = current.close_code;
+		}
+	
+	msg = "Resolved based on resolution of Parent Incident.";
+
+
+   if (current.comments.toString().indexOf(msg) == 0)
+
+
+   incident.comments = current.comments;
+
+
+   else
+
+
+   incident.comments = msg + " " + current.comments;
+
+
+   incident.work_notes = current.work_notes;
+
+
+   incident.update();
+	
