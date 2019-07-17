@@ -9,7 +9,7 @@ var incident = new GlideRecord('incident');
 		
 		gs.print("Incident "+ incident.number + 'resolved based on resolution of Parent Incident' + current.number);
 		
-		incident.inciden_state = IncidentState.RESOLVED;
+		incident.incident_state = IncidentState.RESOLVED;
 		
 		if(incident.close_notes.nil()){
 			
