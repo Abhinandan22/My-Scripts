@@ -37,7 +37,7 @@ CallerManagerSI.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 			var userObject = {
 				"manager":userRec.getValue("manager"),
 				"manager_display":userRec.manager.getDisplayValue(),				
-        "department":userRec.getValue("department"),
+        "department":userRec.getDisplayValue("department"),
 				
 				};
 			
