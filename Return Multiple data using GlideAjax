@@ -2,49 +2,56 @@ OnChange Client script:--
 
 function onChange(control, oldValue, newValue, isLoading, isTemplate) {
    if (newValue === '') {
-	   g_form.setValue('u_caller_manager','');
-	   g_form.setValue('description','');
-      return;
+      g_form.setValue('u_user_manager','');
+	  g_form.setValue('short_description','');
+	   return;
    }
+
+	var caller_mgr = new GlideAjax('User_Details');
+	caller_mgr.addParam('sysparm_name','getdet');
+	caller_mgr.addParam('sysparm_user',newValue);
+	caller_mgr.getXML(CallBack);
 	
-	var caller_mgr = new GlideAjax('CallerManagerSI');
-	caller_mgr.addParam('sysparm_name','getCallerDetails');
-	caller_mgr.addParam('sysparm_caller',newValue);
-	caller_mgr.getXML(result);
-	
-	function result(response){
-		var answer = response.responseXML.documentElement.getAttribute("answer");
+	function CallBack(response){
 		
-		var uObj = JSON.parse(answer);
-g_form.setValue('u_caller_manager',uObj.manager,uObj.manager_display);
-	    g_form.setValue('description',uObj.department);					
-		}
-	//Type appropriate comment here, and begin script below
-   }
+		var getXML = response.responseXML.documentElement.getAttribute("answer");
+		
+		var retobj = JSON.parse(getXML);
+		
+		g_form.setValue('u_user_manager',retobj.user_manager);
+	    g_form.setValue('short_description',retobj.user_department);
+						
+	}
+	
+	
+   //Type appropriate comment here, and begin script below
+   
+}
    
    
    Script Includes :-
    
-   var CallerManagerSI = Class.create();
-CallerManagerSI.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+   var User_Details = Class.create();
+User_Details.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 
-	getCallerDetails : function(){
+	getdet : function(){
 		
-		var userid = this.getParameter('sysparm_caller');
+		var userid = this.getParameter('sysparm_user');
 		
-		var userRec = new GlideRecord('sys_user');
-		if(userRec.get(userid)){
-			var userObject = {
-				"manager":userRec.getValue("manager"),
-				"manager_display":userRec.manager.getDisplayValue(),				
-        "department":userRec.getDisplayValue("department"),
-				
-				};
+		var ga = new GlideRecord('sys_user');
+		if(ga.get(userid)){
+		
+		var userObj = {
 			
-			return JSON.stringify(userObject);
-		}
-		
-				},
-	type:'CallerManagerSI'
-    
+			
+			"user_manager": ga.getDisplayValue("manager"),
+			"user_department":ga.getDisplayValue("department"),
+			
+		};
+	
+			return JSON.stringify(userObj);
+	}
+	},
+	
+    type: 'User_Details'
 });
