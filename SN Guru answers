@@ -49,6 +49,7 @@ gs.print(ga.name);
 }
 
 2 ) gs.addInfoMessage("The dept of "+ gs.getUser() +"is " + gs.getUser().getDepartmentID());
+gs.addInfoMessage("The dept of "+gs.getUserDisplayName()+" is  "+gs.getUser().getRecord().getDisplayValue('department'));
 
 3 ) Default value :- javascript:gs.getUserID();
 
