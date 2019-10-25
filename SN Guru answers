@@ -56,12 +56,29 @@ gs.addInfoMessage("The dept of "+gs.getUserDisplayName()+" is  "+gs.getUser().ge
 4 )UI Policy :-
 
 function onCondition() {
-var ga = new GlideRecord('sys_user');
-ga.get(g_user.userID);
-	var title = ga.title;
-	alert(title);
+
+	var user_title = new GlideAjax('GetUserDetails');
+	user_title.addParam('sysparm_name','getDet');
+	user_title.addParam('sysparm_logg',g_user.userID);
+	user_title.getXML(getTitle);
+	
+	function getTitle(response){
+		var gettitle =response.responseXML.documentElement.getAttribute("answer");
+		alert(gettitle);
+	}
 	
 }
+
+Script Includes :-
+
+getDet:function(){
+		
+		var userID = this.getParameter("sysparm_logg");
+		var ga = new GlideRecord("sys_user");
+		if(ga.get(userID))
+			return ga.title;	
+	},
+	
 
 5 ) BR:-
 
