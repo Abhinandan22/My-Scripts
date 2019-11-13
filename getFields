@@ -1,0 +1,3 @@
+var fields = current.getFields();
+gs.print(fields);
+for (var num = 0; num < fields.size(); num++) {
