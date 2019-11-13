@@ -1,0 +1,30 @@
+while(incidents.next()){
+        incidents.caller_id.getDisplayValue('manager');
+        incidents.caller_id.manager.getDisplayValue('department');
+        incidents.caller_id.manager.getValue('phone');
+        incidents.caller_id.manager.getValue('title');
+        
+        var managerGR = new GlideRecord("sys_user");
+        managerGR.addQuery("sys_id", incidents.caller_id.manager.getValue('sys_id'));
+        managerGR.query();
+        if (managerGR.next()) {
+            managerGR.getDisplayValue();
+            managerGR.getDisplayValue('department');
+            managerGR.getValue('phone');
+            managerGR.getValue('title');
+        }
+        
+        var managerGet = new GlideRecord("sys_user");
+        managerGet.get(incidents.caller_id.manager.getValue('sys_id'));
+        managerGet.getDisplayValue();
+        managerGet.getDisplayValue('department');
+        managerGet.getValue('phone');
+        managerGet.getValue('title');
+        
+        var manager = incidents.caller_id.getRefRecord('manager');
+        manager.getDisplayValue();
+        manager.getDisplayValue('department');
+        manager.getValue('phone');
+        manager.getValue('title');
+        
+    }
