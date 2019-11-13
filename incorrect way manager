@@ -1,0 +1,9 @@
+var managers = [];
+var incidents = new GlideRecord('incident');
+incidents.addActiveQuery();
+incidents.addQuery();
+incidents.setLimit(2);
+incidents.query();
+while(incidents.next()){
+  managers.push(incidents.caller_id.getDisplayValue('manager'));
+}
