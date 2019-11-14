@@ -1,0 +1,20 @@
+(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	
+	var aggIncident=new GlideAggregate('incident');
+	aggIncident.addQuery('active','=',true);
+	aggIncident.addQuery('caller_id','=',current.caller_id);
+	aggIncident.addAggregate('COUNT','caller_id');
+	aggIncident.query();
+	
+	while(aggIncident.next()){
+		
+            var msg = aggIncident.caller_id.name + " has " + aggIncident.getAggregate('COUNT','caller_id') + " active incidents." ;
+            gs.addInfoMessage(msg);
+        }
+	
+	
+	
+
+})(current, previous);
