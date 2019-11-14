@@ -1,0 +1,19 @@
+var inc = new GlideRecord('incident');
+inc.addQuery('active',true);
+inc.query();
+
+while (inc.next()) {
+gs.print(inc.number);
+gs.print(inc.caller_id.getDisplayValue());
+
+var grpMbr = new GlideRecord('sys_user');
+grpMbr.addQuery('sys_id', inc.caller_id);
+grpMbr.orderByDesc('sys_created_on');
+grpMbr.query();
+
+while (grpMbr.next()) {
+var emailid = grpMbr.email;
+gs.print(emailid);
+}
+}
+
