@@ -1,0 +1,101 @@
+getDepartment: function() {
+
+
+  var dept_id = this.getParameter('sysparm_deptid');
+
+
+  var depts = []; //Array to stuff dept objects for multiple results
+
+
+
+  var grd = new GlideRecord('u_cm_departments');
+
+
+  grd.addQuery('sys_id',dept_id);
+
+
+  grd.query();
+
+
+  while (grd.next()){
+
+
+var dept={};   // Create the object within the while loop
+
+
+
+dept.dept_name=grd.u_department_name;
+
+
+dept.org=grd.u_organization;
+
+
+
+              depts.push(dept); // push results in the array
+
+
+
+  }
+
+
+var   json = new JSON(); // move your json setup outside the while loop
+
+
+var dept_data = json.encode(depts);//JSON formatted string
+
+
+
+return dept_data;
+
+
+
+Then in the client script:
+
+
+
+var dept_id=g_form.getValue('u_department');
+
+
+//alert(dept_id);
+
+
+
+var ga=new GlideAjax('GetDataFromServer');
+
+
+ga.addParam('sysparm_name','getDepartment');
+
+
+ga.addParam('sysparm_deptid',dept_id);
+
+
+ga.getXML(getDepartmentData);
+
+
+
+  function getDepartmentData(response) {
+
+
+    var answer=response.responseXML.documentElement.getAttribute("answer");
+
+
+    alert(answer); //alert to see the string value
+
+
+    var answer2 = answer.evalJSON():
+
+
+
+  alert(answer2[0].org); //alert the first object in the array
+
+
+
+  g_form.setValue('u_up_department_name',answer2[0].dept_name,true);
+
+
+  g_form.setValue('u_up_organization',answer2[0].org,true);
+
+
+
+  }
+
