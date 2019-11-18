@@ -1,0 +1,11 @@
+var order=new GlideRecord('sc_cat_item');
+order.addQuery('category.title','Computer & Telephony');
+order.addActiveQuery();
+order.query();
+var item_access = [];
+while(order.next()){
+item_access.push(order.getValue("sys_id"));
+}
+for(var count=0;count < item_access.length; count++){
+gs.log(item_access[count].name);
+}
