@@ -1,0 +1,18 @@
+Inbound Email Action Script :- 
+
+
+current.caller_id = gs.getUserID();
+
+
+current.comments = "email received from: " + email.origemail + "\n\n" + email.body_text;
+
+
+current.short_description = email.subject;
+
+
+
+current.incident_state = IncidentState.NEW;
+
+current.contact_type = "email";
+
+current.insert();
