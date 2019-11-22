@@ -1,0 +1,13 @@
+function testing() {
+        
+    var sysIDkey = [];
+    var GRfilter = new GlideRecord('incident');
+    GRfilter.addEncodedQuery('category="hardware"');
+    GRfilter.query();
+    while (GRfilter.next()) {
+        sysIDkey.push(GRfilter.getValue('sys_id'));
+        
+    }
+        
+    return sysIDkey.join(','); // return comma separated string of sys_ids
+}
