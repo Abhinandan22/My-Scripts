@@ -1,0 +1,25 @@
+function runClientCode(){
+	var answer=prompt('Please provide a justification for rejecting this request.');
+	if (answer!=null) {
+		var msg = "Rejected because " + answer;
+		g_form.setValue("work_notes", msg);
+		gsftSubmit(null, g_form.getFormElement(), 'RejectAN');
+	}
+	else {
+		return false;
+	}
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if(typeof window == 'undefined'){
+	runBusRuleCode();
+}
+
+//server-side function
+function runBusRuleCode(){
+	current.u_approval='rejected';
+	//current.u_work_notes="Rejected because " + answer;
+	current.update();
+	action.setRedirectURL(current);
+}
