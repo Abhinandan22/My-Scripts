@@ -1,0 +1,25 @@
+function AcceptTable(getTableName,limit){
+
+
+var arr = [];
+var gr = new GlideRecord(getTableName);
+if(limit && limit > 0){
+gr.setLimit(limit);
+}
+
+gr.query();
+
+
+
+while(gr.next()){
+
+arr.push(gr.getDisplayValue());
+
+}
+
+return arr;
+
+}
+
+gs.info(AcceptTable('incident',10).join('\n'));
+
