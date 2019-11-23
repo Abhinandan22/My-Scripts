@@ -2,7 +2,7 @@ var arr_fields=[];
 var fields = new GlideRecord('sys_dictionary');
 fields.addQuery('name','incident');
 
-fileds.addEncodedQuery('internal_type!=collection^ORinternal_type=NULL');//To ignore all the table dictionaries(optional)
+fields.addEncodedQuery('internal_type!=collection^ORinternal_type=NULL');//To ignore all the table dictionaries(optional)
 
 fields.query();
 
