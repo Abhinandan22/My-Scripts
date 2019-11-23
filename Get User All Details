@@ -1,0 +1,18 @@
+var arr_fields=[];
+var fields = new GlideRecord('sys_dictionary');
+fields.addQuery('name','incident');
+
+fileds.addEncodedQuery('internal_type!=collection^ORinternal_type=NULL');//To ignore all the table dictionaries(optional)
+
+fields.query();
+
+while(fields.next())
+{
+arr_fields.push(fields.column_label.toString()+"("+fields.element.toString() + ")" );
+}
+
+
+for(var i=0; i<arr_fields.length; i++)
+{
+   gs.print(arr_fields[i]);
+}
