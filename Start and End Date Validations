@@ -1,0 +1,17 @@
+var start = g_form.getValue("u_start_date");
+	var end = g_form.getValue("u_end_date_time");
+	
+	if(start =="" || end ==""){
+		return ;
+		
+	}
+	
+	var format = g_user_date_time_format;
+	
+	var EndBeforeStart = compareDates(start,format,end,format);
+	
+	if(EndBeforeStart){
+	g_form.addErrorMessage("End Date should be greater than Start Date");
+	g_form.clearValue('u_start_date');
+	g_form.clearValue('u_end_date_time');
+	}
