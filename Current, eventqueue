@@ -1,0 +1,3 @@
+if (!current.assigned_to.nil() && current.assigned_to.changes()) {
+  gs.eventQueue('incident.assigned', current, current.assigned_to.getDisplayValue() , previous.assigned_to.getDisplayValue());
+  }
