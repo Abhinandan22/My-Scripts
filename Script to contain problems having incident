@@ -1,0 +1,9 @@
+var gr = new GlideRecord('problem');
+var grSQ = gr.addJoinQuery('incident');
+gr.addActiveQuery();
+gr.query();
+
+while(gr.next())
+gs.info(gr.number);
+
+O/P :- Problems
