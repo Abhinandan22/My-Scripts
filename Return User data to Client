@@ -1,0 +1,56 @@
+CS:-
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	
+	var ga=new GlideAjax('UserDetails');
+	ga.addParam('sysparm_name','userdet');
+	ga.addParam('sysparm_caller_id',newValue);
+	ga.getXML(ServerValue);
+	
+	function ServerValue(response){
+		
+		var responsefromXML = response.responseXML.documentElement.getAttribute("answer");
+		
+		var user_obj = JSON.parse(responsefromXML);
+		
+		g_form.setValue('short_description',user_obj.clr_dept);
+		g_form.setValue('description',user_obj.clr_title);
+		g_form.setValue('u_caller_manager',user_obj.clr_manager);
+	}
+
+   //Type appropriate comment here, and begin script below
+   
+}
+
+
+SI:-
+
+var UserDetails = Class.create();
+UserDetails.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+	userdet : function(){
+	
+		var userid = this.getParameter('sysparm_caller_id');
+		
+		var ga = new GlideRecord('sys_user');
+		if(ga.get(userid)){
+			
+			var userObj = {
+				
+				"clr_manager":ga.getDisplayValue('manager'),
+				"clr_title":ga.getValue('title'),
+				"clr_dept":ga.getDisplayValue('department')
+			};
+			
+			
+		}
+		
+		return JSON.stringify(userObj);
+	},
+	
+	
+    type: 'UserDetails'
+});
