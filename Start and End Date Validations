@@ -30,6 +30,23 @@ g_form.showFieldMsg('u_end_problem_date','End Date should be greater or equal to
 }
 
 }
+
+
+Script Include:-
+
+EndDate : function(){
+
+
+var _startDate = new GlideDateTime(this.getParameter('sysparm_startDate'));
+
+
+var _endDate = new GlideDateTime(this.getParameter('sysparm_endDate'));
+
+
+return _startDate.compareTo(_endDate);
+
+
+},
 	
 
    
