@@ -17,13 +17,15 @@ ga.addParam('sysparm_startDate', g_form.getValue('u_start_problem_date'));
 ga.addParam('sysparm_endDate',newValue);
 
 
-ga.getXMLAnswer(validateEndDate);
+ga.getXML(validateEndDate);
 	
 }
 
-function validateEndDate(answer){
-		
-if(answer == 1){
+function validateEndDate(response){
+	
+var responsefromXML = response.responseXML.documentElement.getAttribute("answer");
+
+if(responsefromXML == 1){
 g_form.clearValue('u_end_problem_date');			
 g_form.showFieldMsg('u_end_problem_date','End Date should be greater or equal to  Start Date','error');
 
