@@ -1,0 +1,21 @@
+Create a UI Action with the no client script
+
+Write the server side code :-
+
+current.setRedirectURL(current);
+
+var gr = new GlideRecord("Table where data is created");
+//gr.fieldname = current.field name
+
+
+current.setRedirectURL(current);
+
+var gr = new GlideRecord("u_data_kp_table");
+gr.initialize();
+gr.u_dsid_of_users=current.user_name;
+gr.u_user_name=current.sys_id.toString();
+gr.u_status='requested';
+gr.insert();
+
+
+gs.addInfoMessage("User record will be updated in a short time.Your patience is appreciated");
