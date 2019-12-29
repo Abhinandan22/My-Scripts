@@ -1,0 +1,3 @@
+1) Create a new Web Service in the Target instance
+2) Create a soap message in the Source instance
+3) Also create a BR in the source for the fields to be sent to target
