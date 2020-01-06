@@ -1,0 +1,9 @@
+var ga = new GlideRecord('incident');
+	ga.addQuery('parent_incident',current.sys_id);
+	ga.addQuery('state','!=',6);
+	ga.query();
+	
+	while(ga.next()){
+	current.setAbortAction(true);
+	}	
+	gs.addErrorMessage('Parent Incident cannot be resolved when child incident is open');
