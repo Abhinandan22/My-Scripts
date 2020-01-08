@@ -1,0 +1,41 @@
+After BR on Know table:-
+
+var knowledgebas = current.kb_knowledge_base.kb_managers;
+    gs.addInfoMessage("managers list:"+knowledgebas);
+	var responsefromSI = new UserDetails().getKbMgrs(knowledgebas);
+	gs.addInfoMessage(responsefromSI);
+	gs.eventQueue('kb_mgr_notif',current,responsefromSI);
+  
+  
+  SI :-
+  
+  getKbMgrs: function(articlekb) {
+
+        var kbmgrarr = [];
+
+        var kb = new GlideRecord('sys_user');
+        kb.addEncodedQuery("sys_idIN"+articlekb);
+		kb.query();
+        while(kb.next()) {
+
+            kbmgrarr.push(kb.getValue('email'));
+        }
+
+        return kbmgrarr.join(',');
+    },
+    
+    Event :- 
+    
+    Pass the BR
+    
+    Notification:-
+    
+    When event is fired, Pass recipients as parm1,
+    
+    Hi ${mail_script:Get the KB managers},
+
+A new article has been created for the KB where you are the managers.
+
+Thanks and Regards,
+
+Author: ${author.URI_REF}
