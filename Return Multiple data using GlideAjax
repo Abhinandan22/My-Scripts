@@ -44,7 +44,7 @@ User_Details.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 		var userObj = {
 			
 			
-			"user_manager": ga.getDisplayValue("manager"),
+			"user_manager": ga.getValue("manager"),
 			"user_department":ga.getDisplayValue("department"),
 			
 		};
