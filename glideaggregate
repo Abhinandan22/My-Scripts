@@ -1,0 +1,10 @@
+var ga = new GlideAggregate('incident');
+ga.addAggregate('COUNT');
+ga.query();
+
+var incidents = 0;
+
+while(ga.next())
+incidents = ga.getAggregate('COUNT');
+
+gs.print(incidents);
