@@ -1,0 +1,6 @@
+>>>>>>  Record,read,Advanced,   Incident  --None--
+
+Script :- if(current.opened_by == gs.getUserID() || current.caller_id == gs.getUserID() || current.watch_list.indexOf(gs.getUserID()) > -1)
+           answer = true ; 
+         else
+           answer = false;
