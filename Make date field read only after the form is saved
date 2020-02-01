@@ -1,0 +1,2 @@
+if(!g_form.isNewRecord())
+g_form.setReadOnly('u_date',true);
