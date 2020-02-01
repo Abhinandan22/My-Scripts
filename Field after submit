@@ -1,0 +1,5 @@
+
+Make date field read only after the form is saved
+
+if(!g_form.isNewRecord()) //// Check if its not a new record, basically you are checking if you already saved it
+g_form.setReadOnly('u_date',true);
