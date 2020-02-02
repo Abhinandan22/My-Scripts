@@ -1,0 +1,15 @@
+Write an onLoad client script:-
+
+For Number field:-
+
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   
+	if(g_form.isNewRecord()){
+		
+		g_form.setDisplay('number',false);
+	}
+	else
+		g_form.setDisplay('number',true);
+	
+}
