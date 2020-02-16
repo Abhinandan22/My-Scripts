@@ -1,0 +1,51 @@
+Condition:-
+
+current.sys_class_name =='incident' || current.sys_class_name=='problem'
+
+Script :-
+
+function commentsDialog() {
+   
+	//Get the values to pass into the dialog
+   
+   var short_text = g_form.getValue("short_description");
+
+	var tbl_name = g_form.getTableName();
+   
+	//Initialize and open the Dialog Window
+   var dialog = new GlideDialogWindow("task_comments_dialog"); //Render the dialog containing the UI Page 'task_comments_dialog'
+   dialog.setTitle("Add Task Comments"); //Set the dialog title
+   dialog.setPreference("table_name",tbl_name);
+   dialog.setPreference("short_text", short_text); //Pass in short description for use in the dialog
+   dialog.render(); //Open the dialog
+}
+
+UI Page:-
+
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<g:ui_form>
+		<g:evaluate var="jvar_table"
+    expression="RP.getWindowProperties().get('table_name')" />
+		
+		<g:evaluate var="jvar_alert_text"
+    expression="RP.getWindowProperties().get('short_text')" />
+			
+		<table width="100%">
+     <tr id="description_row" valign="top">
+        <td colspan="2">
+           <!-- Short description value used as a label -->
+           ${jvar_alert_text} is the short description for table ${jvar_table}
+        </td>
+     </tr>
+     <tr>
+       <td>
+          <div style="width:200px; height:50px; overflow:auto; solid gray;">
+            
+          </div>
+       </td>
+     </tr>
+		</table>
+		</g:ui_form>
+</j:jelly>
