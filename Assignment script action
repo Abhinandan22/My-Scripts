@@ -1,0 +1,63 @@
+BR :- 
+
+(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+
+    var gru = GlideScriptRecordUtil.get(current);
+    var fields = gru.getChangedFields();
+    var fieldValues = gru.getChanges();
+    var fieldNames = gru.getChangedFieldNames();
+
+    gs.include('j2js');
+
+    fields = j2js(fields); //not required
+    fieldValues = j2js(fieldValues);
+    fieldNames = j2js(fieldNames);
+
+    var arrayUtil = new ArrayUtil();
+
+    var field = arrayUtil.convertArray(fields);
+    var fieldValuesArr = arrayUtil.convertArray(fieldValues);
+    var fieldNamesArr = arrayUtil.convertArray(fieldNames);
+
+    var listofval = "";
+	
+	for(var j= 0 ; j < fieldNamesArr.length ; j++ ){
+		var valu = current.getElement(fieldNamesArr[j]);
+		var fname = valu.getLabel().toString();
+		var fvalues = valu.getDisplayValue().toString();
+		
+		if(j==0){
+			listofval = fvalues;
+		}
+		else
+			{
+				listofval = listofval+","+fvalues;
+			}
+	}
+
+	//var fieldsNamesList = listofval.split(",");
+
+    gs.eventQueue("problemModule.updated.fields", current, fields, listofval);
+
+})(current, previous);
+
+
+Script Action :- 
+
+fieldUpdate();
+
+function fieldUpdate(){
+	
+	var fields_arr = event.parm1.split(",");
+	var fields_value_arr = event.parm2.split(",");
+	
+	var ga = new GlideRecord("u_problem_update_fields");
+	
+		ga.initialize();	
+		ga.setValue("u_update_field_details",fields_arr +" corresponding change values are " + fields_value_arr);
+		ga.insert();
+	}
+  
+	
