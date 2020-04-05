@@ -1,0 +1,17 @@
+var ga = new GlideRecord("incident");
+ga.addActiveQuery();
+ga.query();
+
+while(ga.next()){
+
+var userList = ga.watch_list.getDisplayValue();
+var userArray = userList.split(",");
+
+gs.print("WatchList for Incident " + ga.number + " is ");
+
+for(var i = 0 ; i < userArray.length ; i++){
+gs.print(userArray[i]); 
+
+}
+
+}
