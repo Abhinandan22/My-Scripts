@@ -1,0 +1,28 @@
+
+1st way::::::::
+
+var ujob = new GlideRecord('u_job_config');
+ujob.query();
+
+while(ujob.next())
+
+if(ujob.u_related_application.install_status == '7')
+gs.print(ujob.u_name + " has " + ujob.u_related_application.install_status.getDisplayValue());
+
+*** Script: Second Job config has Retired
+*** Script: Retired CI 1st job has Retired
+
+
+2nd way::::::
+
+
+var ujob = new GlideRecord('u_job_config');
+ujob.query();
+
+while(ujob.next())
+
+if(ujob.u_related_application.install_status.getDisplayValue() === 'Retired')
+gs.print(ujob.u_name + " has " + ujob.u_related_application.install_status.getDisplayValue());
+
+*** Script: Second Job config has Retired
+*** Script: Retired CI 1st job has Retired
