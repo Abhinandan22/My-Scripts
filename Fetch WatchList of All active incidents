@@ -1,3 +1,5 @@
+array will be a javascript array of display values
+
 var ga = new GlideRecord("incident");
 ga.addActiveQuery();
 ga.query();
@@ -5,6 +7,28 @@ ga.query();
 while(ga.next()){
 
 var userList = ga.watch_list.getDisplayValue();
+var userArray = userList.split(",");
+
+gs.print("WatchList for Incident " + ga.number + " is ");
+
+for(var i = 0 ; i < userArray.length ; i++){
+gs.print(userArray[i]); 
+
+}
+
+}
+
+
+
+array will be a javascript array of reference values
+
+var ga = new GlideRecord("incident");
+ga.addActiveQuery();
+ga.query();
+
+while(ga.next()){
+
+var userList = ga.watch_list.toString();
 var userArray = userList.split(",");
 
 gs.print("WatchList for Incident " + ga.number + " is ");
