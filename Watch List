@@ -1,0 +1,15 @@
+var ga = new GlideRecord("incident");
+ga.addQuery('sys_id','46e3e949a9fe19810069b824ba2c761a');
+ga.query();
+
+if(ga.next()){
+
+var watchList = ga.watch_list.getDisplayValue();
+
+var list = watchList.split(',');
+
+for(var i = 0 ; i < list.length ; i++)
+gs.print(list[i]);
+
+
+}
