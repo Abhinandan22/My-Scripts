@@ -1,0 +1,17 @@
+1 ) Write an on Demand Scheduled job to Update the BS of the user.
+
+updateDBS();
+
+function updateDBS(){
+	
+	var ga = new GlideRecord("sys_user");
+	ga.addEncodedQuery("u_dsidIN87321,87653,89765,12345");
+	ga.query();
+	
+	while(ga.next()){
+		
+		ga.u_default_business_service = '1ed62280077850104190fa9e7c1ed03d';
+		ga.update();
+	}
+	
+}
