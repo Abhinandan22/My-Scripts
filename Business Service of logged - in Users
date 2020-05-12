@@ -11,8 +11,6 @@ userDetails.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 		
 		if(ga.get(userid)){
 			
-			gs.log("TESTING USER BUSINESS SERVICE" + ga.getDisplayValue('u_default_business_service'));
-			
 			return ga.getDisplayValue('u_default_business_service');
 			
 			
@@ -35,7 +33,7 @@ function onLoad() {
 	var userBS = new GlideAjax("userDetails");
 	userBS.addParam('sysparm_name','userBServ');
 	userBS.addParam('sysparm_logged_in',g_user.userID);
-	userBS.getXML('userDetails');
+	userBS.getXML(userDetails);
 	
 	function userDetails(response){
 		
