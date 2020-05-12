@@ -1,0 +1,47 @@
+userDetails :- 
+
+var userDetails = Class.create();
+userDetails.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+	userBServ : function(){
+		
+		var userid = this.getParameter('sysparm_logged_in');
+		
+		var ga = new GlideRecord("sys_user");
+		
+		if(ga.get(userid)){
+			
+			gs.log("TESTING USER BUSINESS SERVICE" + ga.getDisplayValue('u_default_business_service'));
+			
+			return ga.getDisplayValue('u_default_business_service');
+			
+			
+		}
+	},
+	
+	
+    type: 'userDetails'
+});
+
+
+
+
+
+Client Script :- 
+
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   
+	var userBS = new GlideAjax("userDetails");
+	userBS.addParam('sysparm_name','userBServ');
+	userBS.addParam('sysparm_logged_in',g_user.userID);
+	userBS.getXML('userDetails');
+	
+	function userDetails(response){
+		
+		var userObj = response.responseXML.documentElement.getAttribute("answer");
+		alert("Checking UserOBj " + userObj);
+		g_form.setValue('u_busi_serv',userObj);
+	}
+	
+}
