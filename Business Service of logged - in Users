@@ -11,7 +11,7 @@ userDetails.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 		
 		if(ga.get(userid)){
 			
-			return ga.getDisplayValue('u_default_business_service');
+			return ga.getValue('u_default_business_service');//never use getDisplayValue as preview wont be there
 			
 			
 		}
