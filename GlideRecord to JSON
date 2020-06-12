@@ -1,0 +1,11 @@
+function glideRecordToJson(gr) {
+  var obj = {};
+
+  for (var prop in gr) {
+    if (gr[prop]){
+      obj[prop] = gr.getValue(prop);
+    }
+  }
+
+  return obj;
+};
