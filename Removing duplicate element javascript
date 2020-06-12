@@ -1,0 +1,5 @@
+var your_array = ["response","request","value","request","value"];
+
+var uniqueArray = new ArrayUtil().unique(your_array);
+
+gs.print(uniqueArray);
