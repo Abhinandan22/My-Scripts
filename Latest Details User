@@ -23,7 +23,7 @@ userdet: function() {
     
     CS:-
     
-    if (newValue === '') {
+    if (newValue === '') {    //Please remove the isLoading else after saving the form it will not accept values)
         g_form.setValue('u_caller_manager', '');
         g_form.setValue('short_description', '');
         g_form.setValue('description', '');
