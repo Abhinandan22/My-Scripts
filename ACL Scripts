@@ -11,6 +11,7 @@ Script :- if(current.opened_by == gs.getUserID() || current.caller_id == gs.getU
 
 answer = false ;
 
+https://old.wiki/index.php/Administering_the_List_Editor
 
  
  
