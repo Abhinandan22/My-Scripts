@@ -4,3 +4,13 @@ Script :- if(current.opened_by == gs.getUserID() || current.caller_id == gs.getU
            answer = true ; 
          else
            answer = false;
+           
+ Make fields not editable in list view :- 
+ 
+>>>>>> Record,list_edit,Advanced   Table Name (None) Advance = checked
+
+answer = false ;
+
+
+ 
+ 
