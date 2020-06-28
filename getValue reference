@@ -1,0 +1,13 @@
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (newValue === '') {
+      return;
+   }
+	
+	if(g_form.getValue('u_business_service') === '03d4567507301010dd3dff808c1ed0bf')
+		g_form.addDecoration('u_caller','icon-star','preferred member');
+	else
+		g_form.removeDecoration('u_caller','icon-star','preferred member');
+
+   //Type appropriate comment here, and begin script below
+   
+}
