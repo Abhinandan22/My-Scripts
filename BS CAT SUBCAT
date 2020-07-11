@@ -1,0 +1,54 @@
+var CatSubcat_SI = Class.create();
+CatSubcat_SI.prototype = {
+    initialize: function() {},
+
+    BSValid: function(bsValue) {
+        var ga = new GlideRecord("u_bs_sub_cat_relationship");
+        ga.addQuery('u_business_service', bsValue);
+        ga.query();
+
+        var catValue = '';
+
+        gs.log("BS VALUE " + bsValue);
+        if (!bsValue)
+            return;
+
+        while (ga.next()) {
+            if (catValue.length == 0) {
+                // Create the beginning of the qualifier and add the 1st category
+                catValue = 'sys_idIN' + ga.getValue('u_category');
+            } else {
+                // build a comma separated string of groups if there is more than one
+                catValue += (',' + ga.u_category);
+            }
+
+        }
+        return catValue;
+    },
+
+
+    ValidCT: function(catValue) {
+
+        var ga = new GlideRecord("u_bs_sub_cat_relationship");
+        ga.addQuery('u_category', catValue);
+        ga.query();
+
+        var subcat = '';
+
+        if (!catValue)
+            return;
+
+        while (ga.next()) {
+
+            if (subcat.length == 0)
+                subcat = "sys_idIN" + ga.getValue("u_subcategory");
+            else
+                subcat += (',' + ga.u_subcategory);
+
+        }
+
+        return subcat;
+    },
+
+    type: 'CatSubcat_SI'
+};
