@@ -1,0 +1,9 @@
+var ga = new GlideRecord("sys_user_has_role");
+ga.addQuery('user','d3dbbf173b331300ad3cc9bb34efc466');
+ga.query();
+
+while(ga.next()){
+
+gs.print(ga.role.getDisplayValue());
+}
+gs.print(ga.getRowCount());
