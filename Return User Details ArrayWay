@@ -1,0 +1,57 @@
+SI:- 
+
+var CallerDetailsSI = Class.create();
+CallerDetailsSI.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    callerdet: function() {
+        var caller = this.getParameter('sysparm_caller');
+        var arr = [];
+        var ga = new GlideRecord("sys_user");
+        ga.addQuery('sys_id', caller);
+        ga.query();
+
+        if (ga.next()) {
+            arr.push(ga.manager.getDisplayValue());
+            arr.push(ga.email);
+            arr.push(ga.department.getDisplayValue());
+            return arr.toString();
+        }
+    },
+
+    type: 'CallerDetailsSI'
+});
+
+
+CS :- 
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (newValue === '') {
+        g_form.clearValue('u_caller_manager');
+        g_form.clearValue('u_short_description');
+        g_form.clearValue('u_description');
+        return;
+    }
+
+    var ga = new GlideAjax('CallerDetailsSI');
+    ga.addParam('sysparm_name', 'callerdet');
+    ga.addParam('sysparm_caller', newValue);
+    ga.getXML(UserValue);
+
+    function UserValue(response) {
+
+        var arrValues = [];
+        var userVal = response.responseXML.documentElement.getAttribute("answer");
+        alert(userVal);
+        var arrVal = userVal.split(',');
+        arrValues.push(arrVal[0]);
+        arrValues.push(arrVal[1]);
+        arrValues.push(arrVal[2]);
+        g_form.setValue('u_caller_manager', arrValues[0]);
+        g_form.setValue('u_short_description', arrValues[1]);
+        g_form.setValue('u_description', arrValues[2]);
+    }
+
+
+    //Type appropriate comment here, and begin script below
+
+}
