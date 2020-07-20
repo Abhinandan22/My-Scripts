@@ -1,0 +1,10 @@
+onLoad Script on the table :- 
+
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+ 
+	if(g_user.hasRoleExactly('helpline coordinator'))
+		return;
+	else
+		g_form.removeOption('u_state','New');
+}
