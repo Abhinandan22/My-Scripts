@@ -1,0 +1,9 @@
+Make sure a Table has the fields with the corresponding combinations and it should inherit from Data Lookup Matcher Rules.
+
+Now in the new Data Lookup Definition module create a new record with valid tables source and matcher table.
+
+Provide proper field name in the matcher field definition and setter field definition.
+
+This is the way by which the values will be populated on a priority field based on above two other values.However the value was only populating after choosing values a
+and then saving them. On change this doesnot change.
+
