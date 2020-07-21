@@ -1,0 +1,17 @@
+var ga = new GlideRecord("u_replicate_incident");
+ga.addEncodedQuery('u_caller=a8f98bb0eb32010045e1a5115206fe3a');
+ga.orderByDesc("sys_created_on");
+ga.setLimit(4);//Based on requirement change the records required
+ga.query();
+
+while(ga.next()){
+	
+	var gr = new GlideRecord("u_incident_task");
+	gr.initialize();
+	gr.u_description = "Create New Itask through script";
+	gr.u_short_description = "GlideRecord QUery";
+	gr.u_configuration_item.setDisplayValue("*ANNIE-IBM");
+	gr.insert();
+}
+
+//However this didnot achieve the purpose I was looking for rather it added multiple incident task to the incident.
