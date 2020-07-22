@@ -1,0 +1,10 @@
+var gr = new GlideAggregate('cmdb_ci_server'); //GlideAggregate query
+gr.addAggregate('count'); //Count aggregate (only necessary for a count of items of each OS)
+gr.orderByAggregate('count'); //Count aggregate ordering
+gr.groupBy('os'); //Group aggregate by the 'os' field
+gr.query();
+while(gr.next()){
+   var osCount = gr.getAggregate('count'); //Get the count of the OS group
+   //Print the OS name and count of items with that OS
+   gs.print('Distinct operating system: ' + gr.os + ': ' + osCount);
+}
