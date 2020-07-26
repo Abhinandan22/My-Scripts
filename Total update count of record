@@ -1,0 +1,6 @@
+var gr = new GlideRecord("incident");
+
+if(gr.get('552c48888c033300964f4932b03eb092')){
+gs.print(gr.getValue('sys_mod_count'));
+
+}
