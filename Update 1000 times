@@ -8,4 +8,5 @@ if (grOneRecord.get('552c48888c033300964f4932b03eb092')) {
 	}
 }
 
-These will be found in the sys_mod_count field only.Check in background script result where modcount gives the values.
+These will be found in the sys_mod_count field only.Check in background script result where modcount gives the values.Updates field in the list view of the INC will give that count.
+The sys_mod_count gives the total count.
