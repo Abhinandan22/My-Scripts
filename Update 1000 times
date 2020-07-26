@@ -1,0 +1,11 @@
+var grOneRecord = new GlideRecord('incident');
+
+if (grOneRecord.get('552c48888c033300964f4932b03eb092')) {
+	for (var i=0; i< 1000; i++) {
+		grOneRecord.setValue('short_description', 'UPDATED val ' + (i+1));
+		grOneRecord.setWorkflow(false);
+		grOneRecord.update();
+	}
+}
+
+These will be found in the sys_mod_count field only.Check in background script result where modcount gives the values.
