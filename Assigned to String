@@ -1,0 +1,22 @@
+Advance reference qualifier in assigned to
+
+SI:- 
+
+assignedTo : function(current){
+		
+		var grp = current.u_assignment_group;
+		var userStr = "";
+		
+		var gr = new GlideRecord("sys_user_grmember");
+		gr.addEncodedQuery("group="+grp);
+		gr.query();
+		
+		if(grp === '')
+			return "sys_idIN"+userStr;
+		
+		while(gr.next()){
+			userStr +=","+ gr.getValue("user");			
+		}
+		
+		return "sys_idIN"+userStr;
+	},
