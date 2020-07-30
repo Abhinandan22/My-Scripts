@@ -1,0 +1,42 @@
+Reference qualifier on 2nd :- javascript:new GetDependentValue_SI().getCategory(current)
+Reference qualifier on 3rd :- javascript:new GetDependentValue_SI().getSubCategory(current)
+
+Client Callable Script Include :- 
+
+getCategory : function(current){
+		var bs = current.u_business_service;
+		var cat,strCat="";
+		
+		if(bs === ''){
+		return "sys_idIN"+strCat;
+		}
+		var ga = new GlideRecord("u_bs_sub_cat_relationship");
+		ga.addEncodedQuery('u_business_service='+bs);
+		ga.query();
+		
+		while(ga.next()){
+			strCat += "," + ga.getValue("u_category"); 
+		}
+		return "sys_idIN"+strCat;
+	},
+  
+  
+  getSubcat : function(current){
+		var bs = current.u_business_service;
+		var cat = current.u_category;
+		
+		var subCat,strSubcat;
+		
+		if(bs === '' &&  cat === ''){
+			return "sys_idIN"+subCat;
+		}
+		
+		var ga = new GlideRecord("u_bs_sub_cat_relationship");
+		ga.addEncodedQuery("u_business_service="+bs+"^u_category="+cat);
+		ga.query();
+		
+		while(ga.next()){
+			strSubcat += ","+ga.getValue("u_subcategory");
+		}
+		return "sys_idIN"+strSubcat;
+	},	
