@@ -1,0 +1,43 @@
+SI :- 
+
+Client Callable :- 
+
+callerInc: function(){
+		var caller = this.getParameter('sysparm_caller');
+		var ga = new GlideAggregate('u_replicate_incident');
+		ga.addQuery('u_caller','=',caller);
+		ga.addAggregate('COUNT','u_caller');
+		ga.query();
+		
+		
+		while(ga.next()){
+			
+			var msg = "The total number of incidents with user " + ga.getDisplayValue('u_caller') + " is " + ga.getAggregate('COUNT','u_caller');
+	
+		}	
+		return msg;
+	},
+  
+  
+  Client Script :-
+  
+  function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (newValue === '') {
+        GlideUI.get().clearOutputMessages();
+        return;
+    }
+
+    var gr = new GlideAjax("CallerDetailsSI");
+    gr.addParam('sysparm_name', 'callerInc');
+    gr.addParam('sysparm_caller', newValue);
+    gr.getXML(IncCount);
+
+    function IncCount(response) {
+        var resultfromXML = response.responseXML.documentElement.getAttribute("answer");
+        g_form.addInfoMessage(resultfromXML);
+    }
+
+
+    //Type appropriate comment here, and begin script below
+
+}
