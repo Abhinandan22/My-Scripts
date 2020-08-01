@@ -1,0 +1,34 @@
+UI Policy :- 
+
+var ga = new GlideAjax("fieldsinForm_SI");
+	ga.addParam('sysparm_name','getFields');
+	ga.addParam('sysparm_table_name',g_form.getTableName());
+	ga.getXML(fieldReturn);
+	
+	function fieldReturn(response){
+		var fields = response.responseXML.documentElement.getAttribute("answer");
+		alert(fields);
+    
+ 
+ SI :- 
+ 
+  getFields: function() {
+
+        var table = this.getParameter("sysparm_table_name");
+        var ga = new GlideRecord("sys_dictionary");
+        ga.addQuery('name', table);
+        ga.query();
+
+        var fields = "";
+        var count = 0;
+
+        while (ga.next()) {
+            if (count == 0) {
+                fields = ga.getValue("element");
+                count++;
+            } else {
+                fields += "," + ga.getValue("element");
+                count++;
+            }
+        }
+        return fields;
