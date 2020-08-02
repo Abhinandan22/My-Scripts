@@ -1,0 +1,5 @@
+------->>>> Run script :- To setup the short description of the fields in short_description          current.short_description = current.variables.short_description;
+
+------->>>> Catalog Task :- task.short_description = current.variables.short_description;
+
+------->>>> 
