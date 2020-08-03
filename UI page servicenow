@@ -1,1 +1,47 @@
 https://servicenow-docs.readthedocs.io/en/latest/UI_Pages/
+
+
+---------------------Using a passed parameter in HTML field :- 
+
+HTML : -
+
+<g:evaluate var="jvar_document_array"
+expression="RP.getWindowProperties().get('sysparm_document_array')" />
+
+<script>
+  alert('"${jvar_document_array}"');
+</script>
+
+
+--------------Using a passed parameter in the Client field
+
+Client script
+
+if ("${sysparm_checked_out}" == "true") {
+  alert('"${sysparm_checked_out}"');
+}
+
+
+Triggering on change for select box
+
+HTML :- 
+
+<g:evaluate>
+  var choiceList = new GlideChoiceList();
+  choiceList.add('', '--None--');
+  choiceList.add('123', 'OneTwoThree');
+  choiceList.add('FourFiveSix', '456');
+</g:evaluate>
+
+<select id="document_select" name="document_select" onchange="myFunction(this.value)">
+  <g:options choiceList="${choiceList}" choiceValue="" />
+</select>
+
+
+Client Script :- 
+
+CS :- 
+
+function myFunction(val) {
+  alert(val);
+}
