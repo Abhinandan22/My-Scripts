@@ -1,3 +1,271 @@
 http://sncommander.com/how-to-send-server-data-to-the-client-using-jelly-in-servicenow/
 
 http://snaug.com/?page_id=39
+
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="jelly:core" xmlns:g2="null">
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- SNAUG JELLY CHEAT SHEET -->
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Setting variables -->
+ 
+<!-- Variables can be set with the set tag -->
+<j:set var="jvar_a_var" value="true" />
+ 
+<!-- Variables can also be set in g:evaluate blocks -->
+<g:evaluate>
+var jvar_another_var=true;
+</g:evaluate>
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Outputting variables -->
+<!-- First phase variables g,j are wrapped in ${ } -->
+<!-- They will also be available in the second phase -->
+ 
+<!-- Second phase variables g2,j2 are wrapped in $[ ] -->
+ 
+<g:evaluate>
+var message = "Hello World!";
+</g:evaluate>
+ 
+<!-- Both of these work -->
+First Phase:${message}<br/>
+Second Phase:$[message]<br/>
+ 
+<g2:evaluate>
+var secondMessage = "Hello Again World!";
+</g2:evaluate>
+ 
+<!-- This will not work -->
+First Phase:${secondMessage}<br/>
+ 
+<!-- This will work -->
+Second Phase:$[secondMessage]<br/>
+ 
+<!-- All valid HTML will work as well -->
+<h2>I am HTML</h2>
+ 
+<!-- Or Output it as a variable -->
+<g:evaluate>
+var htmlString="<h2>I am also HTML!</h2>";
+</g:evaluate>
+ 
+${htmlString}
+ 
+<!-- If you want to Ignore the HTML and treat it as a string use the HTML: prefix-->
+<g:evaluate>
+var notHtml="<h2>I am not HTML :(</h2>";
+</g:evaluate>
+ 
+${HTML:notHtml}
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Conditional statements -->
+ 
+<!-- All code within the if will only execute if the condition is true -->
+<j:if test="${jvar_a_var == false}">
+<h2>
+Hello World
+</h2>
+</j:if>
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Looping -->
+ 
+<j:set var="jvar_b_var" value="10" />
+ 
+<g:evaluate>
+var jellyRec = new GlideRecord(\'sys_user\');
+jellyRec.query();
+</g:evaluate>
+ 
+<j:if test="${jellyRec.hasNext()}">
+<j:while test="${jellyRec.next()}">
+<span>
+${jellyRec.name}
+</span>
+<br/>
+</j:while>
+</j:if>
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Iterating Through Arrays -->
+ 
+<g:evaluate>
+var colorArray = [ "blue","red","green" ];
+</g:evaluate>
+ 
+<j:forEach items="${colorArray}" var="jvar_color">
+${jvar_color}
+</j:forEach>
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Conditions with multiple cases -->
+<j:set var="jvar_view" value="main" />
+ 
+<j:choose>
+<j:when test="${jvar_view == \'main\'}"><h2>
+MAIN
+</h2></j:when>
+<j:when test="${jvar_view == \'list\'}">
+<h2>LIST</h2>
+</j:when>
+<j:otherwise>
+<h2>None Selected</h2>
+</j:otherwise>
+</j:choose>
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Using Inline Templates (other UI Macros) -->
+<g:inline template="kb_advanced_search.xml" lang="Italian" />
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Standard UI Elements -->
+<g:ui_reference name="name" id="name" table="sys_user" size="50"/>
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- UI Elements that use inline content -->
+<g:ui_slushbucket name="sb" left_header="Left Side" right_header="Right Side">
+<option value="Item 1">Item 1</option>
+<option value="Item 3">Item 2</option>
+<option value="Item 3">Item 3</option>
+</g:ui_slushbucket>
+ 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Documentation for Out of Box UI Elements -->
+ 
+<!-- ui_button action="action name for processing" -->
+ 
+<!-- ui_checkbox name=input name
+value=value
+class=CSS class -->
+ 
+<!-- ui_choicelist name=what you want to name the select (if omitted, name will be set to the value of the field attribute)
+table=the table from which you will select
+field=the column in the table to select from -->
+ 
+<!-- ui_choice_input_field name= name of the input field
+label=the label of the field
+value= initial value of the field
+onkeyup=the javascript to call onkeyup
+onchange=the javascript to call onchange
+onclick_label=the javascript to call onclick of the label
+mandatory=whether or not this field is madatory, defaults to false -->
+ 
+<!-- ui_date name= name of the input field
+value= initial value of the field (defaults to now) -->
+ 
+<!-- ui_date_time name= name of the input field
+value= initial value of the field (defaults to now) -->
+ 
+<!-- ui_dnd_slushbucket name= name of the slushbucket
+width=width of each list
+cellstyle=the style for each bucket -->
+ 
+<!-- ui_element table=table name
+id = sys_id of a record
+field= field name -->
+ 
+<!-- ui_form form_name=name of the form NOT TESTED
+sys_id=sys_id
+onsubmit=onsubmit function -->
+ 
+<!-- ui_global_text_search -->
+ 
+<!-- ui_header -->
+ 
+<!-- ui_input_field type=the type for the input field, defaults to text
+name= name of the input field
+label=the label of the field
+value= initial value of the field
+onkeyup=the javascript to call onkeyup
+onchange=the javascript to call onchange
+onclick_label=the javascript to call onclick of the label
+mandatory=whether or not this field is madatory, defaults to false
+size=the size of the field
+style=the style of the input field
+readonly=make the input field readonly, defaults to false -->
+ 
+<!-- ui_list_breadcrumb clipped=?????
+guid=?????
+href=target url
+classname=CSS class name
+text=link text -->
+ 
+<!-- ui_multiline_input_field type - the type for the input field, defaults to text
+name - name of the input field
+label - the label of the field
+value - initial value of the field
+onkeyup - the JavaScript to call onkeyup
+onchange - the JavaScript to call onchange
+onclick_label - the JavaScript to call onclick of the label
+mandatory - makes the field mandatory, defaults to false
+size - the size of the field
+style - the style of the input field, defaults to "width: 100%"
+rows - the number of rows, defaults to 5
+readonly - makes the field readonly, defaults to false -->
+ 
+<!-- ui_page_footer -->
+ 
+<!-- ui_progress_worker worker_id=worker ID -->
+ 
+<!-- ui_radio id = the id to use for this entry. If omitted this will be \'name\' followed by the underscore character followed by \'value\'
+name = the name to use (this must be common among all the other radio buttons in the group so that when one is selected any other is deselected)
+value = the value to use for this entry
+text = the text to show for this entry
+checked_value = the value to be automatically selected for the radio buttons in this group
+onchange = javascript to be performed when this entry is selected -->
+ 
+<!-- ui_reference name= what you want to name the select
+table= the table from which you will select
+value= the initial value for the select (may be omitted if nothing is initially selected)
+show_popup= true/false whether the popup icon is displayed
+completer= set to another completer class if you do not want AJAXReferenceCompleter (for example, AJAXTableCompleter)
+ 
+If you are using completer=AJAXReferenceCompleter, you can also use:
+columns= if you want to show additional columns in the drop down (semicolon separated list)
+order_by= if you want to sort matches in the drop down by a particular column -->
+ 
+<!-- ui_select_list name - name of the select list
+header - title for the list
+sort - should the list items be sorted?
+multiple_select - should multiple selects be allowed?
+size - size of the list
+width - width of the list -->
+ 
+<!-- ui_select_list_addremove_control name=name of the control
+selecttable=??
+leftzone=??
+rightzone=?? -->
+ 
+<!-- ui_select_list_indent name - name of the select list
+header - title for the list
+sort - should the list items within a level be sorted?
+size - size of the list
+width - width of the list -->
+ 
+<!-- ui_select_option value = the value to use for this option
+text = the text to show for this option
+selected_value = the value to be automatically selected for the options in this select -->
+ 
+<!-- ui_singlerecord name=name
+table = table name
+fields = list of fields?? -->
+ 
+<!-- ui_slushbucket name=name
+left_header=left list header
+right_header=right list header
+up_down=??? -->
+ 
+<!-- ui_spacer pixels=width of the spacer -->
+ 
+<!-- ui_theme_changer -->
+ 
+<!-- ui_timezone_changer -->
+ 
+<!-- ui_tr line=true or false to determine even or odd row -->
+ 
+<!-- ui_update_set_picker -->
+ 
+</j:jelly>
