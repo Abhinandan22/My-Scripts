@@ -30,14 +30,12 @@ Demote
 <?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	
-	First 10 numbers 
-	
-	<g:evaluate>
-		var numbers=["Abhi","Parhi","Kunu"];
-	</g:evaluate>	
-	
-	<j:forEach var="jvar_number" num="${numbers}">
-		<p>${jvar_number}</p>
-	</j:forEach>	
+	<g:evaluate> 
+		var words = ["Abhi","Parhi","Kunu"];
+	</g:evaluate>
+		
+		<j:forEach var="jvar_name" items="${words}">  
+			<p>${jvar_name}</p>
+	</j:forEach>
 </j:jelly>
 
