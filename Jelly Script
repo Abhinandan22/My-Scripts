@@ -1,0 +1,43 @@
+1 ) Looping through the Jelly Scripts :- 
+
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+	Hello World
+	
+	<g:evaluate> //This is only for the ServiceNow Code under g:evaluate and others j:evaluate jelly
+		var words = ["Propose","Promote","Reject","Demote"];
+	</g:evaluate>
+		
+		<j:forEach var="jvar_state" items="${words}">  //JEXL {words}
+			<p>${jvar_state}</p>
+	</j:forEach>
+</j:jelly>
+
+O/P:- 
+
+Hello World
+Propose
+
+Promote
+
+Reject
+
+Demote
+
+2) Learning test
+
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+	First 10 numbers 
+	
+	<g:evaluate>
+		var numbers=["Abhi","Parhi","Kunu"];
+	</g:evaluate>	
+	
+	<j:forEach var="jvar_number" num="${numbers}">
+		<p>${jvar_number}</p>
+	</j:forEach>	
+</j:jelly>
+
