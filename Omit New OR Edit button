@@ -1,0 +1,13 @@
+Navigate to List Control. In OOB form you wont have Omit new condition/Omit edit condition.So manually add the fields.
+Then provide the condition in the respective fields.  
+
+To hide new button for itil user:-
+
+In the Omit new condition script type field , add the following script :- 
+
+
+var answer;
+if(gs.hasRole('itil'))
+	answer = true;
+else
+	answer = false;
