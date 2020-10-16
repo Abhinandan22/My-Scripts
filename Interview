@@ -1,0 +1,13 @@
+1 ) Can we modify the size of the condition field of the UI Action in ServiceNow??
+
+Yes,go to System Definition > Dictionary menu, search for the Column name task_instructions, open the record and change the field length as per your need. Max length field size to be increased.
+
+Best way is to call the Script include from the UI action and then it returns true/false.If true it is executed.
+
+
+2 ) How to hide the edit and new button in the Related List??
+
+Omit edit/new button and omit edit/new button condition in the List Control of the related list. 
+
+
+3 ) Change question workflow/ workbench (VVI)
