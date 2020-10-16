@@ -1,0 +1,11 @@
+1) Right click on the field and open Configure label.
+2) In the URL field we will get the File Name.
+3) Navigate to Images under System UI / sys_attachment table to get the file
+4) Copy the sys_id of the file
+5) Now navigate to the sys_attachment file. Use the condition Table sys ID is <the sys id in prev step>.Import the XML
+6) Now navigate to sys_Attachment_doc/sys_attachment_doc_v2 table with the condition attachment. <table sys_id> = sys_id of attachment.
+7)Export the records and then import it the required instance.
+
+This is visible in Impact/Urgency/Priority
+
+
