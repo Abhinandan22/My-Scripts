@@ -1,8 +1,16 @@
 Keywords in Jelly :-
 
+if --> test
 
+set --> var , value
 
+while --> test
 
+set_if --> var = <test> ? <if_true> : <if_false>
+
+<g:macro invoke >
+
+when --> test
 
 
 
