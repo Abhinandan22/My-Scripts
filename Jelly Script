@@ -44,7 +44,7 @@ Demote
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	
 	<g:evaluate>
-		var arrayName = ["Abhi","Parhi","Bhadrak"];
+		var arrayName = ["Abhi","Parhi","Bhadrak"]
 	</g:evaluate>
 	
 	<j:forEach var="jvar_val" items="${arrayName}" >
