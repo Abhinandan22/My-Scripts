@@ -1,3 +1,12 @@
+Keywords in Jelly :-
+
+
+
+
+
+
+
+
 1 ) Looping through the Jelly Scripts :- 
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -25,6 +34,8 @@ Reject
 
 Demote
 
+
+
 2) Learning test
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -40,6 +51,7 @@ Demote
 </j:jelly>
 
 
+
 3)<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	
@@ -53,5 +65,14 @@ Demote
 </j:jelly>
 
 
-4)
+
+
+4) <j:set var="jvar_variable" value="45" />   //assigning value to jvar
+	
+	<j:if test= "${jvar_variable ne 5}">  //test returns true.
+		  Count is less than 5
+	</j:if>		
+	
+	
+5)	
 
