@@ -92,7 +92,7 @@ Demote
 5)<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	
-	<j:set var="jvar_variable" value="45" />
+	<j:set var="jvar_variable" value="1" />
 	
 	
 	<j:if test="${jvar_variable ne 67}">
@@ -107,6 +107,13 @@ Demote
 	<j:if test="${jvar_variable le 67}">
 		<p> This is a less than 67 value</p>
 	</j:if>	
+	
+	<p>Value is </p>
+	
+	<j:while test="${jvar_variable le 99}">
+		<p>${jvar_variable}</p>
+		<j:set var="jvar_variable" value="${jvar_variable+1}" />
+	</j:while>	
 	
 </j:jelly>	
 
