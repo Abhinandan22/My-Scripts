@@ -1,7 +1,10 @@
 Before Update BR - 
 
-if(previous.state!=40){
-		current.state = previous.state;
-		current.setAbortAction(true);
-		gs.addErrorMessage("Incident Repl cannot be Closed without resolving the record");
+ if (previous.u_state != 40) {
+        current.u_state = previous.u_state;
+        current.setAbortAction(true);
+        gs.addErrorMessage("Incident Repl cannot be Closed without resolving the record");
+    } else{
+        current.u_state = 50;
+    current.update();
 	}
