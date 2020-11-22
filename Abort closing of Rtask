@@ -1,0 +1,15 @@
+Update Before BR on table :- 
+
+Condition :- State changes to Closed
+
+var incRes = new GlideRecord('u_repl_task');
+    incRes.addEncodedQuery('u_parent='+current.sys_id);
+    incRes.query();
+
+    while (incRes.next()) {
+        if (incRes.state != 'Resolved') {
+            gs.addErrorMessage('Please resolve the repl_task before resolving repl_inc');
+            current.setAbortAction(true);
+			break;
+        }
+    }
