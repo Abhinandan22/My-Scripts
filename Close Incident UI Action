@@ -1,0 +1,37 @@
+UI Action :-
+
+Condition :- !current.isNewRecord()&&current.u_state == 40
+
+Onclick:- Close()
+
+Script :- 
+
+function Close(){
+
+gsftSubmit(null,g_form.getFormElement(),'close_repl');
+}
+
+if(typeof window == 'undefined')
+updateState();
+
+function updateState(){
+	current.u_state = 50;
+	current.update();
+	action.setRedirectURL(current);
+}
+
+
+
+UI policy to close incident:-
+
+function onCondition() {
+var fields = g_form.getEditableFields();
+         for (var x = 0; x < fields.length; x++) {
+           g_form.setReadOnly(fields[x], true);
+         }
+}
+
+
+When to Apply:-
+When State is Closed.
+
