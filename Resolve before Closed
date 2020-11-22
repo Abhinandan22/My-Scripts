@@ -1,10 +1,13 @@
-Before Update BR - 
+Before Insert/Update BR - 
 
 
 Condition :- State changes to Closed
 
 
- if (previous.u_state != 40) {
+ (function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    if (previous.u_state != 40) {
         current.u_state = previous.u_state;
         current.setAbortAction(true);
         gs.addErrorMessage("Incident Repl cannot be Closed without resolving the record");
@@ -12,3 +15,4 @@ Condition :- State changes to Closed
         current.u_state = 50;
     current.update();
 	}
+})(current, previous);
