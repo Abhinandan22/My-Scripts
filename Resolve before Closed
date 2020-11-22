@@ -1,5 +1,9 @@
 Before Update BR - 
 
+
+Condition :- State changes to Closed
+
+
  if (previous.u_state != 40) {
         current.u_state = previous.u_state;
         current.setAbortAction(true);
