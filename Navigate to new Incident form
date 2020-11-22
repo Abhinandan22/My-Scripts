@@ -1,0 +1,14 @@
+For condition provide script include or condition field
+
+function createInc(){
+	gsftSubmit(null,g_form.getFormElement(),'cr_inc');
+}
+
+if(typeof window == 'undefined'){
+	incidentCreate();
+}
+
+function incidentCreate(){
+var instanceName=gs.getProperty('glide.servlet.uri');
+action.setRedirectURL(instanceName+"/incident.do?");
+}
