@@ -1,0 +1,6 @@
+Adding the formatter in a way as that of Change Request.
+
+Create a new Record in Flow Formatters under System UI.
+
+For the required state choose the condition as state is Escalate. Similarly create conditions for the number of record and provide the required Label value.
+
