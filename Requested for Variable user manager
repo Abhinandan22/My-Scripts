@@ -1,0 +1,4 @@
+In the Approval user activity choose advanced checkbox and write the following script:-
+
+var answer = [];
+answer.push(current.variables.req_for.manager);
