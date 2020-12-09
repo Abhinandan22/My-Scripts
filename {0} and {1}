@@ -1,0 +1,4 @@
+var msgArray = [];
+msgArray.push('test');
+msgArray.push('test1');
+gs.print(gs.getMessage('Does this work? {0} and {1}', msgArray));
