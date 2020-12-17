@@ -1,0 +1,19 @@
+UI Action :- 
+
+onClick() function
+Condition :- !current.isNewRecord()&&current.u_state != '40'&&current.u_state!='60'
+
+Script :- 
+
+function createInc(){
+	gsftSubmit(null,g_form.getFormElement(),'cr_inc');
+}
+
+if(typeof window == 'undefined'){
+	incidentCreate();
+}
+
+function incidentCreate(){
+var instanceName=gs.getProperty('glide.servlet.uri');
+action.setRedirectURL(instanceName+"/incident.do?");
+}
