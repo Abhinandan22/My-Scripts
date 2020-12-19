@@ -1,0 +1,6 @@
+var userRole = gs.getSession().getRoles();
+
+if(userRole.indexOf("chat_admin") > 0 )
+gs.print("User has valid Roles");
+else
+gs.print("User doesnot have any role");
