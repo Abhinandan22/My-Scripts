@@ -1,0 +1,14 @@
+UI Action : - 
+
+Create a new record for change request record : -
+
+function cloneCR(){
+	
+	var url = "change_request.do?sys_id=-1&sysparm_query="; 
+	
+url+= "^short_description=" + encodeURIComponent(current.short_description) + "^description=" + encodeURIComponent(current.description) + "^cmdb_ci=" + encodeURIComponent(current.cmdb_ci) + "^assignment_group=" + encodeURIComponent(current.assignment_group) + "^assigned_to=" + encodeURIComponent(current.assigned_to) + "^impact=" + encodeURIComponent(current.impact) + "^risk=" + encodeURIComponent(current.risk) + "^risk_impact_analysis=" + encodeURIComponent(current.risk_impact_analysis) + "^implementation_plan=" + encodeURIComponent(current.implementation_plan) + "^backout_plan=" + encodeURIComponent(current.backout_plan) + "^justification=" + encodeURIComponent(current.justification) + "^test_plan=" + encodeURIComponent(current.test_plan);
+
+    action.setRedirectURL(url);
+
+
+}
