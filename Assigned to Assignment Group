@@ -1,0 +1,36 @@
+SI Getting assigned to Group:-
+
+
+Client Callable :- Checked 
+
+Script Includes :- 
+
+var Populate_UsrGrp_SI = Class.create();
+Populate_UsrGrp_SI.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+	populateMbr:function(group){
+		
+		if(!group)
+		return;
+		
+		var usrList = [];
+		
+		var ga = new GlideRecord('sys_user_grmember');
+		ga.addQuery('group',group);
+		ga.query();
+		
+		while(ga.next()){
+			usrList.push(ga.getValue("user"));
+		}
+		
+		return "sys_idIN"+usrList.join();
+	},
+	
+    type: 'Populate_UsrGrp_SI'
+});
+
+
+Reference Qualifier :-
+
+
+javascript:new Populate_UsrGrp_SI().populateMbr(current.u_assignment_group);
