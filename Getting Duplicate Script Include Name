@@ -1,0 +1,11 @@
+var ga = new GlideAggregate('sys_script_include');
+ga.addAggregate('COUNT','name');
+ga.addHaving('COUNT','name','>','1');
+ga.query();
+
+var dupl=[];
+while(ga.next()){
+dupl.push(ga.getValue('name'));
+}
+
+gs.print(dupl);
