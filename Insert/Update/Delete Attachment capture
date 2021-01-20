@@ -1,0 +1,10 @@
+On Insert Async BR on sys_attachment table.
+
+var attach_obj = new GlideRecord('u_replicate_incident');
+attach_obj.addQuery('sys_id',current.table_sys_id);
+attach_obj.query();
+
+if(attach_obj.next()){
+attach_obj.u_worknotes = "Inserted File Name " + current.file_name + " is attached by " + gs.getUserDisplayName();
+		attach_obj.update();
+	}

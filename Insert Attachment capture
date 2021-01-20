@@ -1,4 +1,0 @@
-Insert Async BR on sys_attachment table.
-
-var attach_obj = new GlideRecord('u_replicate_incident');
-attach_obj.addQuery('sys_id',current.
