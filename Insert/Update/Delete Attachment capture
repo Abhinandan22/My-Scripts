@@ -1,5 +1,9 @@
 On Insert Async BR on sys_attachment table.
 
+
+Condition : - gs.getSession().isInteractive()
+
+
 var attach_obj = new GlideRecord('u_replicate_incident');
 attach_obj.addQuery('sys_id',current.table_sys_id);
 attach_obj.query();
