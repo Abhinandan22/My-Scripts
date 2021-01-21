@@ -29,3 +29,15 @@ var attach_obj = new GlideRecord('u_replicate_incident');
 		 attach_obj.u_worknotes = "The file name " + previous.file_name + " has been renamed to " + current.file_name + " by " + gs.getUserDisplayName();
 		 attach_obj.update();
 	 }
+
+
+On Delete After BR on sys_attachment table.
+
+var attach_del = new GlideRecord('u_replicate_incident');
+	attach_del.addQuery('sys_id',current.table_sys_id);
+	attach_del.query();
+	
+	if(attach_del.next()){
+	  attach_del.u_worknotes = " The file " + current.file_name + " was deleted by " + gs.getUserDisplayName();
+	  attach_del.update();
+	}
