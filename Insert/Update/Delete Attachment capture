@@ -41,3 +41,18 @@ var attach_del = new GlideRecord('u_replicate_incident');
 	  attach_del.u_worknotes = " The file " + current.file_name + " was deleted by " + gs.getUserDisplayName();
 	  attach_del.update();
 	}
+	
+	
+	
+	var fname = current.file_name;
+    var asysid = current.table_sys_id;
+    var tableName = current.table_name;
+    var usr;
+
+
+        var tas = new GlideRecord(tableName);
+        if (tas.get('sys_id', asysid)) {
+
+            tas.u_attachment_audit = "Deleted File Name: " + fname + " / By: " + gs.getUserDisplayName();
+            tas.update();
+        }
