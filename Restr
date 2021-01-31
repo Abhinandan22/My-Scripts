@@ -1,0 +1,41 @@
+Hide the restricted Grp based on checkbox type field
+
+UI policies 
+
+field is true
+
+Check Run Scripts :- 
+
+Execute if true : - g_form.setDisplay('u_restricted_group',true);
+
+Execute if false :- g_form.setDisplay('u_restricted_group',false);
+g_form.setValue('u_restricted_group','');
+
+
+ACL : - Create Record  , table.none
+Script of ACL : - answer = new UserRecordAccessUtil().incRestrict(current);
+
+
+Script Includes : - 
+
+incRestrict : function(current){
+		
+		var grpList = current.u_restricted_group.toString();
+		var grpArray = grpList.split(",");
+		
+		for(var i = 0 ; i < grpArray.length ; i++){
+			
+			if(grpArray[i] == "")
+				continue;
+			if(gs.getUser().isMemberOf(grpArray[i])){
+				return true;
+			}
+		}
+		
+		
+		if(current.u_caller == gs.getUserID() || current.opened_by == gs.getUserID() || current.u_work_notes_list.indexOf(gs.getUserID()) > -1 || gs.getUser().isMemberOf(current.u_assignment_group)){
+			return true;
+		}
+			return false;
+			
+	},
