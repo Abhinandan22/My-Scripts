@@ -36,7 +36,7 @@ userObj['caller'] = ga.getDisplayValue('caller_id');
 userObj['shortdescription'] = ga.getValue('short_description');
 userObj['description'] = ga.getValue('description');
 
-userArr.push(JSON.stringify(userObj));
+userArr.push(JSON.stringify(userObj));  //for pretty json use userArr.push(JSON.stringify(userObj , null , 4));
 
 }
 
@@ -55,3 +55,55 @@ O/P : -   *** Script:
 *** Script: {"number":"INC0010015","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
 *** Script: {"number":"INC0010013","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
 *** Script: {"number":"INC0010012","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
+
+for complete json value only use gs.print(userArr,null,4);
+
+[0:00:00.045] Script completed in scope global: script
+Script execution history and recovery available here
+*** Script: {
+    "number": "INC0010014",
+    "caller": "Aqib Mushtaq",
+    "shortdescription": "test",
+    "description": "testtttt22"
+},{
+    "number": "INC0010019",
+    "caller": "Aqib Mushtaq",
+    "shortdescription": "test",
+    "description": "testtttt22"
+},{
+    "number": "INC0010016",
+    "caller": "Aqib Mushtaq",
+    "shortdescription": "test",
+    "description": "testtttt22"
+},{
+    "number": "INC0010017",
+    "caller": "Aqib Mushtaq",
+    "shortdescription": "test",
+    "description": "testtttt22"
+},{
+    "number": "INC0010018",
+    "caller": "Aqib Mushtaq",
+    "shortdescription": "test",
+    "description": "testtttt22"
+},{
+    "number": "INC0010020",
+    "caller": "Manifah Masood",
+    "shortdescription": "test",
+    "description": "testtttt22"
+},{
+    "number": "INC0010015",
+    "caller": "Aqib Mushtaq",
+    "shortdescription": "test",
+    "description": "testtttt22"
+},{
+    "number": "INC0010013",
+    "caller": "Aqib Mushtaq",
+    "shortdescription": "test",
+    "description": "testtttt22"
+},{
+    "number": "INC0010012",
+    "caller": "Aqib Mushtaq",
+    "shortdescription": "test",
+    "description": "testtttt22"
+}
+
