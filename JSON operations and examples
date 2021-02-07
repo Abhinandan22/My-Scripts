@@ -20,11 +20,11 @@ O/P : - *** Script: {"name":"System Administrator","title":"System Administrator
 
 
 
-var varJSON = {};
+var userObj = {};
 var userArr = [];
 
 var ga = new GlideRecord("incident");
-ga.addQuery('state',9);
+ga.addQuery("state",9);
 ga.query();
 
 while(ga.next()){
@@ -36,9 +36,22 @@ userObj['caller'] = ga.getDisplayValue('caller_id');
 userObj['shortdescription'] = ga.getValue('short_description');
 userObj['description'] = ga.getValue('description');
 
-userArr.push(userObj);
+userArr.push(JSON.stringify(userObj));
 
 }
 
 for(var i in userArr)
 gs.print(userArr[i]);
+
+
+O/P : -   *** Script:
+
+{"number":"INC0010014","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
+*** Script: {"number":"INC0010019","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
+*** Script: {"number":"INC0010016","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
+*** Script: {"number":"INC0010017","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
+*** Script: {"number":"INC0010018","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
+*** Script: {"number":"INC0010020","caller":"Manifah Masood","shortdescription":"test","description":"testtttt22"}
+*** Script: {"number":"INC0010015","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
+*** Script: {"number":"INC0010013","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
+*** Script: {"number":"INC0010012","caller":"Aqib Mushtaq","shortdescription":"test","description":"testtttt22"}
