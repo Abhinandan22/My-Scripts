@@ -1,3 +1,22 @@
+var user = {"name":"Abhi", "title":"Parhi"}
+
+gs.print(user);
+gs.print(JSON.stringify(user));
+
+var user = '{"name":"Abhi", "title":"Parhi"}'
+
+gs.print(user);
+gs.print(JSON.parse(user));
+
+
+*** Script: [object Object]
+*** Script: {"name":"Abhi","title":"Parhi"}
+*** Script: {"name":"Abhi", "title":"Parhi"}
+*** Script: [object Object]
+
+
+
+
 var jsonvar = {};
 
 var ga = new GlideRecord("sys_user");
