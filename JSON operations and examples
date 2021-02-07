@@ -17,3 +17,28 @@ gs.print(JSON.stringify(jsonvar));
 
 
 O/P : - *** Script: {"name":"System Administrator","title":"System Administrator","active":"true"}
+
+
+
+var varJSON = {};
+var userArr = [];
+
+var ga = new GlideRecord("incident");
+ga.addQuery('state',9);
+ga.query();
+
+while(ga.next()){
+
+var userObj = {};
+
+userObj['number'] = ga.getValue('number');
+userObj['caller'] = ga.getDisplayValue('caller_id');
+userObj['shortdescription'] = ga.getValue('short_description');
+userObj['description'] = ga.getValue('description');
+
+userArr.push(userObj);
+
+}
+
+for(var i in userArr)
+gs.print(userArr[i]);
