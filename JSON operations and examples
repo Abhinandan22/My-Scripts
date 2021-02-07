@@ -1,0 +1,19 @@
+var jsonvar = {};
+
+var ga = new GlideRecord("sys_user");
+ga.addQuery('sys_id',gs.getUserID());
+ga.query();
+
+if(ga.next()){
+
+jsonvar['name'] = ga.name.toString();
+jsonvar['title'] = ga.title.toString();
+jsonvar['active'] = ga.active.toString();
+
+}
+
+gs.print(JSON.stringify(jsonvar));
+
+
+
+O/P : - *** Script: {"name":"System Administrator","title":"System Administrator","active":"true"}
