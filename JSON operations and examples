@@ -1,3 +1,17 @@
+var obj = {"firstName":"Ashutosh", "lastName":"Munot"};
+
+var str = JSON.stringify(obj);
+
+var parser = new JSONParser();
+
+var result = parser.parse(str);
+
+gs.print(‘First Name Attribute : ’+result.firstName);
+
+gs.print(obj.firstName);
+
+
+
 var user = {"name":"Abhi", "title":"Parhi"}
 
 gs.print(user);
