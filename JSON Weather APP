@@ -1,0 +1,12 @@
+var resp =
+
+ {"coord":{"lon":85.8333,"lat":20.2333},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50d"}]}
+
+
+
+gs.print("COORD "  + resp.coord.lon);
+
+gs.print("******************");
+
+gs.print("WEATHER " + resp.weather[0].id);
+
