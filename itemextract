@@ -1,0 +1,15 @@
+getItemFields : function(){
+		var query = this.getParameter(q);
+	var ga = new GlideRecord("sc_cat_item");
+ga.addEncodedQuery("type!=bundle^sys_class_name!=sc_cat_item_guide^type!=package^sys_class_name!=sc_cat_item_content^nameINStandard Laptop,Access,Service Category Request");
+	ga.query();
+	
+	var items = [];
+		
+	while(ga.next()){
+		items.push(ga.name);
+	}
+		
+		return items.toString();
+},
+	
