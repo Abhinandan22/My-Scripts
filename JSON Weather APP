@@ -1,3 +1,19 @@
+ var r = new sn_ws.RESTMessageV2('Weather App API', 'Weather_GET');
+ r.setStringParameterNoEscape('city', 'Bhadrak');
+
+ var response = r.execute();
+ var responseBody = response.getBody();
+ var httpStatus = response.getStatusCode();
+ var nameresp = JSON.parse(responseBody);
+
+gs.log("Name of location2 " +responseBody);
+gs.log("Name of location1 " +nameresp.name);
+
+
+
+
+
+
 var resp =
 
  {"coord":{"lon":85.8333,"lat":20.2333},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50d"}],"base":"stations","main":{"temp":294.15,"feels_like":293.59,"temp_min":294.15,"temp_max":294.15,"pressure":1014,"humidity":64},"visibility":5000,"wind":{"speed":2.57,"deg":310},"clouds":{"all":40},"dt":1613529507,"sys":{"type":1,"id":9113,"country":"IN","sunrise":1613522710,"sunset":1613564189},"timezone":19800,"id":1275817,"name":"Bhubaneswar","cod":200}
