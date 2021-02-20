@@ -4,7 +4,7 @@ Populate the city value of the location as hit from the API into the incident de
  before insert BR. Create a Rest message to call the location API.
  
 var r = new sn_ws.RESTMessageV2('Weather App API', 'Weather_GET');
- r.setStringParameterNoEscape('city', 'Bhadrak');
+ r.setStringParameterNoEscape('city', 'Bhadrak'); //setStringParameterNoEscape will accept dynamic city using Script
 
  var response = r.execute();
  var responseBody = response.getBody(); // Get the response as a String response
