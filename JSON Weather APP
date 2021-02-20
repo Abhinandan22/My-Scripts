@@ -1,14 +1,18 @@
- var r = new sn_ws.RESTMessageV2('Weather App API', 'Weather_GET');
+Populate the city value of the location as hit from the API into the incident description. 
+ 
+ 
+ before insert BR. Create a Rest message to call the location API.
+ 
+var r = new sn_ws.RESTMessageV2('Weather App API', 'Weather_GET');
  r.setStringParameterNoEscape('city', 'Bhadrak');
 
  var response = r.execute();
- var responseBody = response.getBody();
+ var responseBody = response.getBody(); // Get the response as a String response
  var httpStatus = response.getStatusCode();
- var nameresp = JSON.parse(responseBody);
-
-gs.log("Name of location2 " +responseBody);
-gs.log("Name of location1 " +nameresp.name);
-
+	
+ var locObj = JSON.parse(responseBody); //Get the response as an Object response
+		
+ current.description = locObj.name;
 
 
 
