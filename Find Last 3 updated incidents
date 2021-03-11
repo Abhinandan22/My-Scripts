@@ -1,0 +1,7 @@
+var ga = new GlideRecord("incident");
+ga.orderByDesc("sys_updated_on");
+ga.setLimit(3);
+ga.query();
+
+while(ga.next())
+gs.print(ga.number);
