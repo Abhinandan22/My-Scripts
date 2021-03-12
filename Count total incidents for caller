@@ -1,0 +1,49 @@
+onChange CS on Caller Field :- 
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        GlideUI.get().clearOutputMessages();
+        return;
+    }
+	
+	GlideUI.get().clearOutputMessages();
+
+    var countRecord = new GlideAjax("CountUserRecords_SI");
+    countRecord.addParam('sysparm_name', 'getUserRecord');
+    countRecord.addParam('sysparm_user_id', newValue);
+    countRecord.getXML(getCount);
+
+    function getCount(response) {
+        var responsefromServer = response.responseXML.documentElement.getAttribute("answer");
+        g_form.addInfoMessage('The total incidents created for the caller is ' +parseInt(responsefromServer));
+    }
+
+    //Type appropriate comment here, and begin script below
+
+}
+
+
+
+SI : - 
+
+var CountUserRecords_SI = Class.create();
+CountUserRecords_SI.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+	getUserRecord : function(){
+		
+		var count = 0;
+		
+		var user = this.getParameter('sysparm_user_id');
+		var userRec = new GlideRecord("incident");
+		userRec.addQuery('caller_id',user);
+		userRec.query();
+		
+		while(userRec.next()){
+			count++;
+		}
+		
+		return count;
+	},
+	
+    type: 'CountUserRecords_SI'
+});
