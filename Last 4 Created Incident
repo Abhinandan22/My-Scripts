@@ -1,0 +1,14 @@
+var ga = new GlideRecord('incident');
+ga.orderByDesc('sys_created_on');
+ga.setLimit(4);
+ga.query();
+
+while(ga.next()){
+gs.print(ga.number);
+}
+
+
+*** Script: INC0010016
+*** Script: INC0010013
+*** Script: INC0010009
+*** Script: INC0000601
