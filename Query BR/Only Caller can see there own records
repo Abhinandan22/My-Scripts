@@ -1,0 +1,14 @@
+Before Query BR on Incident table.
+
+Condition :- gs.getSession().isInteractive()
+
+Script : - 
+
+restrictRecords();
+
+	function restrictRecords(){
+	var user = gs.getUserID();
+	current.addQuery('caller_id',user);
+}
+
+End Result :- Only caller can see there own records in incident list view.Other incident records are not visible for them.
