@@ -13,5 +13,16 @@ answer = false ;
 
 https://old.wiki/index.php/Administering_the_List_Editor
 
+
+
+The short description and description can only be visible to caller and assigned to
+
+2 ACL's on short description and description
+
+read incident short description Caller is dynamic me
+
+read incident description Assigned to is dynamic me
+
+
  
  
