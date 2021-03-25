@@ -1,0 +1,21 @@
+var userObj = {
+
+details : []
+
+};
+
+var gr = new GlideRecord("sys_user");
+gr.addQuery('active',true);
+gr.query();
+
+while(gr.next()){
+
+var uobj = {};
+
+uobj.name = gr.getValue("name");
+uobj.department = gr.getDisplayValue("department");
+userObj.details.push(uobj);
+}
+
+
+gs.print(JSON.stringify(userObj, null, 4));
