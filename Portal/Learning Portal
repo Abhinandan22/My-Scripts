@@ -1,0 +1,43 @@
+HTML : - 
+
+<div>
+<!-- your widget template -->
+  Hello, {{c.data.userName}}!
+  
+  <table>
+    <tr ng-repeat ="row in c.data.table.list">
+    <td>
+      {{row.name}}
+      </td>  
+      <td>
+      {{row.order}}
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+Server Script : - 
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+data.userName = gs.getUserDisplayName();
+data.table = {
+	"list":[]
+};
+	
+var userGr = new GlideRecord("sys_user");
+	userGr.addQuery('active',true);
+	userGr.orderBy('name');
+	
+	userGr.query();
+	while(userGr.next()){
+		var obj = {};
+		obj.name = userGr.getValue("name");
+		obj.order=userGr.getValue("order");
+
+		data.table.list.push(obj);	
+	}
+	gs.info(JSON.stringify(data.table.list));
+})();
