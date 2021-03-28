@@ -1,0 +1,5 @@
+<div>
+  <div ng-init="names=['x','y','xy','x+y']">
+    <li ng-repeat="name in names"><span ng-bind="name"></span></li>
+  </div>
+</div>
