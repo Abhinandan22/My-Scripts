@@ -1,0 +1,14 @@
+<div>
+  <div ng-init="people=[{name:'Abhi',title:'Parhi'},{name:'Abhina',title:'Parhi12'},{name:'Abh',title:'Parhi1'}]">
+    <li ng-repeat="names in people"> {{names.title}} </li>
+  </div>
+  
+  <table >
+    <tr>
+         <td>Name</td>
+         <td>Title</td>
+    </tr>
+    <tr>{{names.name}}</tr>
+    <tr>{{names.title}}</tr>
+  </table>
+</div>
