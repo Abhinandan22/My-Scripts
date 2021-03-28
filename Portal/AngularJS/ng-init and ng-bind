@@ -1,0 +1,12 @@
+<body ng-init="isName='Abhi'">
+<div>
+  <div ng-hide="hideFld">
+LoggedinUser : <input type = "text" ng-model="isName"><span ng-bind="isName"></span><br>
+  </div>
+HideField : <input type="checkbox" ng-model="hideFld">
+      </div>
+ 
+    <button ng-click="isName='Elon'">
+      click
+    </button>
+</body>
