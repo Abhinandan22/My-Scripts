@@ -1,0 +1,7 @@
+<div>
+  
+  <div ng-init="MyName=['Abhi','nandan','Parhi','ODISHA']">
+    <li ng-repeat="names in MyName | orderBy:name"><span ng-bind="names"></span></li>
+  </div>
+  
+</div>
