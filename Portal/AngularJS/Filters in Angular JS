@@ -5,3 +5,37 @@
   </div>
   
 </div>
+
+
+
+<div>
+  
+  <body ng-init="userDetails=[{name:'Abhi',title:'Parhi',address:'Bhadrak'},{name:'Abhinandan',title:'Parhi',address:'Bhadrak123'},{name:'Kunu',title:'Parhi',address:'Bhadrak12'},{name:'Kunu1',title:'Parhi12',address:'Bhadrak1234'}]">
+  
+    <table>
+      
+     <tr>
+           <th> Name </th>
+           <th> Title </th>
+           <th> Address </th>
+   
+    </tr>
+     
+     <tr ng-repeat="user in userDetails">
+           <td>{{ user.name }}</td>
+           <td>{{ user.title }}</td>
+           <td>{{ user.address }}</td>
+                    
+     </tr>
+                
+    </table>
+   
+    </body>
+</div>
+
+
+Name	Title	Address
+Abhi	Parhi	Bhadrak
+Abhinandan	Parhi	Bhadrak123
+Kunu	Parhi	Bhadrak12
+Kunu1	Parhi12	Bhadrak1234
