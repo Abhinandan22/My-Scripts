@@ -22,7 +22,7 @@
     </tr>
      
      <tr ng-repeat="user in userDetails">
-           <td>{{ user.name }}</td>
+           <td>{{ user.name | uppercase}}</td>
            <td>{{ user.title }}</td>
            <td>{{ user.address }}</td>
                     
