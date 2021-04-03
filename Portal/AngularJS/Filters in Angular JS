@@ -34,6 +34,7 @@
 </div>
 
 <tr ng-repeat="user in userDetails | limitTo:2">
+<tr ng-repeat="user in userDetails | orderBy:'name'">
 
 
 Name	Title	Address
