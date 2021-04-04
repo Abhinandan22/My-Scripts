@@ -1,0 +1,25 @@
+<html>
+ <body>
+  
+  <div ng-controller="UserDetails">
+    <ul>
+      <li ng-repeat="user in userData">
+        {{ user.name }} - {{ user.city }}
+      </li>
+    </ul>
+  </div>
+   
+     <script>
+   
+     function UserDetails($scope){
+      $scope.userData = [
+        
+        { name:'Abhinandan', city:'Sydney' },
+        { name:'Abhi', city:'Melbourne' }
+        
+        ];
+     }
+       
+     </script>    
+   </body>
+ </html>
