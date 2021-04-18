@@ -53,3 +53,12 @@ arr.push(JSON.stringify(obj.users[i]));
 
 
 gs.print(arr);
+
+5) var prp = gs.getProperty('sn.test.values.prop');
+
+var obj = JSON.parse(prp);
+
+if(obj.hasOwnProperty('usrrole'))
+gs.print('Valid Property');
+else
+gs.print('Invalid Property');
