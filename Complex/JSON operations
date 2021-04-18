@@ -1,0 +1,34 @@
+Property : - 
+
+{
+"id":"id123",
+"usrrole":"admin",
+"users": [
+                    {
+                       "name":"Abhinandan",
+                       "title":"Parhi"
+                   },
+                   {
+                       "name":"Kunu",
+                       "title":"Parhi"
+                   }
+],
+"department":["IT","CSE"]
+
+}
+
+
+
+
+1 ) var prp = gs.getProperty('sn.test.values.prop');
+
+var obj = JSON.parse(prp);
+
+gs.print(JSON.stringify(obj.users , null , 4));
+
+
+2 ) var prp = gs.getProperty('sn.test.values.prop');
+
+var obj = JSON.parse(prp);
+
+gs.print(obj.department);
