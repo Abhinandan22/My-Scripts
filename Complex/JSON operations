@@ -32,3 +32,11 @@ gs.print(JSON.stringify(obj.users , null , 4));
 var obj = JSON.parse(prp);
 
 gs.print(obj.department);
+
+
+3 ) var prp = gs.getProperty('sn.test.values.prop');
+
+var obj = JSON.parse(prp);
+
+for(var i in obj.users)
+gs.print(JSON.stringify(obj.users[i]));
