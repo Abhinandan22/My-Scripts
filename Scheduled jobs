@@ -1,0 +1,13 @@
+var incRec = new GlideRecord('incident');
+incRec.addEncodedQuery('short_description=test');
+incRec.query();
+
+var incDet = [];
+
+while(incRec.next()){
+	incDet.push(incRec.getValue('number'));
+}
+
+incDet.forEach(function(value){
+	gs.log("Values are " + value);
+});
