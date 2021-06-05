@@ -1,0 +1,56 @@
+var incObj = {};
+var incArr = [];
+
+var ga = new GlideRecord("incident");
+ga.addQuery("state=1");
+ga.query();
+
+while(ga.next()){
+
+incObj.number = ga.getValue('number');
+incObj.state = ga.getDisplayValue('state');
+
+incArr.push(JSON.stringify(incObj , null , 6));
+
+}
+
+gs.print(incArr);
+
+
+ {
+      "number": "INC0000039",
+      "state": "New"
+},{
+      "number": "INC0010112",
+      "state": "New"
+},{
+      "number": "INC0009009",
+      "state": "New"
+},{
+      "number": "INC0000057",
+      "state": "New"
+},{
+      "number": "INC0000059",
+      "state": "New"
+},{
+      "number": "INC0000058",
+      "state": "New"
+},{
+      "number": "INC0009001",
+      "state": "New"
+},{
+      "number": "INC0010111",
+      "state": "New"
+},{
+      "number": "INC0009005",
+      "state": "New"
+},{
+      "number": "INC0007001",
+      "state": "New"
+},{
+      "number": "INC0007002",
+      "state": "New"
+},{
+      "number": "INC0000046",
+      "state": "New"
+}
