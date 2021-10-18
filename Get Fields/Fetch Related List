@@ -1,0 +1,5 @@
+var ga = new GlideRecord('incident');
+var arrInc = ga.getRelatedLists().values().toArray();
+
+for(var i in arrInc)
+gs.print(arrInc[i]);
