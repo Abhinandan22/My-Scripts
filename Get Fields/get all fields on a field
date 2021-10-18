@@ -1,0 +1,12 @@
+var ga = new GlideRecord('incident');
+ga.query();
+ga.next();
+
+var incFie = ga.getFields();
+
+for(var i = 0; i < incFie.size() ; i++){
+
+var ele = incFie.get(i);
+
+gs.print(ele.getName());
+}
