@@ -4,10 +4,11 @@ ga.query();
 
 while(ga.next()){
 
-if(ga.getValue('short_description').includes("BFS.ex@best.com"))
+if(ga.getValue('short_description').includes("BFS.ex@best.com")){
 
 ga.short_description = ga.short_description.replace("BFS.ex@best.com","DFS.ex@best");
 ga.update();
 
+}
 }
 
