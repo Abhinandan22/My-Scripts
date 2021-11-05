@@ -1,7 +1,6 @@
 
 HTML Template : - 
 
-
 <div>
 <!-- your widget template -->
   Hello 
@@ -12,17 +11,26 @@ HTML Template : -
 <br/>
   <button ng-click="msg()">
     Second Alert
-  </button>
+  </button><br/>
   
-   <p ng-if="i">
+  <p ng-if="i">
     TRUE 
   </p>
   
   <li ng-repeat="val in c.arr">
     {{val}}
-  </li>
-    
+  </li><br/>
+  
+  <textarea ng-bind="value"></textarea>{{value}}
+
+  <textarea ng-model="value"></textarea><br/>
+  
+  {{data.s}}  
+  
+  <li ng-repeat="val in data.arr">
+   {{val}}</li>
 </div>
+
 
 
 
@@ -43,7 +51,20 @@ api.controller=function($scope) {
 	$scope.i = false;
 	
 	c.arr = [12,34,224,55,33];
+	
+	$scope.value = "ServiceNow";
 };
+
+Server side
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	
+	data.s = "true";
+	data.arr=[34,78,90,74,23];
+})();
 
 
 
