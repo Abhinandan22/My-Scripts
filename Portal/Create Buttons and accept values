@@ -13,6 +13,14 @@ HTML Template : -
   <button ng-click="msg()">
     Second Alert
   </button>
+  
+   <p ng-if="i">
+    TRUE 
+  </p>
+  
+  <li ng-repeat="val in c.arr">
+    {{val}}
+  </li>
     
 </div>
 
@@ -31,6 +39,10 @@ api.controller=function($scope) {
 	$scope.msg = function(){
 		alert("My second alert");
 	}
+	
+	$scope.i = false;
+	
+	c.arr = [12,34,224,55,33];
 };
 
 
@@ -41,3 +53,8 @@ Hello
 Abhi
 Alert (button)
 Second Alert (button)
+12
+34
+224
+55
+33
