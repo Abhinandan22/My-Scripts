@@ -1,0 +1,43 @@
+
+HTML Template : - 
+
+
+<div>
+<!-- your widget template -->
+  Hello 
+  <br>{{c.name}}<br/> 
+  <button ng-click="c.alert()">
+    Alert
+  </button>
+<br/>
+  <button ng-click="msg()">
+    Second Alert
+  </button>
+    
+</div>
+
+
+
+
+Client Script : - 
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	c.name = "Abhi"
+	c.alert = function(){
+		alert("My first Alert");
+	}
+	$scope.msg = function(){
+		alert("My second alert");
+	}
+};
+
+
+
+Preview : - 
+
+Hello
+Abhi
+Alert (button)
+Second Alert (button)
