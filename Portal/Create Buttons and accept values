@@ -29,7 +29,21 @@ HTML Template : -
   
   <li ng-repeat="val in data.arr">
    {{val}}</li>
+  
+  
+  <table border="2px">
+    <tr><th>ID</th>
+        <th>Short Description</th>
+        <th>Description</th>
+    </tr>
+   <tr ng-repeat="col in data.inc">
+    <td>{{col.id}}</td>
+    <td>{{col.vrty}}</td>
+    <td>{{col.gate}}</td>
+   </tr>
+  </table>  
 </div>
+
 
 
 
@@ -55,6 +69,9 @@ api.controller=function($scope) {
 	$scope.value = "ServiceNow";
 };
 
+
+
+
 Server side
 
 (function() {
@@ -64,7 +81,33 @@ Server side
 	
 	data.s = "true";
 	data.arr=[34,78,90,74,23];
+	
+	data.inc = [];
+	var inc = new GlideRecord('u_godown_details');
+	inc.addEncodedQuery('u_variety=food');
+	inc.query();
+	
+	while(inc.next()){
+		
+		var incint = {};
+		incint.id = inc.getValue('u_id');
+		incint.vrty = inc.getValue('u_variety');
+		incint.gate = inc.getValue('u_gate_time');
+		data.inc.push(incint);
+	}
 })();
+
+
+CSS : - 
+
+th{
+  text-align:center;
+}
+
+
+td{
+  text-align:center;
+}
 
 
 
