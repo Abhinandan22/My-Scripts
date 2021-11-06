@@ -19,11 +19,14 @@ HTML : -
       <input class="form-control" ng-model="user.dept">
     </div>
     
-    <div input type="submit" ng-click="user.Usrupdate(user)">
+    <div class="form-group">
+    <input type="submit" value="Update" class="btn btn-primary" ng-click="user.Usrupdate(user)">
       
     </div>
   </div>
 </div>
+    
+
 
 
 Client Script : - 
@@ -63,11 +66,12 @@ data.user = [];
 	if(input){
 	
 var ga = new GlideRecord("sys_user");
-	ga.name = input.name;
 	ga.email = input.email;
 	ga.update();
 	}	
 })();
+
+
 
 
 
