@@ -17,11 +17,13 @@ HTML : -
     <div class="form-group">
       <label>Department</label>
       <input class="form-control" ng-model="user.dept">
-     </div>
+    </div>
     
-    <div input type="submit" ng-click=user.Usrupdate(user)">
+    <div input type="submit" ng-click="user.Usrupdate(user)">
+      
+    </div>
   </div>
- </div>
+</div>
 
 
 Client Script : - 
@@ -40,7 +42,6 @@ api.controller=function($scope) {
 };
 
 
-
 Server Script : - 
 
 (function() {
@@ -49,10 +50,10 @@ Server Script : -
 data.user = [];
 	
 	var user = new GlideRecord('sys_user');
-	user.EncodedQuery('name=Abel Tuter');
+	user.addEncodedQuery('name=Abel Tuter');
 	user.query();
 	
-	while(user.next()){
+	if(user.next()){
 		data.user.push({
 			name : user.name.toString(),
 			email : user.email.toString(),
@@ -67,6 +68,7 @@ var ga = new GlideRecord("sys_user");
 	ga.update();
 	}	
 })();
+
 
 
 
