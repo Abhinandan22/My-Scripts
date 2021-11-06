@@ -1,0 +1,82 @@
+HTML : - 
+
+
+<div class="panel panel-default">
+  <div class="panel-body border" ng-repeat="user in data.user">
+    
+    <div class="form-group">
+      <label>Name</label>
+      <input class="form-control" readonly ng-model="user.name">
+    </div>
+  
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" ng-model="user.email">
+    </div>
+  
+    <div class="form-group">
+      <label>Department</label>
+      <input class="form-control" ng-model="user.dept">
+     </div>
+    
+    <div input type="submit" ng-click=user.Usrupdate(user)">
+  </div>
+ </div>
+
+
+Client Script : - 
+
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+  $scope.Usr = function(usr){
+		$scope.data.email = usr.email;
+		$scope.server.update();
+		location.reload();
+	}
+	
+};
+
+
+
+Server Script : - 
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+data.user = [];
+	
+	var user = new GlideRecord('sys_user');
+	user.EncodedQuery('name=Abel Tuter');
+	user.query();
+	
+	while(user.next()){
+		data.user.push({
+			name : user.name.toString(),
+			email : user.email.toString(),
+			dept : user.getDisplayValue('department')
+		});
+	}
+	if(input){
+	
+var ga = new GlideRecord("sys_user");
+	ga.name = input.name;
+	ga.email = input.email;
+	ga.update();
+	}	
+})();
+
+
+
+Preview : - 
+
+
+Namesurvey user
+Email
+survey.user@email.com
+Department
+
+
+
