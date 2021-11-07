@@ -1,0 +1,102 @@
+HTML Template : - 
+
+<div>
+<!-- your widget template -->
+  
+  <div ng-repeat="incd in data.arrInc">
+    
+    <div>
+    <label>Number</label>
+    <input type="text" ng-model="incd.number"><br/>
+  </div>
+  
+  
+  <div>
+    <label>Caller</label>
+    <input type="text" ng-model="incd.caller"><br/>
+  </div>
+    
+  
+  <div>
+    <label>Short description</label>
+    <input type="text" ng-model="incd.shortdesc"><br/>
+  </div>
+    
+    
+  <div>
+    <button type = "button" value="update" ng-click="calc(incd)">Submit</button>
+  </div>
+  
+    </div>
+</div>
+
+
+
+CS : - 
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.calc=function(incd){
+		$scope.data.caller=incd.caller;
+		$scope.data.shortdesc=incd.shortdesc;
+		$scope.server.update();
+		location.reload();
+	};
+	
+};
+
+
+Server Script : - 
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.arrInc=[];
+	
+	var inc = new GlideRecord('incident');
+	inc.addEncodedQuery('sys_id=57af7aec73d423002728660c4cf6a71c');
+	inc.query();
+	
+	if(inc.next()){
+		
+		data.arrInc.push({
+			
+			number : inc.number.toString(),
+			caller : inc.getDisplayValue('caller_id').toString(),
+			shortdesc : inc.getValue('short_description').toString()
+			
+		});
+	
+	}
+	
+	if(input){
+		
+	var inci = new GlideRecord('incident');
+	inci.addEncodedQuery('sys_id=57af7aec73d423002728660c4cf6a71c');
+  inci.query();
+		
+	if(inci.next())	{
+	inci.caller_id = input.caller;	
+	inci.short_description = input.shortdesc;
+	inci.update();	
+	}
+	}
+	
+})();
+
+
+Preview : - 
+
+Number 
+INC0009009
+
+Caller 
+System Administrator
+
+Short description 
+Unable to access the shared folder.
+
+Submit
