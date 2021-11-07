@@ -1,0 +1,60 @@
+First Create two widget and add it to a portal
+
+Send Widget Value : - 
+
+
+HTML Template : - 
+
+
+<div>
+<!-- your widget template -->
+  
+ Send : <input type = "text" ng-model="c.text"><br><br>
+ <button type="button" ng-click="c.val()">Send Value to Widget</button>
+    
+</div>
+
+
+Client Script : - 
+
+api.controller=function($rootScope) {
+  /* widget controller */
+  var c = this;
+	
+	c.val = function(){
+		var sv = c.text;
+		$rootScope.$broadcast('Abhi',sv);
+	}
+	
+	
+};
+
+
+
+
+Accept Widget Value : - 
+
+HTML : - 
+
+
+<div>
+<!-- your widget template -->
+  
+  Receive : <input type="text" value="{{c.data.rec}}" />
+  
+</div>
+
+
+Client Script : - 
+
+api.controller=function($rootScope) {
+  /* widget controller */
+  var c = this;
+	
+	c.val = function(){
+		var sv = c.text;
+		$rootScope.$broadcast('Abhi',sv);
+	}
+	
+	
+};
