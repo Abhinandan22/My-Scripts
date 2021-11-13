@@ -1,0 +1,20 @@
+function clone(){
+gsftSubmit(null,g_form.getFormElement(),'clone');
+}
+
+
+	if(typeof window == 'undefined'){
+     ServerSide();
+	}
+
+	function ServerSide(){
+	
+	var grnew = new GlideRecord('u_godown_entries');
+		grnew.initialize();
+		
+	for (prop in current){
+     grnew.setValue(prop, current.getValue(prop));
+   }
+     grnew.insert();
+	 action.setRedirectURL(current);	
+	}	
