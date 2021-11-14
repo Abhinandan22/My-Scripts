@@ -1,0 +1,17 @@
+UI Action : - 
+
+function createDuplicate(){
+	
+	var arr = [];
+for (var x = 0; x < g_form.elements.length; x++) {
+arr.push(g_form.elements[x].fieldName);
+}
+	
+	
+var ga = new GlideModal('duplicateRec');
+	ga.setTitle('Duplicate');
+	ga.setWidth(550);
+	ga.setPreference('table','u_godown_entries');
+	ga.setPreference('sysparm_test', arr);
+	ga.render();
+}
