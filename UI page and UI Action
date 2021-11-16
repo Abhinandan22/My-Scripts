@@ -1,0 +1,59 @@
+UI Action : - 
+
+function showFields(){
+	
+	var dlg = new GlideModal('copy_godown',false,550);
+	dlg.setTitle(new GwtMessage().getMessage('Godown Values'));
+	dlg.setPreference('sysparm_id',g_form.getValue('u_id'));
+	dlg.setPreference('sysparm_var',g_form.getValue('u_variety'));
+	dlg.setPreference('sysparm_gate',g_form.getValue('u_gate_time'));
+	dlg.setPreference('sysparm_room',g_form.getValue('u_room_date'));
+	dlg.render();
+}
+
+
+UI Page : - 
+
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<j:set var="jvar_id" value="${sysparm_id}"/>
+	<j:set var="jvar_variety" value="${sysparm_var}" />
+	<j:set var="jvar_gate" value="${sysparm_gate}"/>
+	<j:set var="jvar_room" value="${sysparm_room}" />
+	
+	<g:evaluate var="jvar_id" expression="RP.getWindowProperties().get('sysparm_id')" />
+	<g:evaluate var="jvar_variety" expression="RP.getWindowProperties().get('sysparm_var')" />
+	<g:evaluate var="jvar_gate" expression="RP.getWindowProperties().get('sysparm_gate')" />
+	<g:evaluate var="jvar_room" expression="RP.getWindowProperties().get('sysparm_room')" />
+	
+	<g:evaluate var="jvar_godown" jelly="true">
+       var gr = new GlideRecord('u_godown_details');
+       var ID;
+       if(gr.get(jelly.jvar_id)){
+       ID = gr.getValue('u_id');
+     }
+		
+    </g:evaluate>
+	
+	<g:evaluate var="jvar_godown" jelly="true">
+       var grVar = new GlideRecord('u_godown_details');
+       var Variety;
+       if(grVar.get(jelly.jvar_variety)){
+       Variety = grVar.getValue('u_variety');
+     }
+		
+    </g:evaluate>
+	
+	<g:ui_input_field label="ID" id="sysparm_id" table="u_godown_details" value="${jvar_id}" completer="AJAXTableCompleter" displayvalue="${jvar_godown}"/>
+	<g:ui_choicelist label="Variety" id="sysparm_var" table="u_godown_details" value="${jvar_variety}" completer="AJAXTableCompleter" displayvalue="${jvar_godown}"/>
+	<g:ui_date_time label="Gate Time" id="sysparm_gate" table="u_godown_details" value="${jvar_gate}" completer="AJAXTableCompleter" displayvalue="${jvar_godown}"/>
+	<g:ui_date_time label="Room Date" id="sysparm_room" table="u_godown_details" value="${jvar_room}" completer="AJAXTableCompleter" displayvalue="${jvar_godown}"/>
+	<!--
+	<p>ID is ${jvar_id}</p>
+	<p>Variety is ${jvar_variety}</p>
+	<p>Gate Time is ${jvar_gate}</p>
+	<p>Room Date is ${jvar_room}</p>
+	-->
+					
+</j:jelly>
