@@ -1,0 +1,20 @@
+UI Macro : - worker_input_desc
+
+XML : - 
+
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<button type="button" onclick="autoDesc()">
+	   <span class="icon icon-lightbulb" aria-hidden="true"></span>
+	</button>
+	
+	<script>
+		
+	function autoDesc(){
+		g_form.setValue('u_short_description',g_user.userName);
+	}
+		
+    </script>
+	
+</j:jelly>
