@@ -1,1 +1,23 @@
 
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	
+<g:evaluate>
+	
+	var userDetails = [];
+		
+	var ga = new GlideRecord("sys_user");
+		
+		if(ga.get(gs.getUserID())){
+			userDetails[0] = gs.getUserDisplayName();
+			userDetails[1] = gs.getUserID();
+			userDetails[2] = gs.getUserName();
+		}
+		
+</g:evaluate>
+	
+	<j:forEach var="jvar_mydet" items="${userDetails}">
+		<p>${jvar_mydet}</p>
+	</j:forEach>
+								
+</j:jelly>
