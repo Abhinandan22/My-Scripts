@@ -21,3 +21,25 @@
 	</j:forEach>
 								
 </j:jelly>
+
+
+
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+ 
+<j:set var="jvar_num" value="5" />	
+<j:set var="jvar_num1" value="10" />
+	
+	<j:if test="${jvar_num ne 6}" >
+		${jvar_num} is not equal to 6  <br />
+	</j:if>
+	
+  <j:if test="${jvar_num == 5}" >
+	  ${jvar_num} is equal to 5   <br />
+	</j:if>
+	
+	<j:if test="${jvar_num le 8}" >
+	  ${jvar_num} is less than 8   <br />
+	</j:if>		  
+	
+</j:jelly>
