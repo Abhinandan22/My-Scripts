@@ -171,3 +171,26 @@ Demote
 	
 	
 </j:jelly>
+
+8)<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<g:evaluate>
+		
+	var a = new GlideRecord('incident');
+	a.query();
+	
+	</g:evaluate>
+	
+	<j:while test="${a.next()}">
+		
+		<table width="50%" border="1">
+			<tr>
+				<td>${a.number} </td>
+				<td>${a.short_description} </td>
+			</tr>
+		</table>
+		
+	</j:while>
+	
+</j:jelly>
