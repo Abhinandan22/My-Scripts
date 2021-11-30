@@ -150,3 +150,24 @@ Demote
 	
 	
 </j:jelly>
+
+
+
+7)<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<g:evaluate>
+		
+	var a = new GlideRecord('incident');
+	a.query();
+	
+	</g:evaluate>
+	
+	<j:while test="${a.next()}">
+		
+		<p> number = ${a.number} </p>
+		
+	</j:while>
+	
+	
+</j:jelly>
