@@ -127,3 +127,26 @@ Demote
 	
 </j:jelly>	
 
+
+
+6) while loop
+
+<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+	<g:evaluate>
+		
+	var a=10;
+	
+	</g:evaluate>
+	
+	<j:while test="${a!=50}">
+		
+		<p> a = ${a} </p>
+		
+		<g:evaluate>a++</g:evaluate>
+		
+	</j:while>
+	
+	
+</j:jelly>
