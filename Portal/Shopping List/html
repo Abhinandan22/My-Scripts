@@ -1,1 +1,40 @@
 
+<div>
+<!-- your widget template -->
+  
+  <head>
+    
+    <title>My Shopping List</title>
+  
+  </head>
+  
+  <body>
+    
+     <h3>My Shopping List</h3>
+     <h3>So far I have <big>{{data.item.length}}</big> items</h3>
+     
+       <table>
+      
+         <tr ng-repeat="item in data.item">
+           
+           <td> {{$index + 1}} </td>
+           
+           <td> {{item}} </td>
+           
+           <td><button class="btn btn-danger" ng-click="remove(item)">X</button>
+             
+           </td>
+      
+         </tr> 
+     
+      </table>
+    
+    <br>
+   
+    <input type="text" ng-model="newItem">
+    
+      <button class="btn btn-success" ng-click="addItem(newItem)">Add</button>
+   
+  </body>
+
+</div>
