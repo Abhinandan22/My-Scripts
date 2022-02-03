@@ -1,0 +1,33 @@
+head{
+  width:50px;
+  font-size:50px;
+}
+
+input{
+  font-size:30px;
+  width:200px;
+  color:green;
+  height:70px;
+  padding:0px 10px;
+}
+
+button{
+  width:70px;
+  height:60px;
+}
+
+td{
+  width:50px;
+  font-size:30px;
+  border:10px solid grey;
+  text-align:center;
+  padding:5px 10px;
+}
+
+
+tr:hover{
+  background-color:grey;
+  color:white;
+  
+}
+
