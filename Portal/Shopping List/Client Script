@@ -1,0 +1,19 @@
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+
+	
+	$scope.addItem = function(newItem){
+		
+		$scope.data.item.push(newItem);
+		$scope.newItem = "";
+	}
+	
+	$scope.remove = function(addedItem){
+		$scope.data.item.pop(addedItem);
+	}
+	
+	
+};
+
+
