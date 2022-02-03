@@ -1,0 +1,10 @@
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.item = [];
+	//data.item.push('milk');
+	//data.item.push('eggs');
+	//data.item.push('cheese');
+	
+})();
