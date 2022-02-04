@@ -59,7 +59,7 @@ api.controller=function($scope) {
 
 
 
-3 > <div>
+<div>
 <!-- your widget template -->
   
 <span ng-if="data.coins == 0 || data.coins == undefined">
@@ -85,4 +85,33 @@ api.controller=function($scope) {
   var c = this;
 	
 	$scope.coins = -51;
+};
+
+
+3 > ng-repeat
+
+
+
+<div>
+<!-- your widget template -->
+  
+<span ng-repeat="item in data.items">{{item}}<br></span>
+</div>
+
+
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.items = ["food","beverage","biriyani"];
+	
+})();
+
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.items = ["food","beverage","biriyanire"];
 };
