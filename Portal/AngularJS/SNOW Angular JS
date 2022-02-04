@@ -115,3 +115,32 @@ api.controller=function($scope) {
 	
 	$scope.items = ["food","beverage","biriyanire"];
 };
+
+
+
+4 > ng-model and ng-bind
+
+<div>
+<!-- your widget template -->
+  
+  <textarea ng-model="amount"></textarea>
+  <span>Amount = {{amount}}</span>
+  
+</div>
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.amount = 1000;
+};
+
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.items = ["food","beverage","biriyani"];
+	
+})();
+
