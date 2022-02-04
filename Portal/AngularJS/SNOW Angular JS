@@ -1,3 +1,5 @@
+1 > ng-if
+
 <div>
 <!-- your widget template -->
   <div>
@@ -23,6 +25,34 @@ api.controller=function($scope) {
 			return true;
 		else
 			return false;
+	}
+	
+};
+
+
+
+
+2 > ng - click
+
+<div>
+<!-- your widget template -->
+  
+    <button ng-click="sum()">Sum</button>
+  
+  </div>
+  
+  
+  
+  
+  
+  api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.sum = function(){
+		var x = 20;
+		var y = 60;
+		alert(x+y);
 	}
 	
 };
