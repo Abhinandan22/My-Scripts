@@ -1,0 +1,28 @@
+<div>
+<!-- your widget template -->
+  <div>
+    <span ng-if="show()">Valid</span>
+  </div>
+  
+  
+</div>
+
+
+
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.show=function(){
+		
+		var x = 10;
+		var y = 20;
+		
+		if(x<y)
+			return true;
+		else
+			return false;
+	}
+	
+};
