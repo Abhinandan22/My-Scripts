@@ -56,3 +56,33 @@ api.controller=function($scope) {
 	}
 	
 };
+
+
+
+3 > <div>
+<!-- your widget template -->
+  
+<span ng-if="data.coins == 0 || data.coins == undefined">
+             No Coins</span>
+
+<span ng-if="data.coins > 0">Number of Coins = {{data.coins}}</span>
+  
+  
+</div>
+
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.coins = 10;
+	
+})();
+
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.coins = -51;
+};
