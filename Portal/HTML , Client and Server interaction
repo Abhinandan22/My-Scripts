@@ -1,0 +1,31 @@
+Incorrect HTML Server way :- 
+
+<div>
+<!-- your widget template -->
+  
+ <button ng-click="c.server.get({'action':'getIncident'})">My Incidents</button>  // Sending value in the form of object
+  
+</div>
+
+
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	if(input.action == 'getIncident'){
+		
+		var ga = new GlideRecord("incident");
+		ga.addEncodedQuery('caller_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe');
+		ga.query();
+		
+		while(ga.next()){
+			$sp.log(ga.number); // logs th result in the console
+		}
+	}
+})();
+
+
+Wrap the value in Client (Correct way)
+
+
