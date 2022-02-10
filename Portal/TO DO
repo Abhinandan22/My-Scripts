@@ -1,0 +1,42 @@
+<div>
+<!-- your widget template -->
+  
+  <h1>Item's List</h1>
+  
+ 
+  <div>
+  <ul>
+    <li ng-repeat="i in item">
+   {{i}}
+    
+     <span ng-click="removeItem($index)">x</span>
+    </li>
+  </ul>
+  </div>
+  
+  <div>
+   <input ng-model="newItem" placeholder="Add the new Item">
+   <button ng-click="pushItem()">Add</button>
+  </div>
+  
+  
+</div>
+
+
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	$scope.item=["Egg","Vegetable"];
+	$scope.newItem="";
+	
+	$scope.pushItem = function(){
+	   $scope.item.push($scope.newItem);
+		 $scope.newItem="";
+	}
+	
+	$scope.removeItem = function(index){
+		$scope.item.splice(index,1);
+	}
+	
+};
