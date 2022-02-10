@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2022-02-10 13:20:16">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Learning AngularJS App</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>8052a4da2f654110f564837cf699b631</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-02-10 13:20:16</sys_created_on>
+<sys_id>f7babc562fa54110f564837cf699b64c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-02-10 13:20:16</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_aa82a8da2f654110f564837cf699b6b6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	$scope.item=["Egg","Vegetable"];
+	$scope.newItem="";
+	
+	$scope.pushItem = function(){
+	   $scope.item.push($scope.newItem);
+		 $scope.newItem="";
+	}
+	
+	$scope.removeItem = function(index){
+		$scope.item.splice(index,1);
+	}
+	
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;TO Do list&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-10 11:35:17&lt;/sys_created_on&gt;&lt;sys_id&gt;aa82a8da2f654110f564837cf699b6b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;53&lt;/sys_mod_count&gt;&lt;sys_name&gt;TO Do list&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_aa82a8da2f654110f564837cf699b6b6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-10 13:07:12&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;!-- your widget template --&gt;
+  
+  &lt;h1&gt;Item's List&lt;/h1&gt;
+  
+ 
+  &lt;div&gt;
+  &lt;ul&gt;
+    &lt;li ng-repeat="i in item"&gt;
+   {{i}}
+    
+     &lt;span ng-click="removeItem($index)"&gt;x&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/div&gt;
+  
+  &lt;div&gt;
+   &lt;input ng-model="newItem" placeholder="Add the new Item"&gt;
+   &lt;button ng-click="pushItem()"&gt;Add&lt;/button&gt;
+  &lt;/div&gt;
+  
+  
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>914517943</payload_hash>
+<remote_update_set display_value="Learning AngularJS App">f7babc562fa54110f564837cf699b64c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2022-02-10 13:20:16</sys_created_on>
+<sys_id>bbbabc562fa54110f564837cf699b64c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17ee3beb21f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2022-02-10 13:20:16</sys_updated_on>
+<table/>
+<target_name>TO Do list</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>a4c770526de54110bb832c63959e664a</update_guid>
+<update_guid_history>a4c770526de54110bb832c63959e664a:914517943,e2777c129de5411074d045a6407dae04:-1633838466,27673c1291e54110aa793a25d99a7d56:794295223,c5f6741234e5411017555789d51addc7:-63426645,1535b49e70a54110b3a552c1cf5db997:-15572206,7d91fc9682a5411094e8e5ce07d56355:1752679916,c88fa41a23a54110a010a64763e61650:1708800284,d75fe49623a54110f62ff93276f714df:1201499557,2a0f201a5ba54110d24c72faeb1f04f3:1039240284,80aea496cba5411035bf295cb7d788b2:1507253317,78fda0968ba541104c531251f208843a:754395086,0dedac9612a5411092bf42f943109a3e:607795548,607de496e7a5411087237f7a28e831d8:-655955980,035de09664a541104af665f023a4ef4c:447934022,0b4d249646a54110c5b55f12a184dc50:-889489446,a03d2496c9a5411070ee44deee890249:-2026696738,192d2892e1a541108e92939f69a90198:-819055230,6c1da09664a54110c854a4ce2d695031:1759326288,03cce85619a541100d9ff9729032e524:1219242449,9abce856eda54110aaaab25d552e5d1c:5855674,d29c649289a5411030e8952c134f84e2:-799171952,534c20d20ca54110c7c7b85b87c8697c:-1691911154,5bfaec522ca5411057432585d5225108:500317023,acf9e89268a54110265d5f8a7a925655:-743258461,3c99ac5207a54110706c73f1160fbaf9:643523030,ed6964927ea541105b8ac02a7b56cdbe:-775814590,80396492f1a54110c43689baab1792b7:-1153677319,09096812c9a54110b630da9c263fa7f1:-1704627273,9db82c52b0a54110c88376bc6192a7c1:1157033833,3b882c520aa5411047242f0408edecba:506908525,6878e85281a5411031893ba18c715e29:2120278166,d958285291a541105983274fecf70e34:1187646566,61e760de436541105925af33db6443dc:-979695790,a887a0de2c65411053eac8bd8b4f6885:582817585,d57728128ca541106011de6d8392c19e:885874515,ad57e412bca5411041a9e9f0939ca80f:-1877012769,f737e4def365411056e55d2dcfaa5f16:-757387273,69d66cda6e654110f41a437fff4bf8a1:-1830523648,cc56e09e596541106d7ea3cbf7614a75:-1906388282,f036e01e42654110bd95d5e805e73ef2:-665405925,4716a4de4565411056e084d9c4261c0b:203861795,edf56c9e4b6541109cebda3afcca01e9:618255661,55e5a85e65654110e777cf14a08dc84c:-1325303358,8ec56c9e47654110e16b19f12e1d86c8:-1326658261,6865a85e2f654110510fb4b6d8310c26:43118634,0d55e09e606541102d1aaa283506385e:-1128582233,8605e09e68654110eb2c23d10445d557:263114738,e7946c5ebc654110100ee3e110f8826c:535069582,d264a85efb65411093379adb9b523b1f:633218842,5024a8da78654110a013ff656b37eace:-634853911,37d3605e0a654110ff9a0d24fbb28314:-1691713025,d31368da8b654110a95ab3c4b6be0426:-513521261,9ff268da1a654110aabc7b2735911b0b:-908528740,42b26052556541101f814a2ccf97c3fc:135468340</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
