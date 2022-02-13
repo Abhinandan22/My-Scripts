@@ -78,3 +78,53 @@ api.controller=function() {
 })();
 
 
+$scope : - 
+
+
+<div>
+<!-- your widget template -->
+  
+  <div>
+    <button ng-click="doIt()">Get My Incident</button>
+  </div>
+  
+  <span>{{newdata}}</span>
+ 
+</div>
+
+
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.doIt = function(){
+		
+		$scope.server.get({'action':'getInc'}).then(function(resp){
+			$scope.newdata = resp.data.newdata;
+		})
+		
+	}
+};
+
+
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	if(input.action == 'getInc'){
+		
+		var ga = new GlideRecord('incident');
+		ga.addEncodedQuery('caller_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe');
+		ga.query();
+		
+		while(ga.next()){
+			data.newdata = ga.getDisplayValue('number');
+		}
+		
+		
+	}
+
+})();
+
