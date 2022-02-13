@@ -29,3 +29,52 @@ Incorrect HTML Server way :-
 Wrap the value in Client (Correct way)
 
 
+
+<div>
+<!-- your widget template -->
+  
+  <div>
+    <button ng-click="c.doIt()">Get My Incident</button>
+  </div>
+  
+  <span>{{c.newdata}}</span>
+ 
+</div>
+
+
+
+api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	c.doIt = function(){
+		
+		c.server.get({'action':'getInc'}).then(function(resp){
+			c.newdata = resp.data.newdata;
+		})
+		
+	}
+};
+
+
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	if(input.action == 'getInc'){
+		
+		var ga = new GlideRecord('incident');
+		ga.addEncodedQuery('caller_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe');
+		ga.query();
+		
+		while(ga.next()){
+			data.newdata = ga.getDisplayValue('number');
+		}
+		
+		
+	}
+
+})();
+
+
