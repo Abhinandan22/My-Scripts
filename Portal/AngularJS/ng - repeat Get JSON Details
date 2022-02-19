@@ -1,0 +1,53 @@
+HTML : - 
+
+<div>
+<!-- your widget template --> 
+
+<ul>
+ 
+  <li ng-repeat="userName in name">{{userName.name}} - {{userName.city}}</li>
+  
+</ul>
+  
+</div>
+
+
+Client Controller : - 
+
+
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	 
+	$scope.name = [
+		
+		 {
+	     name:"Abhi Parhi",
+			 city:"Bengaluru"
+		 },
+		 
+		 {
+	     name:"Abhisdf Als",
+			 city:"Chennai"
+		 },
+		 
+		 {
+	     name:"ghy slsl",
+			 city:"Hyderabad"
+		 },
+		 
+		 {
+	     name:"Abhizcf lsdf",
+			 city:"Bengaluru"
+		 }
+		 
+	 ]; 
+};
+
+
+O/P : - Abhi Parhi - Bengaluru
+Abhisdf Als - Chennai
+ghy slsl - Hyderabad
+Abhizcf lsdf - Bengaluru
