@@ -1,0 +1,54 @@
+<div>
+<!-- your widget template --> 
+ 
+<div>Name : <input type="text" ng-model="name"></div>  
+ 
+  
+ <div>
+   
+<ul>
+ 
+  <li ng-repeat="userName in customers | filter:name | orderBy:city">{{userName.name}} - {{userName.city | lowercase}}</li>
+  
+</ul>
+   
+    </div> 
+  
+</div>
+
+
+
+api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	 
+	$scope.customers = [
+		
+		 {
+	     name:"Abhi Parhi",
+			 city:"Bengaluru"
+		 },
+		 
+		 {
+	     name:"Abhisdf Als",
+			 city:"Chennai"
+		 },
+		 
+		 {
+	     name:"ghy slsl",
+			 city:"Hyderabad"
+		 },
+		 
+		 {
+	     name:"Abhizcf lsdf",
+			 city:"Bengaluru"
+		 }
+		 
+	 ]; 
+};
+
+
+
+
+
