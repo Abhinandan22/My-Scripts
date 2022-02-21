@@ -1,0 +1,15 @@
+<div>
+<!-- your widget template -->
+  <div ng-init="names=['First','Second','Third','Fourth']"></div>
+  
+  <ul>
+    <li ng-repeat="x in names">{{ x }}</li>
+  </ul>
+  
+</div>
+
+
+First
+Second
+Third
+Fourth
