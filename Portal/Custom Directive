@@ -1,0 +1,10 @@
+api.directive('myDirective',function(){
+		
+		return{
+			template : "<h1>Directive created by me</h1>"
+		};
+		
+	});
+	
+  
+  <myDirective></myDirective>
