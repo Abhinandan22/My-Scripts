@@ -1,0 +1,8 @@
+<div ng-model="location"></div>
+  
+  <span>{{location}}</span>
+  
+  
+  $scope.location=$location.absUrl();
+  
+  https://dev31650.service-now.com/$sp.do?id=sp-preview&sys_id=c8e084392f718110f564837cf699b6f5
