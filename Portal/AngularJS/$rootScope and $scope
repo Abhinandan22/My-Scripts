@@ -1,0 +1,10 @@
+$scope.color="red";
+	$rootScope.color="blue"
+  
+  <div ng-model="color"></div>
+  
+  <span>{{color}}</span>
+  <span>{{color}}</span>
+  
+  
+  red red {scope value will override rootScope}
