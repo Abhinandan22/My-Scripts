@@ -1,8 +1,14 @@
-var start = new GlideDateTime(current.start_time);
+(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
 	
-	var end = new GlideDateTime(current.end_time);
+	var start = new GlideDateTime(current.start_date);
 	
-	if(end.before(start)){
+	var end = new GlideDateTime(current.end_date);
+	
+     if(end < start){
 		gs.addErrorMessage("End date is before start");
 		current.setAbortAction(true);
 	}
+
+})(current, previous);
