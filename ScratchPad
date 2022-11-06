@@ -1,0 +1,7 @@
+Business Rules - 
+
+		g_scratchpad.user_location = current.requested_for.location.getDisplayValue();
+
+Client Scripts - 
+
+  g_form.setValue("location_to_be_used",g_scratchpad.user_location);
