@@ -1,0 +1,8 @@
+var start = new GlideDateTime(current.start_time);
+	
+	var end = new GlideDateTime(current.end_time);
+	
+	if(end.before(start)){
+		gs.addErrorMessage("End date is before start");
+		current.setAbortAction(true);
+	}
