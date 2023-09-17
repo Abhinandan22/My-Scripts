@@ -1,1 +1,47 @@
+<div>
+<!-- your widget template -->
+  
+  <!-- Comments and ServiceNow -->
+  
+  <table style="width:100%">
+    
+    <tr>
+      <th style="width:70%">Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    
+    <tr style="height:100px">
+      <td>Infosys</td>
+      <td>Narayan Murthy</td>
+      <td>India</td>
+    </tr>
+    
+    <tr>
+      <td>TCS</td>
+      <td>Ratan Tata</td>
+      <td>India</td>
+    </tr>
+    
+    <tr>
+      <td>Wipro</td>
+      <td>Azim Premji</td>
+      <td>India</td>
+    </tr>
+    
+  </table>
+  
+  <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">HTML Basic</a>
+  
+  <p>This is <!-- good --> way to learn</p>
+  
+  <h1 style="border:2px solid Tomato;background-color:orange;color:red;">Learning HTML</h1>
+  
+  <p><i>Learning through</i><small>ServiceNOW</small> <sup>Learn</sup><sub>Write</sub><strong>Practice</strong></p>
+  <p style="color:red;text-align:left;font-family:courier;font-size:100%;background-color:yellow">This is required for Building Portal and better Switch.</p>
+  <a href="https://www.aldaily.com/" target="_blank"><img src="https://www.shutterstock.com/shutterstock/photos/2277328299/display_1500/stock-photo-newspaper-magazine-collage-background-texture-torn-clippings-scrap-paper-black-and-white-2277328299.jpg" alt="Paper visible"></a><br>
+  
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
 
+ 
+</div>
