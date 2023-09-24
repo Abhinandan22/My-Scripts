@@ -1,0 +1,22 @@
+var countofActiveInc = new GlideAggregate('incident');
+
+countofActiveInc.addEncodedQuery('active=true');
+
+countofActiveInc.addAggregate('COUNT');
+
+countofActiveInc.orderBy('category');
+
+countofActiveInc.query();
+
+while(countofActiveInc.next())
+
+gs.print(countofActiveInc.category + " count is " + countofActiveInc.getAggregate('COUNT'));
+
+
+
+*** Script:  count is 4
+*** Script: database count is 1
+*** Script: hardware count is 5
+*** Script: inquiry count is 24
+*** Script: network count is 4
+*** Script: software count is 8
