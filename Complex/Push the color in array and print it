@@ -1,0 +1,47 @@
+var colorArray = [];
+
+var cars = [
+  {
+    "color": "purple",
+    "type": "minivan",
+    "registration": '2023-05-06',
+    "capacity": 7
+  },
+  {
+    "color": "red",
+    "type": "station wagon",
+    "registration": '2033-05-06',
+    "capacity": 5
+  }
+];
+
+var bus = [
+  {
+    "color": "orange",
+    "type": "minivan",
+    "registration": '2023-05-06',
+    "capacity": 7
+  },
+  {
+    "color": "yellow",
+    "type": "station wagon",
+    "registration": '2033-05-06',
+    "capacity": 5
+  }
+];
+
+for(var i in cars)
+colorArray.push(cars[i].color);
+
+
+for(var j in bus)
+colorArray.push(bus[j].color);
+
+gs.print(colorArray.map(function(clr){
+
+return clr;
+
+}));
+
+
+*** Script: purple,red,orange,yellow
