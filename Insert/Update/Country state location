@@ -1,0 +1,77 @@
+Client script to capture state , city , location logic 
+
+On the onchange state field
+
+function onChange(control, oldValue, newValue, isLoading) {
+   if (newValue == '') {
+      g_form.clearOptions('state');
+   }
+
+   g_form.clearOptions('state');
+
+   if(newValue == "Ind"){
+	g_form.addOption('state','kta','Karnataka');
+	g_form.addOption('state','oda','Odisha');
+   }
+
+
+   else if(newValue == "Aus"){
+	g_form.addOption('state','Vic','Victoria');
+	g_form.addOption('state','syd','Sydney');
+
+   }
+
+
+   else {
+	g_form.addOption('state','auc','Auckland');
+	g_form.addOption('state','wel','Wellington');
+
+   }
+
+   
+
+   //Type appropriate comment here, and begin script below
+   
+}
+
+On the state field 
+
+function onChange(control, oldValue, newValue, isLoading) {
+   if (newValue == '') {
+      g_form.clearOptions('location');
+   }
+
+   g_form.clearOptions('location');
+
+   if(newValue == "oda"){
+	g_form.addOption('location','bbsr','Bhubaneswar');
+  }
+
+   else if(newValue == "kta"){
+	g_form.addOption('location','krw','Karwar');
+  }
+
+  else if(newValue == "syd"){
+	g_form.addOption('location','Syd','Sydney');
+  }
+
+  else if(newValue == "Vic"){
+	g_form.addOption('location','Mel','Melbourne');
+  }
+
+  else if(newValue == "ChristChrch"){
+	g_form.addOption('location','ChristChrch','ChristChurch');
+  }
+
+  else if(newValue == "auc") {
+        g_form.addOption('location','auc','Auckland');
+  }
+
+else if(newValue == "wel") {
+        g_form.addOption('location','wel','Wellington');
+  }
+
+
+   //Type appropriate comment here, and begin script below
+   
+}
