@@ -1,0 +1,7 @@
+Applies to Table - Book Tickets
+Queries from table - Approval
+
+
+current.addQuery('document_id', parent.sys_id);  
+
+current refers to Approval table and parent refers in Book Tickets
