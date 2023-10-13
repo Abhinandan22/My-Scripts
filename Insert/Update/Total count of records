@@ -1,0 +1,25 @@
+function duplicate(){
+	gsftSubmit(null,g_form.getFormElement(),'u_number_of_booking');
+}
+
+if(typeof window == 'undefined')
+calculateBooking();
+
+function calculateBooking(){
+	
+	var bookTicket = new GlideAggregate('u_book_tickets');
+	bookTicket.addEncodedQuery('u_user='+current.u_user);
+  bookTicket.addAggregate('COUNT');
+	bookTicket.query();
+
+	var countIncident = 0;
+
+	if(bookTicket.next())
+     
+	 countIncident = bookTicket.getAggregate('COUNT');
+
+	 gs.addInfoMessage('The total records created for ' + current.u_user.getDisplayValue() + ' is ' + countIncident);
+
+	
+
+}
