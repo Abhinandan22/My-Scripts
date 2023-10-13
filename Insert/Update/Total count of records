@@ -23,3 +23,30 @@ function calculateBooking(){
 	
 
 }
+
+
+
+var countUser = new GlideAggregate('incident');
+
+countUser.addQuery('caller_id','77ad8176731313005754660c4cf6a7de');
+
+countUser.addAggregate('COUNT');
+
+countUser.query();
+
+
+var incidentCount = 0;
+
+
+if(countUser.next()){
+
+
+incidentCount = countUser.getAggregate('COUNT');
+
+gs.print("Total Count " + incidentCount);
+
+
+}
+
+
+
