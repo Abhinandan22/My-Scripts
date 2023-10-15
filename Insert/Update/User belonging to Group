@@ -1,20 +1,23 @@
-User field Reference Qualifier - javascript:new UserGroup_SI().userGroups(current.u_group);
+User field Reference Qualifier - javascript:new UserGroups_SI().userGroups(current.u_group); // current used here mark it
 
 Script Includes - 
 
+var UserGroups_SI = Class.create();
+UserGroups_SI.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
 userGroups:function(group){
       
-	  var userGrp = [];
+	  var userGrp = '';
 
 	  var gaUser = new GlideRecord('sys_user_grmember');
 	  gaUser.addEncodedQuery('group='+group);
 	  gaUser.query();
 
       while(gaUser.next()){
-       userGrp.push(gaUser.user.getDisplayValue());
+       userGrp+=','+gaUser.user;
 	  }
-
-	  gs.log("Abhi testing "  + userGrp);
-
-	  return userGrp;
+   return 'sys_idIN' + userGrp;
+   
 	},
+    type: 'UserGroups_SI'
+});
