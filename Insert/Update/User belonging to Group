@@ -1,0 +1,20 @@
+User field Reference Qualifier - javascript:new UserGroup_SI().userGroups(current.u_group);
+
+Script Includes - 
+
+userGroups:function(group){
+      
+	  var userGrp = [];
+
+	  var gaUser = new GlideRecord('sys_user_grmember');
+	  gaUser.addEncodedQuery('group='+group);
+	  gaUser.query();
+
+      while(gaUser.next()){
+       userGrp.push(gaUser.user.getDisplayValue());
+	  }
+
+	  gs.log("Abhi testing "  + userGrp);
+
+	  return userGrp;
+	},
