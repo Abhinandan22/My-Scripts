@@ -16,7 +16,7 @@ userGroups:function(group){
       while(gaUser.next()){
        userGrp+=','+gaUser.user;
 	  }
-   return 'sys_idIN' + userGrp;
+   return 'sys_idIN' + userGrp;   // As we want to show the value in the form of list so sys_idIn is used.
    
 	},
     type: 'UserGroups_SI'
