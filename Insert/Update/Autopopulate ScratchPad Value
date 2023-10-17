@@ -3,9 +3,12 @@ display BR : -
 var loggedinUserManager = new GlideRecord('sys_user')
 loggedinUserManager.get(gs.getUserID());
 g_scratchpad.userManager = loggedinUserManager.manager.getDisplayValue();
+g_scratchpad.userEmail = loggedinUserManager.email;
+
 
 Client Script : - 
 
 onLoad Client Script 
 
 g_form.setValue('u_user_email',g_scratchpad.userManager);
+g_form.setValue('u_user_email_address',g_scratchpad.userEmail);
