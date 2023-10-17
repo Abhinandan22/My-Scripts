@@ -1,0 +1,8 @@
+Provide the table on which you want to create the record.
+
+In Variables make sure field backend value is same as the field name of the created record.
+
+For using scripts -
+
+current.description = producer.caller_id.getDisplayValue();
+current.
