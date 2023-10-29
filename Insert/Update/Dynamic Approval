@@ -1,0 +1,21 @@
+var answer = [];
+
+if(current.variables.location.getDisplayValue() == "London"){
+	
+	answer.push('62826bf03710200044e0bfc8bcbe5df1');
+}
+
+else if(current.variables.location.getDisplayValue() == "New York City"){
+	
+	answer.push('a8f98bb0eb32010045e1a5115206fe3a');
+}
+
+else if(current.variables.location.getDisplayValue() == "Melbourne"){
+	
+	answer.push('0a826bf03710200044e0bfc8bcbe5d7a');
+}
+
+else {
+	answer.push(current.variables.requested_for.manager);
+}
+	
