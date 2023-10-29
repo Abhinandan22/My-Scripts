@@ -1,0 +1,5 @@
+In Catalog Task activity choose advanced and then write the below script. Make sure you write this script afte choosing Advanced.
+
+Short Description can be provided any value as it won't override any value.
+
+task.short_description = "Task creation for  " + current.variables.location.getDisplayValue() + "location.";
