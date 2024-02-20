@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-02-20 17:58:21">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>RohitSnexpert</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>c540582b47100a10cb02b1a8536d4322</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>dce2782447a44e10cb02b1a8536d43a3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_13cdbe54476c0e10cb02b1a8536d43c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="2">9fcdbad847e80e10cb02b1a8536d4320</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-20 09:26:49</sys_created_on><sys_id>13cdbe54476c0e10cb02b1a8536d43c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_13cdbe54476c0e10cb02b1a8536d43c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-20 09:26:49</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1287525766</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>10e2782447a44e10cb02b1a8536d43a5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d6dc8f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>13cdbe54366c0e10a88153d305ce0fc8</update_guid>
+<update_guid_history>13cdbe54366c0e10a88153d305ce0fc8:1287525766</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_ee7b5d2f47d80a10cb02b1a8536d43e8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">667b5d2f47d80a10cb02b1a8536d43e6</sp_column><sp_widget display_value="Home Page Title">ea7b91a347d80a10cb02b1a8536d43d4</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 18:21:47</sys_created_on><sys_id>ee7b5d2f47d80a10cb02b1a8536d43e8</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_ee7b5d2f47d80a10cb02b1a8536d43e8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-17 18:21:47</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=ee7b5d2f47d80a10cb02b1a8536d43e8"/></record_update>]]></payload>
+<payload_hash>703671835</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>10e2782447a44e10cb02b1a8536d43a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc6130af40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>56dc0b54efac0e10a7e27d3d84b8173f</update_guid>
+<update_guid_history>56dc0b54efac0e10a7e27d3d84b8173f:703671835,2e7b5d2f56d80a106d3d2589494ceaea:-1364970865</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_81a9bd7747508a10cb02b1a8536d435b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><sp_column/><sp_container display_value="My Task - Container 1">83f8b97747508a10cb02b1a8536d43b2</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:12:03</sys_created_on><sys_id>81a9bd7747508a10cb02b1a8536d435b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_81a9bd7747508a10cb02b1a8536d435b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:12:03</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1370980962</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>10e2782447a44e10cb02b1a8536d43ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcc637090000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>85a9bd77af508a1055c7a3af152f405c</update_guid>
+<update_guid_history>85a9bd77af508a1055c7a3af152f405c:-1370980962</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_28b93df347508a10cb02b1a8536d4325</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">09a9bd7747508a10cb02b1a8536d435d</sp_column><sp_widget display_value="Record Details">a71739f347508a10cb02b1a8536d4371</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:12:17</sys_created_on><sys_id>28b93df347508a10cb02b1a8536d4325</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_28b93df347508a10cb02b1a8536d4325</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:12:17</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=28b93df347508a10cb02b1a8536d4325"/></record_update>]]></payload>
+<payload_hash>-758807177</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>14e2782447a44e10cb02b1a8536d43a7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc0d037da0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>052cf5004264ca106679552372d6a898</update_guid>
+<update_guid_history>052cf5004264ca106679552372d6a898:-758807177,20b93df36f508a10bebe5e95312ed627:1391683268</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rectangle_menu_item_aad9f97747508a10cb02b1a8536d4322</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph>file-o</glyph><hint/><kb_article/><kb_category/><kb_topic/><label>My Task</label><order>100</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page display_value="my_task">2fd8b97747508a10cb02b1a8536d43e1</sp_page><sp_rectangle_menu display_value="Portal Training Menu">6812752b475c0a10cb02b1a8536d432f</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:13:29</sys_created_on><sys_id>aad9f97747508a10cb02b1a8536d4322</sys_id><sys_mod_count>0</sys_mod_count><sys_name>My Task</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rectangle_menu_item_aad9f97747508a10cb02b1a8536d4322</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:13:29</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=aad9f97747508a10cb02b1a8536d4322"/></record_update>]]></payload>
+<payload_hash>1518802181</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>14e2782447a44e10cb02b1a8536d43aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcc786270000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>My Task</target_name>
+<type>Menu Item</type>
+<update_domain>global</update_domain>
+<update_guid>06f9f977f7508a107831a0a2e705a78a</update_guid>
+<update_guid_history>06f9f977f7508a107831a0a2e705a78a:1518802181</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_231739f347508a10cb02b1a8536d437a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Incident Details - Test Page - Container 1</name><order>1</order><semantic_tag/><sp_page display_value="incident_details">6f1739f347508a10cb02b1a8536d4376</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:01:01</sys_created_on><sys_id>231739f347508a10cb02b1a8536d437a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Incident Details - Test Page - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_231739f347508a10cb02b1a8536d437a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:01:01</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>-552908770</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>18e2782447a44e10cb02b1a8536d43a6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcbc1d960000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Incident Details - Test Page - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>6f1739f345508a100df64b9c710dd07b</update_guid>
+<update_guid_history>6f1739f345508a100df64b9c710dd07b:-552908770</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_6e7b91a347d80a10cb02b1a8536d43d9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><human_readable_url_structure/><id>home_page</id><internal>false</internal><omit_watcher>false</omit_watcher><public>false</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 18:21:47</sys_created_on><sys_id>6e7b91a347d80a10cb02b1a8536d43d9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>home_page</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_6e7b91a347d80a10cb02b1a8536d43d9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-17 18:21:47</sys_updated_on><title>Home Page Title - Test Page</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=6e7b91a347d80a10cb02b1a8536d43d9"/></record_update>]]></payload>
+<payload_hash>-993662857</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>18e2782447a44e10cb02b1a8536d43a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18db84d90350000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>home_page</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>aa7b91a3a1d80a10d10daf89bdddc0db</update_guid>
+<update_guid_history>aa7b91a3a1d80a10d10daf89bdddc0db:-993662857</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_8c4cfa90476c0e10cb02b1a8536d4365</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">804cfa90476c0e10cb02b1a8536d4363</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-20 09:20:02</sys_created_on><sys_id>8c4cfa90476c0e10cb02b1a8536d4365</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_8c4cfa90476c0e10cb02b1a8536d4365</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-20 09:20:02</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-2035300682</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>1ce2782447a44e10cb02b1a8536d43a5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d0a6f50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>444cfa909a6c0e10d2dd72df7ea0db67</update_guid>
+<update_guid_history>444cfa909a6c0e10d2dd72df7ea0db67:-2035300682</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_table_014c318c4724ca10cb02b1a8536d4343</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_table"&gt;&lt;sp_instance_table action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field/&gt;&lt;field_list/&gt;&lt;filter table="change_request"&gt;state=-5^requested_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe&lt;item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/&gt;&lt;item endquery="false" field="requested_by" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/&gt;&lt;/filter&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;5&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by/&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description&gt;This is Change Request Details&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;a03cfd4c4724ca10cb02b1a8536d4340&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Incident Details"&gt;a71739f347508a10cb02b1a8536d4371&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_table&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-19 10:02:00&lt;/sys_created_on&gt;&lt;sys_id&gt;014c318c4724ca10cb02b1a8536d4343&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Change Details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_table_014c318c4724ca10cb02b1a8536d4343&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-19 12:01:35&lt;/sys_updated_on&gt;&lt;table&gt;change_request&lt;/table&gt;&lt;title&gt;Change Details&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"title_color": {
+		"value": "blue",
+		"displayValue": "blue"
+	},
+	"short_description_color": {
+		"value": "red",
+		"displayValue": "red"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_table&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=014c318c4724ca10cb02b1a8536d4343"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1036798005</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>1ce2782447a44e10cb02b1a8536d43a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc13e31540000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table>change_request</table>
+<target_name>Change Details</target_name>
+<type>Instance with Table</type>
+<update_domain>global</update_domain>
+<update_guid>f4a7d280d2e4ca109755510aad3b9080</update_guid>
+<update_guid_history>f4a7d280d2e4ca109755510aad3b9080:1036798005,aacdfd004264ca10c7ae8dfe45b205fa:633672674,c54c318c1424ca1047f684494f194f44:57632783</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_analytics_bucket_284c5d6f47d80a10cb02b1a8536d4388</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_analytics_bucket"><sys_analytics_bucket action="INSERT_OR_UPDATE"><analytics_channel display_value="web">6496ef61c7001010393d265c95c260b9</analytics_channel><application_name>Portal Training</application_name><bucket_document_id>b5eb956f47d80a10cb02b1a8536d4331</bucket_document_id><bucket_metadata/><bucket_table_name>sp_portal</bucket_table_name><bucket_type>service_portal</bucket_type><enable_unauthenticated_user_tracking>false</enable_unauthenticated_user_tracking><enabled>true</enabled><internal_name_for_index>global.sp_portal.b5eb956f47d80a10cb02b1a8536d4331</internal_name_for_index><sys_class_name>sys_analytics_bucket</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 18:25:12</sys_created_on><sys_id>284c5d6f47d80a10cb02b1a8536d4388</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Portal Training</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_analytics_bucket_284c5d6f47d80a10cb02b1a8536d4388</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-17 18:25:12</sys_updated_on></sys_analytics_bucket></record_update>]]></payload>
+<payload_hash>-909507925</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>28e2782447a44e10cb02b1a8536d43ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18db850b1020000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Portal Training</target_name>
+<type>User Experience Analytics Settings</type>
+<update_domain>global</update_domain>
+<update_guid>744c5d6fb7d80a1079cae0bc96c7298a</update_guid>
+<update_guid_history>744c5d6fb7d80a1079cae0bc96c7298a:-909507925</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_search_source_007847d047ac0e10cb02b1a8536d43e5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_search_source"&gt;&lt;sp_search_source action="INSERT_OR_UPDATE"&gt;&lt;advanced_typeahead_config&gt;false&lt;/advanced_typeahead_config&gt;&lt;condition table="incident"&gt;active=true^EQ&lt;item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;data_fetch_script&gt;&lt;![CDATA[(function(query) {
+  var results = [];
+  /* Calculate your results here. */
+  
+  return results;
+})(query);]]&gt;&lt;/data_fetch_script&gt;&lt;display_fields&gt;number,short_description,caller_id,priority&lt;/display_fields&gt;&lt;enable_typeahead&gt;true&lt;/enable_typeahead&gt;&lt;facet_generation_script&gt;&lt;![CDATA[(function(query, facetService, searchResults) {
+	/* Calculate your facets here using facetService */
+	/* var stateFacet = facetService.createFacet('State', 'state'); */
+	/* stateFacet.addFacetItem('Facet Item Label', '123'); */
+
+})(query, facetService, searchResults);]]&gt;&lt;/facet_generation_script&gt;&lt;id&gt;incident-details&lt;/id&gt;&lt;is_scripted_source&gt;false&lt;/is_scripted_source&gt;&lt;name&gt;incident-details&lt;/name&gt;&lt;page display_value="search"&gt;87466b63c3223100c8b837659bba8feb&lt;/page&gt;&lt;pagination_supported&gt;true&lt;/pagination_supported&gt;&lt;primary_display_field&gt;short_description&lt;/primary_display_field&gt;&lt;roles/&gt;&lt;search_page_template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;a href="?id=form&amp;sys_id={{item.sys_id}}&amp;table={{item.table}}" class="h4 text-primary m-b-sm block"&gt;
+    &lt;span ng-bind-html="highlight(item.primary, data.q)"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;span class="text-muted" ng-repeat="f in item.fields"&gt;
+    &lt;span class="m-l-xs m-r-xs" ng-if="!$first"&gt; &amp;middot; &lt;/span&gt;
+    {{f.label}}: &lt;span ng-bind-html="highlight(f.display_value, data.q)"&gt;&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;]]&gt;&lt;/search_page_template&gt;&lt;source_table&gt;incident&lt;/source_table&gt;&lt;sys_class_name&gt;sp_search_source&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-20 10:15:22&lt;/sys_created_on&gt;&lt;sys_id&gt;007847d047ac0e10cb02b1a8536d43e5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;incident-details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_search_source_007847d047ac0e10cb02b1a8536d43e5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-20 10:17:25&lt;/sys_updated_on&gt;&lt;typeahead_glyph&gt;user&lt;/typeahead_glyph&gt;&lt;typeahead_template/&gt;&lt;/sp_search_source&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=007847d047ac0e10cb02b1a8536d43e5"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1576142181</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>2ce2782447a44e10cb02b1a8536d43ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc60532d30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>incident-details</target_name>
+<type>Search Source</type>
+<update_domain>global</update_domain>
+<update_guid>f469cfd0c0ac0e10b4b8686b59816c39</update_guid>
+<update_guid_history>f469cfd0c0ac0e10b4b8686b59816c39:1576142181,eee843d0b7ac0e106425472e83662b79:-782943253</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_83f8b97747508a10cb02b1a8536d43b2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>My Task - Container 1</name><order>1</order><semantic_tag/><sp_page display_value="my_task">2fd8b97747508a10cb02b1a8536d43e1</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:09:11</sys_created_on><sys_id>83f8b97747508a10cb02b1a8536d43b2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>My Task - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_83f8b97747508a10cb02b1a8536d43b2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:09:11</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>-325014492</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>50e2782447a44e10cb02b1a8536d43a7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcc396390000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>My Task - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>87f8b977f0508a10e343ee43cf5d81b3</update_guid>
+<update_guid_history>87f8b977f0508a10e343ee43cf5d81b3:-325014492</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rectangle_menu_item_7c33f96b475c0a10cb02b1a8536d43ac</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph/><hint/><kb_article/><kb_category/><kb_topic/><label>Knowledge Item</label><order>200</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page/><sp_rectangle_menu display_value="Portal Training Menu">6812752b475c0a10cb02b1a8536d432f</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 20:06:06</sys_created_on><sys_id>7c33f96b475c0a10cb02b1a8536d43ac</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Knowledge Item</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rectangle_menu_item_7c33f96b475c0a10cb02b1a8536d43ac</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-17 20:06:06</sys_updated_on><table/><type>kb</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=7c33f96b475c0a10cb02b1a8536d43ac"/></record_update>]]></payload>
+<payload_hash>236436375</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>50e2782447a44e10cb02b1a8536d43aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18db8ad11160000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Knowledge Item</target_name>
+<type>Menu Item</type>
+<update_domain>global</update_domain>
+<update_guid>325331abc65c0a1064de9c626e503b26</update_guid>
+<update_guid_history>325331abc65c0a1064de9c626e503b26:236436375</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_e43cfd4c4724ca10cb02b1a8536d433d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">e43cfd4c4724ca10cb02b1a8536d433a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-19 10:01:41</sys_created_on><sys_id>e43cfd4c4724ca10cb02b1a8536d433d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_e43cfd4c4724ca10cb02b1a8536d433d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-19 10:01:41</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-38936776</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>54e2782447a44e10cb02b1a8536d43a6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc0d06ee30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>ec3cfd4ce324ca10c97643ede3b4783e</update_guid>
+<update_guid_history>ec3cfd4ce324ca10c97643ede3b4783e:-38936776</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_2fd8b97747508a10cb02b1a8536d43e1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><human_readable_url_structure/><id>my_task</id><internal>false</internal><omit_watcher>false</omit_watcher><public>false</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:09:00</sys_created_on><sys_id>2fd8b97747508a10cb02b1a8536d43e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>my_task</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_2fd8b97747508a10cb02b1a8536d43e1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:09:00</sys_updated_on><title>My Task</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=2fd8b97747508a10cb02b1a8536d43e1"/></record_update>]]></payload>
+<payload_hash>-346211010</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>54e2782447a44e10cb02b1a8536d43a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcc36bb50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>my_task</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>dcf83d779d508a100d2e1bbece54686f</update_guid>
+<update_guid_history>dcf83d779d508a100d2e1bbece54686f:-346211010</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_667b5d2f47d80a10cb02b1a8536d43e6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><size/><size_lg/><size_sm/><size_xs/><sp_row display_value="1">ea7b5d2f47d80a10cb02b1a8536d43e3</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 18:21:47</sys_created_on><sys_id>667b5d2f47d80a10cb02b1a8536d43e6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_667b5d2f47d80a10cb02b1a8536d43e6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-17 18:21:47</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-2121177682</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>58e2782447a44e10cb02b1a8536d43a5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18db84d908c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>2e7b5d2f7cd80a100391bb1713164ee7</update_guid>
+<update_guid_history>2e7b5d2f7cd80a100391bb1713164ee7:-2121177682</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_menu_6812752b475c0a10cb02b1a8536d432f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_menu"&gt;&lt;sp_instance_menu action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column/&gt;&lt;sp_widget display_value="Header Menu"&gt;5ef595c1cb12020000f8d856634c9c6e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_menu&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-17 20:01:08&lt;/sys_created_on&gt;&lt;sys_id&gt;6812752b475c0a10cb02b1a8536d432f&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Portal Training Menu&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_menu_6812752b475c0a10cb02b1a8536d432f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-18 11:55:03&lt;/sys_updated_on&gt;&lt;title&gt;Portal Training Menu&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{"enable_cart": { "displayValue": "true","value": true}}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_menu&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=6812752b475c0a10cb02b1a8536d432f"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-238204124</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>58e2782447a44e10cb02b1a8536d43a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbc11dc680000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Portal Training Menu</target_name>
+<type>Instance with Menu</type>
+<update_domain>global</update_domain>
+<update_guid>9b8c81bf995c4a1083ecfd2aef3d2bee</update_guid>
+<update_guid_history>9b8c81bf995c4a1083ecfd2aef3d2bee:-238204124,bf3cc53f435c4a104214a55139c4b11a:1288279137,c632312b5d5c0a104612a6bef8566358:2119926209</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_ea7b5d2f47d80a10cb02b1a8536d43e3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><sp_column/><sp_container display_value="Home Page Title - Test Page - Container 1">6e7b5d2f47d80a10cb02b1a8536d43e0</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 18:21:47</sys_created_on><sys_id>ea7b5d2f47d80a10cb02b1a8536d43e3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_ea7b5d2f47d80a10cb02b1a8536d43e3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-17 18:21:47</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>1361823820</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>58e2782447a44e10cb02b1a8536d43ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18db84d90700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>a27b5d2f75d80a10c185d8c31a8bf4e5</update_guid>
+<update_guid_history>a27b5d2f75d80a10c185d8c31a8bf4e5:1361823820</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_09a9bd7747508a10cb02b1a8536d435d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">81a9bd7747508a10cb02b1a8536d435b</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:12:03</sys_created_on><sys_id>09a9bd7747508a10cb02b1a8536d435d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_09a9bd7747508a10cb02b1a8536d435d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:12:03</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-542503215</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>5ce2782447a44e10cb02b1a8536d43a4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcc637210000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>89a9bd77d9508a10571ce37983126b5e</update_guid>
+<update_guid_history>89a9bd77d9508a10571ce37983126b5e:-542503215</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_ais_40dc075447ac0e10cb02b1a8536d4367</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_ais"&gt;&lt;sp_instance_ais action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;ai_search_source_filter/&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;disable_all_suggestions&gt;false&lt;/disable_all_suggestions&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;placeholder/&gt;&lt;roles/&gt;&lt;search_application/&gt;&lt;search_results_configuration/&gt;&lt;short_description&gt;What is your issue?&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;667b5d2f47d80a10cb02b1a8536d43e6&lt;/sp_column&gt;&lt;sp_widget display_value="Homepage Search"&gt;200fbd96cb20020000f8d856634c9ca1&lt;/sp_widget&gt;&lt;spell_check_font_size&gt;xl&lt;/spell_check_font_size&gt;&lt;sys_class_name&gt;sp_instance_ais&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-20 10:32:23&lt;/sys_created_on&gt;&lt;sys_id&gt;40dc075447ac0e10cb02b1a8536d4367&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;How can Abhi Help?&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_ais_40dc075447ac0e10cb02b1a8536d4367&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-20 10:34:03&lt;/sys_updated_on&gt;&lt;title&gt;How can Abhi Help?&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"typeahead_search": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_ais&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=40dc075447ac0e10cb02b1a8536d4367"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-521651345</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>5ce2782447a44e10cb02b1a8536d43a7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc6146c540000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>How can Abhi Help?</target_name>
+<type>Instance with Search</type>
+<update_domain>global</update_domain>
+<update_guid>9c3d8f9400ac0e101355b4d376bc622e</update_guid>
+<update_guid_history>9c3d8f9400ac0e101355b4d376bc622e:-521651345,dadc0f1864ac0e10e6794c0c22b7c389:876584455,4cdc075426ac0e105e8bf34518dd4e68:-2108581560</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_804cfa90476c0e10cb02b1a8536d4363</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><sp_column/><sp_container display_value="Home Page Title - Test Page - Container 2">473cfa90476c0e10cb02b1a8536d434b</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-20 09:20:02</sys_created_on><sys_id>804cfa90476c0e10cb02b1a8536d4363</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_804cfa90476c0e10cb02b1a8536d4363</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-20 09:20:02</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1158469675</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>5ce2782447a44e10cb02b1a8536d43aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d0a6d70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>884cfa90c16c0e102bb5d70175110964</update_guid>
+<update_guid_history>884cfa90c16c0e102bb5d70175110964:-1158469675</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_ea7b91a347d80a10cb02b1a8536d43d4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;home_page_title&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Home Page Title&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	var usr = gs.getUserID();
+	
+	var userRecord = new GlideRecord('sys_user');
+	if(userRecord.get(usr)){
+		data.fname = userRecord.getValue('first_name');
+		
+		var rtask = new GlideRecord('task');
+		rtask.addEncodedQuery('opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe');
+		rtask.orderByDesc('sys_created_on');
+		rtask.query();
+		
+		if(rtask.next()){
+			
+			data.task = rtask.getValue('number');
+			
+		}
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-17 18:21:47&lt;/sys_created_on&gt;&lt;sys_id&gt;ea7b91a347d80a10cb02b1a8536d43d4&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Home Page Title&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ea7b91a347d80a10cb02b1a8536d43d4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-18 13:14:48&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;!-- your widget template --&gt;
+  Hello {{data.fname}},
+  Last record created is {{data.task}}
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-332558200</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>64e2782447a44e10cb02b1a8536d43ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbc5ade7b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Home Page Title</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>a3ce15b749dc4a10112643e6fc748cec</update_guid>
+<update_guid_history>a3ce15b749dc4a10112643e6fc748cec:-332558200,4fbe513362dc4a106c6669fa95e8845b:76943175,a2bddd3798dc4a10bffadcd2e06e078c:-1170114528,99d2ddff0f5c4a10cbb3f63a10c30484:-1112746544,65529977579c4a1023c65482b1d01784:1671689898,15e191736b9c4a10f0970d69403a3ca7:-678541303,8fbbd1a343d80a1069d4971641ee8407:175719030,51bb91a36ad80a10e7a77015c93b2ae5:-1861309746,e67b91a312d80a10bc9fe85e298d7cd8:489254143</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_a03cfd4c4724ca10cb02b1a8536d4340</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>2</order><semantic_tag/><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">e43cfd4c4724ca10cb02b1a8536d433a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-19 10:01:41</sys_created_on><sys_id>a03cfd4c4724ca10cb02b1a8536d4340</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_a03cfd4c4724ca10cb02b1a8536d4340</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-19 10:01:41</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1697307288</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>90e2782447a44e10cb02b1a8536d43a6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc0d06efe0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>e03cfd4c2c24ca1091344cf397bb0a41</update_guid>
+<update_guid_history>e03cfd4c2c24ca1091344cf397bb0a41:1697307288</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_vlist_8ffe3a54476c0e10cb02b1a8536d4347</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_vlist"&gt;&lt;sp_instance_vlist action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;number&lt;/display_field&gt;&lt;field_list/&gt;&lt;filter table="incident"&gt;active=true&lt;item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;/filter&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;5&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by/&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;13cdbe54476c0e10cb02b1a8536d43c7&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Simple List"&gt;5b255672cb03020000f8d856634c9c28&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_vlist&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-20 09:31:59&lt;/sys_created_on&gt;&lt;sys_id&gt;8ffe3a54476c0e10cb02b1a8536d4347&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_vlist_8ffe3a54476c0e10cb02b1a8536d4347&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-20 09:34:03&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "short_description,caller_id",
+		"displayValue": "short_description,caller_id"
+	},
+	"rounded_images": {
+		"value": "",
+		"displayValue": ""
+	},
+	"list_page": {
+		"value": "ed5f8ec347730200ba13a5554ee49046",
+		"displayValue": "form"
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "",
+		"displayValue": ""
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_vlist&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=8ffe3a54476c0e10cb02b1a8536d4347"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2059814485</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>90e2782447a44e10cb02b1a8536d43a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5dd7b810000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table>incident</table>
+<target_name/>
+<type>Instance of Simple List</type>
+<update_domain>global</update_domain>
+<update_guid>997fbed4e26c0e10a2fd567c0a8fbc4d</update_guid>
+<update_guid_history>997fbed4e26c0e10a2fd567c0a8fbc4d:-2059814485,4bfe3a54dd6c0e10220ae5715745c149:2009006882</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_484cfa90476c0e10cb02b1a8536d4368</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>2</order><semantic_tag/><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">804cfa90476c0e10cb02b1a8536d4363</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-20 09:20:02</sys_created_on><sys_id>484cfa90476c0e10cb02b1a8536d4368</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_484cfa90476c0e10cb02b1a8536d4368</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-20 09:20:02</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-299056618</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>94e2782447a44e10cb02b1a8536d43a5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d0a70e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>084cfa90356c0e10fb689f91ed9e1a69</update_guid>
+<update_guid_history>084cfa90356c0e10fb689f91ed9e1a69:-299056618</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_link_fd3d7a90476c0e10cb02b1a8536d4334</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;book&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article display_value="KB0000005"&gt;dcf43d75474321009db4b5b08b9a71dc&lt;/kb_article&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;484cfa90476c0e10cb02b1a8536d4368&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-20 09:24:15&lt;/sys_created_on&gt;&lt;sys_id&gt;fd3d7a90476c0e10cb02b1a8536d4334&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Knowledge article&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_fd3d7a90476c0e10cb02b1a8536d4334&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-20 09:25:04&lt;/sys_updated_on&gt;&lt;title&gt;Knowledge article&lt;/title&gt;&lt;type&gt;kb_article&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=fd3d7a90476c0e10cb02b1a8536d4334"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>462360215</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>94e2782447a44e10cb02b1a8536d43a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d541f50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Knowledge article</target_name>
+<type>Instance with Link</type>
+<update_domain>global</update_domain>
+<update_guid>b96df214a16c0e1089b549e10eddb363</update_guid>
+<update_guid_history>b96df214a16c0e1089b549e10eddb363:462360215,f13d7a90896c0e1056dd53914f557b36:-349454471</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_e43cfd4c4724ca10cb02b1a8536d433a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><sp_column display_value="1">09a9bd7747508a10cb02b1a8536d435d</sp_column><sp_container/><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-19 10:01:41</sys_created_on><sys_id>e43cfd4c4724ca10cb02b1a8536d433a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_e43cfd4c4724ca10cb02b1a8536d433a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-19 10:01:41</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-2039525792</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>94e2782447a44e10cb02b1a8536d43ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc0d06ec50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>243cfd4c7a24ca1037264848f760fa3c</update_guid>
+<update_guid_history>243cfd4c7a24ca1037264848f760fa3c:-2039525792</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>pwd_process_4ff0c881bf220100710071a7bf0739fa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pwd_process"><pwd_process action="INSERT_OR_UPDATE"><active>false</active><allow_verification_choice>false</allow_verification_choice><apply_to_all_users>true</apply_to_all_users><auto_gen_password>true</auto_gen_password><change>false</change><cred_store display_value="Local ServiceNow Instance">6e51033fbf020100710071a7bf0739e0</cred_store><description>Service-desk process for the local ServiceNow as a stand-alone credential-store</description><display_captcha>false</display_captcha><display_password>true</display_password><email_password_reset_url>false</email_password_reset_url><enable_security_score_notification>true</enable_security_score_notification><enabled_on_chatbot>false</enabled_on_chatbot><enrollment_reminder>false</enrollment_reminder><expiration_run_period/><expiration_run_start/><expiration_run_time/><expiration_run_time_zone/><expiration_schedule_frequency/><expiration_warn_days/><identification_type/><label>Service-Desk Password Reset for Local ServiceNow</label><min_verifications>1</min_verifications><name>Service-Desk Password Reset for Local ServiceNow</name><password_needs_reset>true</password_needs_reset><post_processor/><process_owner/><public_access>false</public_access><public_url/><pwd_validity_days/><redirect_url/><reset>true</reset><run_dayofmonth/><run_dayofweek/><run_start/><run_time/><run_type/><security_score/><send_email>true</send_email><send_expiration_reminder>false</send_expiration_reminder><sender_alias/><sys_class_name>pwd_process</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2013-07-11 18:00:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4ff0c881bf220100710071a7bf0739fa</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Service-Desk Password Reset for Local ServiceNow</sys_name><sys_package display_value="Password Reset" source="com.glideapp.password_reset">1399f4e43cf1311068bcf327dfe37fe4</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>pwd_process_4ff0c881bf220100710071a7bf0739fa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-19 08:00:05</sys_updated_on><unlock_account>true</unlock_account><url_suffix/><user_experience_entry/><user_experience_failure/><user_experience_footer/><user_experience_header/><user_experience_success/></pwd_process><sys_translated_text action="delete_multiple" query="documentkey=4ff0c881bf220100710071a7bf0739fa"/></record_update>]]></payload>
+<payload_hash>-1446838289</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>98e2782447a44e10cb02b1a8536d43a4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc0611b7e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Service-Desk Password Reset for Local ServiceNow</target_name>
+<type>Password Reset Process</type>
+<update_domain>global</update_domain>
+<update_guid>9f50654c56a0ca10a316922c1f71e93d</update_guid>
+<update_guid_history>9f50654c56a0ca10a316922c1f71e93d:-1446838289,963dd939641402106385c37dda3fc316:-1446838289,563dd939221402102b22533a17ebc514:-71893024</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_a01dfe14476c0e10cb02b1a8536d43c5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;484cfa90476c0e10cb02b1a8536d4368&lt;/sp_column&gt;&lt;sp_widget display_value="KB Category Page"&gt;fb5d068cd7610200a9ad1e173e24d400&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-20 09:23:37&lt;/sys_created_on&gt;&lt;sys_id&gt;a01dfe14476c0e10cb02b1a8536d43c5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_a01dfe14476c0e10cb02b1a8536d43c5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-20 09:23:44&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"show_star_rating": {
+		"value": "Use system properties",
+		"displayValue": "Use system properties"
+	},
+	"limit_article": {
+		"value": null,
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a01dfe14476c0e10cb02b1a8536d43c5"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-474754548</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>98e2782447a44e10cb02b1a8536d43a7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d426a20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>482d7254406c0e103fee9d114738f62b</update_guid>
+<update_guid_history>482d7254406c0e103fee9d114738f62b:-474754548,d21d3254c86c0e10b0750e66adb26b8b:2022273048,a81dfe14dd6c0e10e7b7ff1af6ad1ec6:-2046264336</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_231739f347508a10cb02b1a8536d437d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><sp_column/><sp_container display_value="Incident Details - Test Page - Container 1">231739f347508a10cb02b1a8536d437a</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:01:01</sys_created_on><sys_id>231739f347508a10cb02b1a8536d437d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_231739f347508a10cb02b1a8536d437d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:01:01</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1446333951</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>98e2782447a44e10cb02b1a8536d43aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcbc1db20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>6b1739f3b3508a10ad51034412d2f37e</update_guid>
+<update_guid_history>6b1739f3b3508a10ad51034412d2f37e:-1446333951</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_6e7b5d2f47d80a10cb02b1a8536d43e0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color>#8784db</background_color><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Home Page Title - Test Page - Container 1</name><order>1</order><semantic_tag/><sp_page display_value="home_page">6e7b91a347d80a10cb02b1a8536d43d9</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 18:21:47</sys_created_on><sys_id>6e7b5d2f47d80a10cb02b1a8536d43e0</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Home Page Title - Test Page - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_6e7b5d2f47d80a10cb02b1a8536d43e0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-20 10:36:51</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>1166374660</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>9ce2782447a44e10cb02b1a8536d43a6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc616fc9c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Home Page Title - Test Page - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>ddddcb1843ac0e10b97c5e54ae7b86d7</update_guid>
+<update_guid_history>ddddcb1843ac0e10b97c5e54ae7b86d7:1166374660,2a7b5d2f8fd80a10ab6a665459a42ae2:-1763934050</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_portal_b5eb956f47d80a10cb02b1a8536d4331</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal"><sp_portal action="INSERT_OR_UPDATE"><css_variables/><dark_theme/><default>false</default><enable_ais>false</enable_ais><enable_certificate_based_authentication>false</enable_certificate_based_authentication><enable_favorites>false</enable_favorites><hide_portal_name>false</hide_portal_name><homepage display_value="home_page">6e7b91a347d80a10cb02b1a8536d43d9</homepage><icon/><kb_knowledge_base/><kb_knowledge_page/><login_page/><logo/><notfound_page/><quick_start_config/><rtl_enabled>false</rtl_enabled><sc_catalog/><sc_catalog_page/><sc_category_page/><search_application/><search_results_configuration/><sp_chat_queue/><sp_rectangle_menu display_value="Portal Training Menu">6812752b475c0a10cb02b1a8536d432f</sp_rectangle_menu><sys_class_name>sp_portal</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 18:25:11</sys_created_on><sys_id>b5eb956f47d80a10cb02b1a8536d4331</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Portal Training</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_portal_b5eb956f47d80a10cb02b1a8536d4331</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-17 20:03:32</sys_updated_on><theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</theme><title>Portal Training</title><ts_index_group/><url_suffix>pt</url_suffix></sp_portal><sys_translated_text action="delete_multiple" query="documentkey=b5eb956f47d80a10cb02b1a8536d4331"/></record_update>]]></payload>
+<payload_hash>156398395</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>9ce2782447a44e10cb02b1a8536d43a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18db8aab87a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Portal Training</target_name>
+<type>Service Portal</type>
+<update_domain>global</update_domain>
+<update_guid>41c275e38b1c0a1024d628a07b8e24ee</update_guid>
+<update_guid_history>41c275e38b1c0a1024d628a07b8e24ee:156398395,719c51af8cd80a101a0b3107e7e3947c:898329731,bd7c51afc1d80a106d9654d154a09b77:-1839347321,f44c5d6f24d80a108760c3312312018c:898329731</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_b63cdf5447ec0e10cb02b1a8536d435a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function(spModal) {
+  /* widget controller */
+  var c = this;
+	
+	
+	c.refresh = function(){
+		/*alert('JSAlert');
+		spModal.alert('spModal Alert').then(function(){
+		window.location.reload();
+	 })*/
+		
+		var dec = confirm('Do you want to Refresh?');
+		
+		if(dec){
+			window.location.reload();
+		}
+		
+		spModal.confirm('Do you want to refresh?').then(function(answer){
+		
+			if(answer){
+				window.location.reload();
+			}
+			
+		})
+	}
+	
+	
+	c.getName = function(){
+		var name = prompt('Enter your name');
+		if(name == "Rohit"){
+			alert('Success');
+		}else{
+			alert('Failure');
+		}
+	}
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;test_feb&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;test_Feb&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-20 11:39:45&lt;/sys_created_on&gt;&lt;sys_id&gt;b63cdf5447ec0e10cb02b1a8536d435a&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;test_Feb&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b63cdf5447ec0e10cb02b1a8536d435a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-20 13:46:05&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;!-- your widget template --&gt;
+  &lt;button ng-click="c.refresh()"&gt;Refresh&lt;/button&gt;&lt;br&gt;
+  &lt;button ng-click="c.getName()"&gt;GetName&lt;/button&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-591024926</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>a0e2782447a44e10cb02b1a8536d43ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc6c439e70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>test_Feb</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>5929f7dcc0604e102830423c46a45aba</update_guid>
+<update_guid_history>5929f7dcc0604e102830423c46a45aba:-591024926,e39767980c204e1007dba57771fb560b:-45238679,b747631421204e10a3244dbd05c89c07:1226207303,d947abd0e0204e1091ed2ea906be14d3:497783352,f517ab5801204e1005c319a3d9bbace4:707667964,f5e2ab149c204e10f338a6f9fbd4003f:-50518606,3ec26fd081204e10d3f0da2129f974c5:-228129358,c5622314d7204e10e97f7bb60e7b5d93:1893780627,6a12a750c1204e101714e1df55c2d7bb:1119432500,6db1a3d002204e10cbe5b59d4b368394:-1303098955,c271a7509b204e109e83ed10046a10b5:-766663300,49112f1c10ec0e10041931211705ff9f:1452095319,0201639057204e104e7a2d4b279aaf79:388359172,476d1f5c88ec0e1088283781731b7d70:1498646248,fc4d5b5c75ec0e10ae8054eb4f09c5a0:-2002214742,faac9f1c05ec0e10cd71c39eae947e4e:1473462874,919c9394e2ec0e1032ed8a4cd41485c4:-1454851956,2a8c97947cec0e10eb8344cf428b0373:-1735969171,796c131cecec0e109da117d9d941e5d2:1133818491,f23cdf5425ec0e1035bd6e339fac4d5d:719946913</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_684c916f47940a10cb02b1a8536d4396</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>If true, portal css would be in rem units</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>glide.service_portal.resize_text.pt.enable_rem_conversion</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 18:25:12</sys_created_on><sys_id>684c916f47940a10cb02b1a8536d4396</sys_id><sys_mod_count>0</sys_mod_count><sys_name>glide.service_portal.resize_text.pt.enable_rem_conversion</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_684c916f47940a10cb02b1a8536d4396</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-17 18:25:12</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=684c916f47940a10cb02b1a8536d4396"/></record_update>]]></payload>
+<payload_hash>454600980</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>ace2782447a44e10cb02b1a8536d43ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18db850b0d10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>glide.service_portal.resize_text.pt.enable_rem_conversion</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>ac4c5d6f66d80a1091fb63bb6793a686</update_guid>
+<update_guid_history>ac4c5d6f66d80a1091fb63bb6793a686:454600980</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_portal_search_source_aae8cfd047ac0e10cb02b1a8536d432e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_search_source"><m2m_sp_portal_search_source action="INSERT_OR_UPDATE"><order>100</order><sp_portal display_value="Portal Training">b5eb956f47d80a10cb02b1a8536d4331</sp_portal><sp_search_source display_value="incident-details">007847d047ac0e10cb02b1a8536d43e5</sp_search_source><sys_class_name>m2m_sp_portal_search_source</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-20 10:15:22</sys_created_on><sys_id>aae8cfd047ac0e10cb02b1a8536d432e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Portal Training.incident-details</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_portal_search_source_aae8cfd047ac0e10cb02b1a8536d432e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-20 10:15:22</sys_updated_on></m2m_sp_portal_search_source></record_update>]]></payload>
+<payload_hash>-1951711817</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>d0e2782447a44e10cb02b1a8536d43a4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc60350c30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Portal Training.incident-details</target_name>
+<type>Search Source</type>
+<update_domain>global</update_domain>
+<update_guid>2ae8cfd06eac0e109dd52cdbd8a9ef30</update_guid>
+<update_guid_history>2ae8cfd06eac0e109dd52cdbd8a9ef30:-1951711817</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_2f1739f347508a10cb02b1a8536d437f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><size/><size_lg/><size_sm/><size_xs/><sp_row display_value="1">231739f347508a10cb02b1a8536d437d</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:01:01</sys_created_on><sys_id>2f1739f347508a10cb02b1a8536d437f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_2f1739f347508a10cb02b1a8536d437f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:01:01</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1888159996</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>d0e2782447a44e10cb02b1a8536d43a5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcbc1dd50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>671739f35d508a10d669ffd9ebfc7781</update_guid>
+<update_guid_history>671739f35d508a10d669ffd9ebfc7781:1888159996</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_link_324c3650476c0e10cb02b1a8536d43c1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;warning&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;home&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item display_value="Report an Incident"&gt;e159dd8c0a0a0aa7004a1618fbf78198&lt;/sc_cat_item&gt;&lt;sc_category/&gt;&lt;short_description&gt;Report an Incident&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;8c4cfa90476c0e10cb02b1a8536d4365&lt;/sp_column&gt;&lt;sp_page display_value="sc_cat_item"&gt;9f12251147132100ba13a5554ee490f4&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-20 09:20:13&lt;/sys_created_on&gt;&lt;sys_id&gt;324c3650476c0e10cb02b1a8536d43c1&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Report an Incident&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_324c3650476c0e10cb02b1a8536d43c1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-20 09:26:04&lt;/sys_updated_on&gt;&lt;title&gt;Report an Incident&lt;/title&gt;&lt;type&gt;sc_cat_item&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=324c3650476c0e10cb02b1a8536d43c1"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-22681868</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>d0e2782447a44e10cb02b1a8536d43a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d62dce0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Report an Incident</target_name>
+<type>Instance with Link</type>
+<update_domain>global</update_domain>
+<update_guid>acad32d0f06c0e10008bca9beb388876</update_guid>
+<update_guid_history>acad32d0f06c0e10008bca9beb388876:-22681868,f6ac32d0e26c0e10a64f0f560c2a3c72:-615914014,324c3650966c0e1063b40726fbf141c3:-418504612</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_9fcdbad847e80e10cb02b1a8536d4320</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>2</order><semantic_tag/><sp_column/><sp_container display_value="Home Page Title - Test Page - Container 2">473cfa90476c0e10cb02b1a8536d434b</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-20 09:26:49</sys_created_on><sys_id>9fcdbad847e80e10cb02b1a8536d4320</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_9fcdbad847e80e10cb02b1a8536d4320</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-20 09:26:49</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>460919443</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>d0e2782447a44e10cb02b1a8536d43ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d6dc750000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>9fcdbe549c6c0e109ae7995f69e243c5</update_guid>
+<update_guid_history>9fcdbe549c6c0e109ae7995f69e243c5:460919443</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_2b1739f347508a10cb02b1a8536d4382</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">2f1739f347508a10cb02b1a8536d437f</sp_column><sp_widget display_value="Incident Details">a71739f347508a10cb02b1a8536d4371</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:01:01</sys_created_on><sys_id>2b1739f347508a10cb02b1a8536d4382</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_2b1739f347508a10cb02b1a8536d4382</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:01:01</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=2b1739f347508a10cb02b1a8536d4382"/></record_update>]]></payload>
+<payload_hash>-1177983954</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>d4e2782447a44e10cb02b1a8536d43a7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcbc1df60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>2b1739f3f9508a1068aaef49ab4e4d84</update_guid>
+<update_guid_history>2b1739f3f9508a1068aaef49ab4e4d84:-1177983954</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rectangle_menu_item_bd52b92b475c0a10cb02b1a8536d43ee</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph/><hint/><kb_article/><kb_category/><kb_topic/><label>Favorites List</label><order>100</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page display_value="favorites_list">9a8e817a53710110fedfddeeff7b12ed</sp_page><sp_rectangle_menu display_value="Portal Training Menu">6812752b475c0a10cb02b1a8536d432f</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-17 20:02:58</sys_created_on><sys_id>bd52b92b475c0a10cb02b1a8536d43ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Favorites List</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rectangle_menu_item_bd52b92b475c0a10cb02b1a8536d43ee</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-17 20:02:58</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=bd52b92b475c0a10cb02b1a8536d43ee"/></record_update>]]></payload>
+<payload_hash>-789705868</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>d4e2782447a44e10cb02b1a8536d43aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18db8aa349e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Favorites List</target_name>
+<type>Menu Item</type>
+<update_domain>global</update_domain>
+<update_guid>bca2316b3a5c0a10f0e42a6bc5fe2541</update_guid>
+<update_guid_history>bca2316b3a5c0a10f0e42a6bc5fe2541:-789705868</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_473cfa90476c0e10cb02b1a8536d434b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Home Page Title - Test Page - Container 2</name><order>2</order><semantic_tag/><sp_page display_value="home_page">6e7b91a347d80a10cb02b1a8536d43d9</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-20 09:19:58</sys_created_on><sys_id>473cfa90476c0e10cb02b1a8536d434b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Home Page Title - Test Page - Container 2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_473cfa90476c0e10cb02b1a8536d434b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-20 09:19:58</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>2130078749</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>d8e2782447a44e10cb02b1a8536d43a6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d096840000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Home Page Title - Test Page - Container 2</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>873cfa90526c0e105e417cf20bd1b34e</update_guid>
+<update_guid_history>873cfa90526c0e105e417cf20bd1b34e:2130078749</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_6f1739f347508a10cb02b1a8536d4376</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><human_readable_url_structure/><id>incident_details</id><internal>false</internal><omit_watcher>false</omit_watcher><public>false</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-18 15:01:01</sys_created_on><sys_id>6f1739f347508a10cb02b1a8536d4376</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident_details</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_6f1739f347508a10cb02b1a8536d4376</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 15:01:01</sys_updated_on><title>Incident Details - Test Page</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=6f1739f347508a10cb02b1a8536d4376"/></record_update>]]></payload>
+<payload_hash>1894090407</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>d8e2782447a44e10cb02b1a8536d43a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbcbc1d6f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>incident_details</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>6f1739f397508a107c771449409aac78</update_guid>
+<update_guid_history>6f1739f397508a107c771449409aac78:1894090407</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_93cdbe54476c0e10cb02b1a8536d43c9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>2</order><semantic_tag/><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="2">9fcdbad847e80e10cb02b1a8536d4320</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-02-20 09:26:49</sys_created_on><sys_id>93cdbe54476c0e10cb02b1a8536d43c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_93cdbe54476c0e10cb02b1a8536d43c9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-20 09:26:49</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-1271197466</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>dce2782447a44e10cb02b1a8536d43a5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc5d6dca70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>53cdbe54dc6c0e10022d512755413bca</update_guid>
+<update_guid_history>53cdbe54dc6c0e10022d512755413bca:-1271197466</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_table_a44cf9cc4724ca10cb02b1a8536d43b7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_table"&gt;&lt;sp_instance_table action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field/&gt;&lt;field_list/&gt;&lt;filter table="incident"&gt;caller_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe&lt;item endquery="false" field="caller_id" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/&gt;&lt;/filter&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;5&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by/&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description&gt;This is Incident Details&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;e43cfd4c4724ca10cb02b1a8536d433d&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Incident Details"&gt;a71739f347508a10cb02b1a8536d4371&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_table&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-19 10:01:57&lt;/sys_created_on&gt;&lt;sys_id&gt;a44cf9cc4724ca10cb02b1a8536d43b7&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Incident Details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_table_a44cf9cc4724ca10cb02b1a8536d43b7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-19 12:05:01&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;title&gt;Incident Details&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"title_color": {
+		"value": "blue",
+		"displayValue": "blue"
+	},
+	"short_description_color": {
+		"value": "yellow",
+		"displayValue": "yellow"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_table&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a44cf9cc4724ca10cb02b1a8536d43b7"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1102247532</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>dce2782447a44e10cb02b1a8536d43a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc141587b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table>incident</table>
+<target_name>Incident Details</target_name>
+<type>Instance with Table</type>
+<update_domain>global</update_domain>
+<update_guid>07689e4083e4ca1036d89ba990945a48</update_guid>
+<update_guid_history>07689e4083e4ca1036d89ba990945a48:1102247532,2f279a00d3e4ca100cb5023e067dc506:1213885610,3fdc75402d64ca100ee145e2563ea50e:-961675763,db7cb1cc2724ca10a9d2c0297a9d07c3:1090197045,684cf9cc6724ca10dd06db75a8a175b9:464501987</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_63f1a53377451110cd1b756f1b5a9991</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Captures the last execution timestamp of the scheduled job 'Surface New Unconnected Content of Categories'</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>taxonomy.category.new_content_job_last_run</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-08 07:43:25</sys_created_on><sys_id>63f1a53377451110cd1b756f1b5a9991</sys_id><sys_mod_count>11</sys_mod_count><sys_name>taxonomy.category.new_content_job_last_run</sys_name><sys_package display_value="Content Taxonomy" source="com.snc.taxonomy">0dbb74a43c35311068bcf327dfe37ffd</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_63f1a53377451110cd1b756f1b5a9991</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-02-18 08:00:06</sys_updated_on><type>date_format</type><value>2024-02-18</value><write_roles>maint</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=63f1a53377451110cd1b756f1b5a9991"/></record_update>]]></payload>
+<payload_hash>-1435038396</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>e8e2782447a44e10cb02b1a8536d43ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dbb3ac3830000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>taxonomy.category.new_content_job_last_run</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>b5c6d47f4d584a10fbc031c20e1c36a9</update_guid>
+<update_guid_history>b5c6d47f4d584a10fbc031c20e1c36a9:-1435038396,67e42071c61002103e89737836df3708:198260362,2fe42071ee100210ef463df2b8f10602:-437767834</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_a71739f347508a10cb02b1a8536d4371</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function(spModal) {
+  /* widget controller */
+  var c = this;
+	
+	c.useraction = function(incID,action){
+		
+		if(action=='open'){
+		//var url="?id=form&amp;table=incident&amp;sys_id="+incID;
+    //window.open(url,'_blank');
+			spModal.open({
+				title:"Record Details",
+				widget:"widget-form",
+				widgetInput:{sysid:incID,table:c.data.table}
+			}).then(function(){
+				alert('pop close');
+			})
+		}
+		else{
+			c.data.currentIncident=incID;
+			c.server.update().then(function(){
+				c.data.currentIncident="";
+		})
+	 }
+	}
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;incident_details&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Incident Details&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Color code like black","name":"title_color","section":"Presentation","label":"Title Color","type":"string"},{"name":"short_description_color","section":"Presentation","label":"Short Description Color","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	
+	var table = $sp.getValue('table');
+	data.table = table;
+	var filter = $sp.getValue('filter');
+	data.ptitle = $sp.getValue('title');
+	data.shortdesc = $sp.getValue('short_description');
+	data.title_color = options.title_color;
+	
+	if(input &amp;&amp; input.currentIncident){
+		var incUpdate = new GlideRecord('incident');
+		if(incUpdate.get(input.currentIncident)){
+			incUpdate.state = 6;
+			incUpdate.update();
+		}
+	}
+	
+	
+
+	
+	data.arrINC = [];
+	
+	var grInc = new GlideRecord(table);
+	grInc.addEncodedQuery(filter);
+	grInc.query();
+	
+	while(grInc.next()){
+		
+		var INCjson = {};
+		
+		INCjson.number=grInc.number.toString();
+		INCjson.shortdescription=grInc.short_description.toString();
+		INCjson.callerId = grInc.getDisplayValue('caller_id');
+		INCjson.sysid=grInc.getValue('sys_id');
+		INCjson.state=grInc.getDisplayValue('state');
+
+		data.arrINC.push(INCjson);
+	}
+	
+	
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-18 15:01:01&lt;/sys_created_on&gt;&lt;sys_id&gt;a71739f347508a10cb02b1a8536d4371&lt;/sys_id&gt;&lt;sys_mod_count&gt;69&lt;/sys_mod_count&gt;&lt;sys_name&gt;Incident Details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a71739f347508a10cb02b1a8536d4371&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-20 17:19:23&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;!-- your widget template --&gt;
+  
+  &lt;h1 style="color:{{data.title_color}}"&gt;
+    {{data.ptitle}}
+  &lt;/h1&gt;
+  &lt;p style="color:{{options.short_description_color}}"&gt;
+    {{data.shortdesc}}
+  &lt;/p&gt;
+  
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Number&lt;/th&gt;
+      &lt;th&gt;Short Description&lt;/th&gt;
+      &lt;th&gt;Caller&lt;/th&gt;
+      &lt;th&gt;State&lt;/th&gt;
+      &lt;th&gt;Action&lt;/th&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr ng-repeat="inc in data.arrINC"&gt;
+      &lt;td&gt;&lt;a href="?id=form&amp;table=incident&amp;sys_id={{inc.sysid}}" target="_blank"&gt;{{inc.number}}&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;{{inc.shortdescription}}&lt;/td&gt;
+      &lt;td&gt;{{inc.callerId}}&lt;/td&gt;
+      &lt;td&gt;{{inc.state}}&lt;/td&gt;
+      &lt;td&gt;&lt;button ng-click="c.useraction(inc.sysid,'open')"&gt;Open Incident&lt;/button&gt;&lt;button ng-click="c.useraction(inc.sysid,'close')"&gt;Close Incident&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    
+  &lt;/table&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>810707914</payload_hash>
+<remote_update_set display_value="RohitSnexpert">dce2782447a44e10cb02b1a8536d43a3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-02-20 17:58:20</sys_created_on>
+<sys_id>ece2782447a44e10cb02b1a8536d43ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18dc787846b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-02-20 17:58:20</sys_updated_on>
+<table/>
+<target_name>Incident Details</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>3df9a0a8cf644e10eb3854be1d797064</update_guid>
+<update_guid_history>3df9a0a8cf644e10eb3854be1d797064:810707914,0268e028e6644e107b633789058ec0ea:103634544,322860e4ae644e101543555486398b5b:88190839,9ad6a4e0dc644e1003554f06816a1f99:367948711,04cd37543da04e107d7644112dc0c345:583747447,c22d3b149ea04e1028b2126560e87c14:-404130057,1bacbfd038a04e109ec1f422861d1fe6:164348187,594cb7d06da04e108152536528e3c88b:-105831828,62495a0404e4ca10a7274772efd35202:-2028393335,34199ac0b6e4ca101f390a0bfa96fa34:-701205303,cb38d2c04ae4ca107e0acb2f9c050d3e:-1009715658,3367960031e4ca1097b38269f1a9c060:764771975,a7571a4037e4ca10c21648a02daa84e3:-2032041531,2226560000e4ca109b05f429e2298b9e:-289944994,81a30a48bf64ca10b2260d5d6a2450f5:-1528386893,1fc286845764ca105fa25fee8b1c3974:-472365119,14920ac46264ca10d0fee6fca6044f56:-1901374933,02ff3d800d64ca10f6139d95445f9460:-1147067694,8efd3d807c64ca108d4636908eddb039:-1502515612,fdbbb1cc7824ca10d374b377c54ddaa8:834673462,ba4bfd8c8a24ca104afd1cabb2cba5dd:-526544027,984cdd0489a0ca10937e4c58b811e9ed:-1502515612,43d9d144c1a0ca10e5ac7ef94967856b:-387716180,6ca91d4c1360ca107fa38b971a1c4d69:-1348680983,50d81dc0b0a0ca1046d71b32037f4973:1150722844,9da81d4c8360ca100b63bc2e4d7042fc:-1344137704,6b9f81c49360ca107eb4d97a60970048:1135087992,f7be89c4bd60ca10f8c55649c39dcca1:871798263,f3ae89040d60ca1049b94fbe3aab2f07:1409203894,e66e05c40d60ca10ff2a6a79eb12372a:-637898397,c05ec9046960ca10885a3fb62cc34445:1365192943,a7ed0140c560ca109f04586b7753c8ee:121287792,2c7c49040360ca103e911964f61f92ff:-1224678625,1ac9cd845220ca10f8a3f5210bda8efb:-512691501,043141847e20ca10f17ef04a29dd2797:1535800492,93e085846720ca1093cdab08e4f5f2f9:264273859,161f7c401820ca10594f5e65186932ed:-1207263531,263d7c40f920ca107f3b644d4fd5b311:247727425,bd0df00c5aec8a108b61669586ad4cc0:-1038534435,018b3ccc6cec8a100ec0ac129c90e283:-704235881,136bbc8c73ec8a106006128b3916c638:665048040,a0ca788c2bec8a10ce9a48fa674ba276:-1095496260,458af0c037ec8a10220e24d25cdd3d4e:1554853238,cd597c0c55ec8a1090905ae079a28986:736714490,099f5e3796148a10246d1808051a1cbd:250863678,845fde737f148a10ab35f39425d60cb6:-199823926,76ce1ab38a148a10ce04a9c9943ab83f:-1203783188,02ad52b38e148a10793046477cf37108:250863678,0e3dde738d148a10e5441832255940ac:-188526302,5e6c9ebf7dd08a101549a139b6d282be:-1203783188,0babde7f14d08a10abe072555df695c5:-229027577,edf7963bbbd08a10b61bb830b5b0c483:-1890201972,56c752fba1d08a101a3a68ff749db38b:1622941048,5b568a3ffd508a103dc2aafed92f8a10:2003928089,21f5ce7f90508a10b0d2a58dfcef01a4:-659973569,4daffd7f20508a10177689276515489c:2044163352,564ff53f07508a10eb02a04b6e335776:-54477368,ef7ef53fa0508a1086cac3db48fd1d6f:1766449828,4c5e3dbb88508a104e39ddf4075c9624:-1334949160,120e7dbb03508a103417061539aae9c0:-518058564,f5ed39f708508a101a15a5e44c2c7fb4:-834516549,99cdb5fb2e508a105f2518ff07d0c970:-1807804242,358db5fba1508a1088fbc222b227426a:1062271796,5e0d7dbb8d508a10dee18476a7bff623:2053767411,11ec71bb2a508a106d93b31d7a5e37f9:1747677266,780bb53bd9508a105f2208781cde2c77:-1720858209,a2baf9f7cd508a107350ee6e1511f7c9:-82361462,c1b8f1b762dc4a10c90ae4159174e1ae:-1985660231,0667b9f3ee508a10170f920209c76cd6:1525948368,e71739f3b2508a10a23c1ae1223e1e75:1546076098</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
