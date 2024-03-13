@@ -1,0 +1,30 @@
+I built a single generic workflow and made a custom table that I gave access to the staff members that need to update the approvers etc. so I didn't need to keep changing workflows every time they wanted to change approvers. I actually now use the same generic workflow for most of my catalog items. 
+
+Do achieve this I created a table with the first column being a reference field pointing to the sc_cat_item table to select the catalog item. The second column was a list of 1st level approvers. The third column was a list of 2nd level approvers (we needed two rounds of approvals). You might need to add a true/false column to say whether to send an approval to the user's manager or have no approver depending on your requirements.
+
+Then finally I had another reference column that pointed the the sys_template table. I then created a template for the task I wanted to create and chose that for each row in my table. This allowed me to have different tasks created for each catalog item (you might just want to point it to the sys_user_group table if you just want to set the fulfiller group.
+
+Then my workflow looks up the catalog item, pulls the record from the table and uses the various pieces of data at various steps of the workflow. Does this sound similar to what you are trying to achieve? If so let me know and I can help you set something up.
+
+
+1 ) Approval 
+
+ answer = [];
+var gr = new GlideRecord("u_generic_workflow_variables");
+gr.addQuery("u_catalog_itemsLIKE" + current.cat_item);
+gr.addQuery("u_role", current.variables.role);
+gr.query();
+if (gr.next()) {
+	var approvers = gr.u_approvers.split(',');
+	for (i = 0; i < approvers.length; i++) {
+		answer.push(approvers[i]);
+	}
+}
+
+2 ) var gr = new GlideRecord("u_generic_workflow_variables");
+gr.addQuery("u_catalog_itemsLIKE" + current.cat_item);
+gr.addQuery("u_role", current.variables.role);
+gr.query();
+if (gr.next()) {
+	task.assignment_group = gr.u_fulfillment_group; //This change the variable here to your column name.
+}
