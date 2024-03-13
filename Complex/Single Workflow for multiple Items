@@ -28,3 +28,15 @@ gr.query();
 if (gr.next()) {
 	task.assignment_group = gr.u_fulfillment_group; //This change the variable here to your column name.
 }
+
+There's a field on the Item (sc_req_item) table called Item (cat_item) that holds the ordered item.
+Using an if activity:
+
+answer = ifScript();
+function ifScript() {
+if(current.cat_item.getDisplayValue() == 'Blackberry'){
+return 'yes';
+}
+else{
+return 'no';
+}
