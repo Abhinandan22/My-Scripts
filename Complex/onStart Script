@@ -1,0 +1,4 @@
+if(source.u_number.subString(0,3)!='INC'){
+		ignore=true;
+		log.error("Error caused due to OnStart Transform Map Script while inserting incorrect incident number ", ' error');
+	}
