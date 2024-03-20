@@ -1,0 +1,13 @@
+gs.eventQueue('trigger.parm1.event',current,current.assigned_to.email.toString(),previous.assigned_to.email.toString());
+
+email.setSubject(current.number +  " assigned to is updated.Please pay attention.");
+        
+		  email.addAddress('cc',event.parm1);
+		  email.addAddress('bcc',event.parm2);
+
+      template.print("Caller: " + current.caller_id.getDisplayValue()+ "<br />");
+		  template.print("Short Description: " + current.short_description + "<br />");
+		  template.print("Description: " + current.description);
+
+${mail_script:notification_email_script_new}
+
