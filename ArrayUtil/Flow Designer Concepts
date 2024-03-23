@@ -1,0 +1,15 @@
+Trigger --> Service Catalog
+
+Actions --> Get Catalog Variables
+Use Data Piller to get the value
+Choose Catalog Variables / Variable Sets
+
+Choose the variable from the slush Bucket
+
+Flow Logic --> Introduce a flow logic to get variable value that the user has provided.
+
+If manager approves create catalog task , Update Requested Item
+
+Update requested item records
+
+Create Catalog task. End flow.
