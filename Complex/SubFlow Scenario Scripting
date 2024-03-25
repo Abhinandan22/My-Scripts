@@ -1,0 +1,25 @@
+Create a Child Workflow. Start --> RunScript --> Notification --> End
+
+Click on Edit Options. If it is not visible then change the value to true in the system property.
+
+current.u_blue_sub_variable = workflow.inputs.u_blue_sub_variable; --> RunScript
+
+In Notification Use This is ${u_blue_sub_variable}
+
+
+Coming to Parent , Add the Script and the below line is added to it ,
+
+Run Script --> Child Workflow (Subflow)  --> Run Script --> End
+
+workflow.scratchpad.bluemainvariable = current.variables.short_description;
+
+Next activity is add the Child Subflow and then add Logs through a Run Script activity.
+
+Child Workflow activity --> Blue Sub variable ${workflow.scratchpad.bluemainvariable}
+
+
+
+gs.log("Abhi Workflow " + workflow.scratchpad.bluemainvariable);
+gs.log("Abhi Workflow " + current.variables.short_description);
+
+
