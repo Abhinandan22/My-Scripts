@@ -1,0 +1,48 @@
+<div ng-repeat="x in data.obj">
+  <span>{{x.number}}</span>
+  <button class="btn btn-primary" ng-click="c.approveClicked()">Approve</button>
+  <button class="btn btn-danger" ng-click="c.errorClicked()">Reject</button>
+  
+</div>
+
+
+api.controller=function(spUtil,$scope) {
+  /* widget controller */
+  var c = this;
+	
+	c.approveClicked = function(){
+		//spUtil.addInfoMessage("Request Approved");
+		spUtil.addTrivialMessage("Request Approved");
+	}
+	
+	c.errorClicked = function(){
+		spUtil.addErrorMessage("Request Rejected");
+	}
+	
+	spUtil.recordWatch($scope,"sysapproval_approver","approver=5137153cc611227c000bbd1bd8cd2007^state=requested",function(response){
+		
+		c.server.update();
+	});
+};
+
+
+
+(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	data.obj = [];
+	
+	var grAppr = new GlideRecord('sysapproval_approver');
+	grAppr.addEncodedQuery('approver=5137153cc611227c000bbd1bd8cd2007^state=requested');
+	grAppr.query();
+	
+	while(grAppr.next()){
+		
+		var jsonInc = {};
+		jsonInc.number = grAppr.getDisplayValue('sysapproval');
+		
+		data.obj.push(jsonInc);
+	}
+
+})();
