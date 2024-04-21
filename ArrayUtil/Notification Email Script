@@ -1,0 +1,18 @@
+(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+          // Add your code here
+
+		  var callerInc = new GlideRecord('incident');
+		  callerInc.addEncodedQuery('caller_id=2e826bf03710200044e0bfc8bcbe5de0');
+		  callerInc.query();
+
+		  while(callerInc.next()){
+			template.print("Number : " + callerInc.number + '<br/>');
+			template.print("Caller : " + callerInc.getDisplayValue('caller_id') + '<br/>');
+			template.print("Short Description " + callerInc.short_description + '<br/>');
+			template.print("Caller Manager : " + callerInc.caller_id.manager.getDisplayValue() + '<br/>');
+		  }
+
+})(current, template, email, email_action, event);
